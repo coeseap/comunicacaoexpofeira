@@ -1,0 +1,1831 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caderno de Comunicação - Expofeira 2026</title>
+  <meta name="description" content="Caderno de comunicação da Expofeira 2026 para imprensa e influenciadores locais.">
+  <meta property="og:title" content="Expofeira 2026 - Caderno de Comunicação">
+  <meta property="og:description" content="Informações oficiais, dados, programação nacional e pautas para cobertura da Expofeira 2026.">
+  <meta property="og:image" content="assets/aparelhagens.jpg">
+  <meta name="theme-color" content="#005be8">
+  <style>
+    :root {
+      --blue: #005be8;
+      --blue-dark: #07124b;
+      --sky: #24a8ff;
+      --green: #49d640;
+      --green-dark: #166d34;
+      --yellow: #ffd21a;
+      --pink: #ec008c;
+      --orange: #ff7a00;
+      --red: #e91b2d;
+      --ink: #08111f;
+      --muted: #5c6572;
+      --paper: #fffdf7;
+      --line: rgba(8, 17, 31, .13);
+      --shadow: 0 18px 50px rgba(8, 17, 31, .16);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(73, 214, 64, .08) 0 12.5%, transparent 12.5% 25%, rgba(0, 91, 232, .06) 25% 37.5%, transparent 37.5% 50%, rgba(255, 210, 26, .08) 50% 62.5%, transparent 62.5% 75%, rgba(236, 0, 140, .06) 75% 87.5%, transparent 87.5%),
+        var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -80px;
+      z-index: 20;
+      padding: 10px 14px;
+      background: var(--yellow);
+      color: var(--ink);
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 253, 247, .9);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand-mini {
+      width: 220px;
+      flex: 0 0 auto;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex: 1 1 auto;
+      margin-left: auto;
+      min-width: 0;
+      max-width: 100%;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav a,
+    .print-btn {
+      border: 0;
+      background: transparent;
+      color: var(--ink);
+      min-height: 38px;
+      padding: 9px 11px;
+      border-radius: 999px;
+      font: inherit;
+      font-size: .88rem;
+      font-weight: 850;
+      text-decoration: none;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .nav a:hover,
+    .print-btn:hover {
+      background: rgba(0, 91, 232, .1);
+    }
+
+    .print-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
+      background: var(--blue-dark);
+    }
+
+    .print-btn:hover {
+      background: var(--blue);
+    }
+
+    .icon {
+      width: 17px;
+      height: 17px;
+      stroke-width: 2.6;
+    }
+
+    .hero {
+      min-height: min(760px, calc(100svh - 112px));
+      position: relative;
+      isolation: isolate;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      color: #fff;
+      background: #090f22;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(7, 18, 75, .92) 0%, rgba(7, 18, 75, .65) 42%, rgba(7, 18, 75, .16) 76%),
+        linear-gradient(0deg, rgba(8, 17, 31, .92) 0%, rgba(8, 17, 31, .12) 48%);
+      z-index: -1;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 14px;
+      background: linear-gradient(90deg, var(--green) 0 20%, var(--blue) 20% 40%, var(--yellow) 40% 60%, var(--pink) 60% 80%, var(--orange) 80%);
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(1.08) contrast(1.04);
+    }
+
+    .hero-inner {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 58px 0 70px;
+      display: grid;
+      grid-template-columns: minmax(0, 760px) minmax(260px, 380px);
+      gap: 36px;
+      align-items: end;
+      min-width: 0;
+    }
+
+    .hero-inner > * {
+      min-width: 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      width: fit-content;
+      max-width: 100%;
+      min-height: 32px;
+      padding: 6px 10px;
+      margin: 0 0 18px;
+      color: var(--ink);
+      background: var(--yellow);
+      font-weight: 950;
+      text-transform: uppercase;
+      font-size: .78rem;
+      line-height: 1.15;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      overflow-wrap: anywhere;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin-bottom: 18px;
+      font-family: Impact, Haettenschweiler, "Arial Black", system-ui, sans-serif;
+      font-size: clamp(3.2rem, 8vw, 7.8rem);
+      line-height: .84;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      text-wrap: balance;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      margin: 0;
+      color: rgba(255, 255, 255, .92);
+      font-size: clamp(1.06rem, 1.6vw, 1.34rem);
+      font-weight: 650;
+      overflow-wrap: anywhere;
+    }
+
+    .service-stack {
+      display: grid;
+      gap: 10px;
+      align-self: stretch;
+      min-width: 0;
+    }
+
+    .service-strip {
+      display: grid;
+      grid-template-columns: 94px minmax(0, 1fr);
+      min-height: 76px;
+      color: var(--ink);
+      background: #fff;
+      box-shadow: var(--shadow);
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .service-strip > * {
+      min-width: 0;
+    }
+
+    .service-strip strong {
+      display: grid;
+      place-items: center;
+      padding: 12px;
+      color: #fff;
+      background: var(--pink);
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 1.24rem;
+      letter-spacing: 0;
+    }
+
+    .service-strip span {
+      display: block;
+      align-self: center;
+      padding: 14px 16px;
+      font-weight: 900;
+      line-height: 1.22;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .service-strip:nth-child(2) strong {
+      background: var(--blue);
+    }
+
+    .service-strip:nth-child(3) strong {
+      background: var(--green-dark);
+    }
+
+    .service-strip:nth-child(4) strong {
+      background: var(--orange);
+    }
+
+    .section {
+      padding: 76px 0;
+    }
+
+    .section.tight {
+      padding: 50px 0;
+    }
+
+    .section.band-blue {
+      color: #fff;
+      background: var(--blue);
+    }
+
+    .section.band-ink {
+      color: #fff;
+      background: var(--blue-dark);
+    }
+
+    .section.band-light {
+      background: rgba(255, 255, 255, .7);
+      border-block: 1px solid var(--line);
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      min-width: 0;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, .78fr) minmax(260px, .42fr);
+      gap: 28px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    .kicker {
+      color: var(--pink);
+      font-size: .78rem;
+      font-weight: 950;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .band-blue .kicker,
+    .band-ink .kicker {
+      color: var(--yellow);
+    }
+
+    h2 {
+      margin-bottom: 0;
+      font-family: Impact, Haettenschweiler, "Arial Black", system-ui, sans-serif;
+      font-size: clamp(2.2rem, 4.6vw, 5rem);
+      line-height: .9;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.05rem;
+      font-weight: 650;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .band-blue .lead,
+    .band-ink .lead {
+      color: rgba(255, 255, 255, .84);
+    }
+
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .fact {
+      min-height: 150px;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    .fact b {
+      display: block;
+      margin-bottom: 8px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(2rem, 4vw, 3.7rem);
+      line-height: .9;
+      color: var(--blue);
+      letter-spacing: 0;
+    }
+
+    .fact:nth-child(2) b {
+      color: var(--green-dark);
+    }
+
+    .fact:nth-child(3) b {
+      color: var(--pink);
+    }
+
+    .fact:nth-child(4) b {
+      color: var(--orange);
+    }
+
+    .fact span {
+      color: var(--muted);
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+
+    .release-layout {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(280px, .45fr);
+      gap: 34px;
+      align-items: start;
+    }
+
+    .prose {
+      font-size: 1.05rem;
+    }
+
+    .prose p {
+      margin-bottom: 18px;
+    }
+
+    .pull-quote {
+      position: sticky;
+      top: 98px;
+      padding: 28px;
+      color: #fff;
+      background: var(--pink);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .pull-quote img {
+      width: 100%;
+      margin-bottom: 22px;
+    }
+
+    .pull-quote p {
+      margin: 0;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(2rem, 3.2vw, 3.2rem);
+      line-height: .9;
+      text-transform: uppercase;
+    }
+
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .topic {
+      min-height: 210px;
+      padding: 22px;
+      border-radius: var(--radius);
+      color: var(--ink);
+      background: #fff;
+      border: 1px solid var(--line);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .topic::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 10px;
+      background: var(--accent, var(--blue));
+    }
+
+    .topic h3 {
+      margin-bottom: 10px;
+      font-size: 1.18rem;
+      line-height: 1.15;
+    }
+
+    .topic p {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 650;
+      overflow-wrap: anywhere;
+    }
+
+    .edital-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .edital-card {
+      position: relative;
+      min-width: 0;
+      padding: 24px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .edital-card.accent {
+      color: #fff;
+      background: var(--blue-dark);
+      border-color: rgba(255,255,255,.18);
+    }
+
+    .edital-card h3 {
+      margin-bottom: 12px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: .9;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .edital-card p {
+      margin-bottom: 16px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .edital-card.accent p {
+      color: rgba(255,255,255,.86);
+    }
+
+    .edital-card ul,
+    .benefit-list ul,
+    .stage-card ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .edital-card li,
+    .benefit-list li,
+    .stage-card li {
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .edital-card.accent li {
+      color: rgba(255,255,255,.88);
+      border-top-color: rgba(255,255,255,.22);
+    }
+
+    .edital-programs {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .edital-logo {
+      width: 150px;
+      aspect-ratio: 1;
+      object-fit: contain;
+      border-radius: 999px;
+      background: #fff;
+      box-shadow: 0 12px 28px rgba(8, 17, 31, .12);
+    }
+
+    .queen-feature {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, .64fr);
+      gap: 0;
+      color: #fff;
+      background: var(--blue-dark);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .queen-feature img {
+      width: 100%;
+      height: 100%;
+      min-height: 430px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .queen-copy {
+      padding: 34px;
+      display: grid;
+      align-content: center;
+      background:
+        linear-gradient(135deg, rgba(236, 0, 140, .96), rgba(255, 122, 0, .88)),
+        var(--pink);
+    }
+
+    .queen-copy h3 {
+      margin-bottom: 16px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(2.4rem, 4.2vw, 4.6rem);
+      line-height: .88;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .queen-copy p {
+      margin-bottom: 18px;
+      color: rgba(255,255,255,.9);
+      font-weight: 760;
+    }
+
+    .queen-details {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .queen-detail {
+      min-width: 0;
+      padding: 14px;
+      color: var(--ink);
+      background: rgba(255,255,255,.94);
+      border-radius: var(--radius);
+    }
+
+    .queen-detail b {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--pink);
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .queen-detail span {
+      font-weight: 900;
+      line-height: 1.18;
+      overflow-wrap: anywhere;
+    }
+
+    .service-panel {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(280px, .5fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .info-row {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      min-height: 58px;
+      border: 1px solid rgba(255,255,255,.22);
+      background: rgba(255,255,255,.08);
+    }
+
+    .info-row b {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      color: var(--yellow);
+      border-right: 1px solid rgba(255,255,255,.22);
+      text-transform: uppercase;
+      font-size: .8rem;
+    }
+
+    .info-row span {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      font-weight: 750;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .micro-box {
+      padding: 22px;
+      color: var(--ink);
+      background: var(--yellow);
+      border-radius: var(--radius);
+      display: grid;
+      align-content: center;
+    }
+
+    .micro-box b {
+      display: block;
+      margin-bottom: 12px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 2.4rem;
+      line-height: .9;
+      text-transform: uppercase;
+    }
+
+    .micro-box p {
+      margin: 0;
+      font-weight: 800;
+    }
+
+    .artist-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .artist {
+      position: relative;
+      min-height: 420px;
+      overflow: hidden;
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--blue-dark);
+      box-shadow: 0 10px 24px rgba(8, 17, 31, .12);
+    }
+
+    .artist img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+      object-position: center;
+      transition: transform .45s ease;
+    }
+
+    .artist:hover img {
+      transform: scale(1.04);
+    }
+
+    .artist::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(7, 18, 75, .95) 0%, rgba(7, 18, 75, .58) 42%, rgba(7, 18, 75, .08) 70%);
+    }
+
+    .artist-body {
+      position: absolute;
+      inset: auto 0 0;
+      z-index: 1;
+      padding: 18px;
+    }
+
+    .date-pill {
+      display: inline-flex;
+      margin-bottom: 12px;
+      padding: 6px 9px;
+      color: var(--ink);
+      background: var(--yellow);
+      font-weight: 950;
+    }
+
+    .artist h3 {
+      margin: 0 0 8px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 2rem;
+      line-height: .92;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .artist p {
+      margin: 0;
+      color: rgba(255,255,255,.84);
+      font-size: .92rem;
+      font-weight: 650;
+      overflow-wrap: anywhere;
+    }
+
+    .artist.feature {
+      grid-column: span 2;
+    }
+
+    .artist.feature h3 {
+      font-size: clamp(2.6rem, 4vw, 4.3rem);
+    }
+
+    .artist.mystery {
+      background:
+        linear-gradient(135deg, var(--pink), var(--orange) 55%, var(--yellow));
+    }
+
+    .artist.mystery::before {
+      content: "?";
+      position: absolute;
+      right: 20px;
+      top: 8px;
+      z-index: 0;
+      color: rgba(255,255,255,.32);
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 14rem;
+      line-height: .8;
+    }
+
+    .artist.mystery::after {
+      background: linear-gradient(0deg, rgba(7, 18, 75, .82), rgba(7, 18, 75, .08));
+    }
+
+    .aparelhagem-feature {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: minmax(0, .95fr) minmax(300px, .65fr);
+      gap: 18px;
+      align-items: stretch;
+      color: #fff;
+      background: var(--blue-dark);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .aparelhagem-feature img {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+    }
+
+    .aparelhagem-copy {
+      padding: 30px;
+      display: grid;
+      align-content: center;
+    }
+
+    .aparelhagem-copy h3 {
+      margin-bottom: 16px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(2.8rem, 4.5vw, 5.2rem);
+      line-height: .86;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .aparelhagem-copy p {
+      margin-bottom: 16px;
+      color: rgba(255,255,255,.86);
+      font-weight: 700;
+    }
+
+    .photo-credit {
+      color: rgba(255,255,255,.68);
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    .photo-credit a {
+      color: #fff;
+      text-decoration-thickness: 2px;
+    }
+
+    .stage-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .stage-card {
+      min-width: 0;
+      min-height: 260px;
+      padding: 22px;
+      color: #fff;
+      background: var(--blue-dark);
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .stage-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 10px;
+      background: var(--accent, var(--yellow));
+    }
+
+    .stage-card h3 {
+      margin: 22px 0 14px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(1.8rem, 2.6vw, 2.7rem);
+      line-height: .92;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .stage-card p,
+    .stage-card li {
+      color: rgba(255,255,255,.84);
+      font-weight: 700;
+    }
+
+    .stage-card li {
+      border-top-color: rgba(255,255,255,.18);
+    }
+
+    .numbers {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .number-block {
+      padding: 24px;
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+    }
+
+    .number-block h3 {
+      margin-bottom: 16px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 2.2rem;
+      line-height: .9;
+      color: var(--blue);
+      letter-spacing: 0;
+    }
+
+    .number-block ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .number-block li {
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      gap: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .number-block li b {
+      color: var(--ink);
+    }
+
+    .incentive {
+      display: grid;
+      grid-template-columns: minmax(0, .55fr) minmax(0, .45fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .incentive-main {
+      padding: 34px;
+      color: #fff;
+      background: var(--green-dark);
+      border-radius: var(--radius);
+    }
+
+    .incentive-main h3 {
+      margin-bottom: 18px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(2.4rem, 4.5vw, 5rem);
+      line-height: .88;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .incentive-main p {
+      margin-bottom: 0;
+      color: rgba(255,255,255,.9);
+      font-weight: 700;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      align-content: start;
+      padding: 22px;
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 8px 11px;
+      color: var(--ink);
+      background: rgba(0, 91, 232, .08);
+      border: 1px solid rgba(0, 91, 232, .16);
+      border-radius: 999px;
+      font-size: .9rem;
+      font-weight: 850;
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .benefit-list {
+      min-width: 0;
+      padding: 24px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .benefit-list h3 {
+      margin-bottom: 14px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: .9;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .benefit-list li strong {
+      color: var(--ink);
+    }
+
+    .media-strip {
+      min-height: 310px;
+      background-image:
+        linear-gradient(90deg, rgba(8, 17, 31, .76), rgba(8, 17, 31, .1)),
+        url("assets/elementos-expofeira.jpg");
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      align-items: center;
+      color: #fff;
+    }
+
+    .media-strip h2 {
+      max-width: 720px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .gallery-main,
+    .gallery-side {
+      display: grid;
+      gap: 14px;
+    }
+
+    .photo-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      min-height: 260px;
+      background: var(--blue-dark);
+    }
+
+    .photo-card.tall {
+      min-height: 534px;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+    }
+
+    .photo-card span {
+      position: absolute;
+      left: 14px;
+      bottom: 14px;
+      z-index: 1;
+      padding: 6px 10px;
+      color: #fff;
+      background: rgba(7, 18, 75, .82);
+      font-weight: 900;
+    }
+
+    .footer {
+      padding: 38px 0;
+      color: #fff;
+      background: var(--ink);
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .footer p {
+      margin: 0;
+      color: rgba(255,255,255,.72);
+      font-weight: 650;
+    }
+
+    .footer img {
+      width: 210px;
+    }
+
+    @media (max-width: 1000px) {
+      .topbar-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 12px 0;
+        gap: 8px;
+      }
+
+      .nav {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .hero {
+        min-height: 720px;
+      }
+
+      .hero-inner,
+      .section-head,
+      .release-layout,
+      .service-panel,
+      .incentive,
+      .benefit-grid,
+      .edital-grid,
+      .edital-programs,
+      .queen-feature,
+      .queen-details,
+      .aparelhagem-feature,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .facts-grid,
+      .artist-grid,
+      .numbers,
+      .stage-grid,
+      .topic-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .artist.feature {
+        grid-column: span 1;
+      }
+
+      .pull-quote {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section {
+        padding: 54px 0;
+      }
+
+      h2 {
+        font-size: clamp(1.85rem, 8.8vw, 2.35rem);
+        line-height: .92;
+        text-wrap: wrap;
+        word-break: break-word;
+      }
+
+      h1,
+      h3 {
+        text-wrap: wrap;
+      }
+
+      .artist.feature h3,
+      .aparelhagem-copy h3,
+      .incentive-main h3 {
+        font-size: clamp(2rem, 9.5vw, 2.65rem);
+        line-height: .92;
+      }
+
+      .brand-mini {
+        width: 170px;
+      }
+
+      .hero {
+        min-height: 710px;
+      }
+
+      .hero-inner {
+        padding-bottom: 52px;
+      }
+
+      .service-strip {
+        grid-template-columns: 72px minmax(0, 1fr);
+      }
+
+      .eyebrow {
+        width: 100%;
+        font-size: .68rem;
+      }
+
+      .hero-copy {
+        font-size: .98rem;
+        line-height: 1.42;
+      }
+
+      .service-strip strong {
+        padding: 8px;
+        font-size: 1rem;
+      }
+
+      .service-strip span {
+        padding: 12px;
+        font-size: .82rem;
+        line-height: 1.18;
+        word-break: break-word;
+      }
+
+      .fact {
+        min-height: 132px;
+        padding: 18px;
+      }
+
+      .fact span {
+        font-size: .88rem;
+      }
+
+      .facts-grid,
+      .artist-grid,
+      .numbers,
+      .stage-grid,
+      .topic-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .artist,
+      .artist.feature,
+      .queen-feature img,
+      .photo-card,
+      .photo-card.tall {
+        min-height: 390px;
+      }
+
+      .info-row {
+        grid-template-columns: 1fr;
+      }
+
+      .info-row b {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.22);
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .topbar-inner,
+      .hero-inner,
+      .container {
+        width: calc(100% - 28px);
+      }
+
+      .hero {
+        min-height: 690px;
+      }
+
+      h1 {
+        font-size: 3.05rem;
+      }
+
+      h2 {
+        font-size: clamp(1.72rem, 8.2vw, 2.08rem);
+      }
+
+      .eyebrow {
+        font-size: .62rem;
+      }
+
+      .service-strip {
+        grid-template-columns: 64px minmax(0, 1fr);
+      }
+
+      .service-strip span {
+        font-size: .76rem;
+      }
+
+      .fact b {
+        font-size: 2.45rem;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .topbar,
+      .print-btn {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        color: var(--ink);
+        background: #fff;
+        break-after: page;
+      }
+
+      .hero-bg,
+      .hero::before,
+      .hero::after {
+        display: none;
+      }
+
+      .service-strip,
+      .fact,
+      .topic,
+      .number-block,
+      .incentive-main,
+      .chips {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+
+      .section {
+        padding: 28px 0;
+      }
+
+      .artist,
+      .photo-card {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topbar" aria-label="Navegação principal">
+    <div class="topbar-inner">
+      <a href="#inicio" aria-label="Expofeira 2026">
+        <img class="brand-mini" src="assets/expofeira-logo.png" alt="Expofeira 2026">
+      </a>
+      <nav class="nav" aria-label="Seções">
+        <a href="#release">Release</a>
+        <a href="#servico">Serviço</a>
+        <a href="#editais">Editais</a>
+        <a href="#rainha">Rainha</a>
+        <a href="#pautas">Pautas</a>
+        <a href="#programacao">Programação</a>
+        <a href="#palcos-locais">Palcos locais</a>
+        <a href="#numeros">Números</a>
+        <button class="print-btn" type="button" onclick="window.print()">
+          <i data-lucide="printer" class="icon" aria-hidden="true"></i>
+          Imprimir
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-bg" src="assets/aparelhagens.jpg" alt="Show de aparelhagens com palco iluminado e público na Expofeira">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">Caderno de comunicação para imprensa e influenciadores</p>
+          <h1 id="hero-title">Expofeira 2026</h1>
+          <p class="hero-copy">A Feira do Desenvolvimento reúne negócios, cultura, inovação, bioeconomia, turismo e oportunidades para projetar o Amapá para o Brasil e para o mundo.</p>
+        </div>
+        <aside class="service-stack" aria-label="Informações rápidas">
+          <div class="service-strip"><strong>08-16</strong><span>agosto de 2026</span></div>
+          <div class="service-strip"><strong>Local</strong><span>Parque de Exposições da Fazendinha, Macapá</span></div>
+          <div class="service-strip"><strong>312</strong><span>mil m² preparados para receber o público</span></div>
+          <div class="service-strip"><strong>500</strong><span>atrações locais e 9 atrações nacionais</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section band-light" aria-label="Dados rápidos">
+      <div class="container">
+        <div class="facts-grid">
+          <article class="fact">
+            <b>R$ 2,2 bi</b>
+            <span>em negócios movimentados nas três últimas edições</span>
+          </article>
+          <article class="fact">
+            <b>4,5 mi</b>
+            <span>de visitantes somados entre 2023 e 2025</span>
+          </article>
+          <article class="fact">
+            <b>587</b>
+            <span>empresas expositoras na edição de 2025</span>
+          </article>
+          <article class="fact">
+            <b>20+</b>
+            <span>ambientes temáticos e atividades econômicas representadas</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="release">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Release oficial</p>
+            <h2>A maior vitrine de desenvolvimento do Amapá</h2>
+          </div>
+          <p class="lead">A edição de 2026 consolida a Expofeira como plataforma de negócios, encontro popular, agenda cultural e espaço de afirmação das vocações econômicas do estado.</p>
+        </div>
+
+        <div class="release-layout">
+          <div class="prose">
+            <p>O Governo do Amapá promove, de <strong>8 a 16 de agosto</strong>, no Parque de Exposições da Fazendinha, em Macapá, a <strong>Expofeira 2026</strong>, com o tema <strong>A Feira do Desenvolvimento</strong>. O evento simboliza a consolidação de um projeto econômico que voltou a fazer parte da vida dos amapaenses e hoje ocupa papel estratégico no desenvolvimento do estado.</p>
+            <p>Retomada em 2023, a Expofeira ganhou uma nova dimensão. O que antes era conhecido principalmente como exposição agropecuária passou a reunir oportunidades de negócios, inovação, turismo, cultura, empreendedorismo, investimentos e serviços públicos.</p>
+            <p>Em três edições, a feira movimentou <strong>mais de R$ 2,2 bilhões em negócios</strong> e recebeu <strong>mais de 4,5 milhões de visitantes</strong>, impulsionando cadeias produtivas, fortalecendo pequenos e grandes empreendedores, estimulando o comércio, gerando empregos e abrindo oportunidades para diferentes setores da economia.</p>
+            <p>O legado da Expofeira vai além dos indicadores econômicos. Ao reunir famílias, produtores, artistas, estudantes, pesquisadores, empresários e visitantes, o evento também ajuda a fortalecer o orgulho de ser amapaense, valorizando a cultura local e as potencialidades do estado.</p>
+            <p><strong>Do Amapá para o Mundo</strong>, a Expofeira 2026 apresenta um estado que preserva suas raízes, valoriza sua identidade, amplia horizontes e se posiciona como nova fronteira nacional e internacional de oportunidades na Amazônia.</p>
+          </div>
+
+          <aside class="pull-quote" aria-label="Síntese do conceito">
+            <img src="assets/expofeira-logo.png" alt="Marca Expofeira 2026">
+            <p>Do Amapá para o mundo</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band-ink" id="servico">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Serviço</p>
+            <h2>O que a imprensa precisa ter à mão</h2>
+          </div>
+          <p class="lead">Dados essenciais para notas, chamadas, legendas, cards, entradas ao vivo e conteúdos de serviço.</p>
+        </div>
+
+        <div class="service-panel">
+          <div class="info-list">
+            <div class="info-row"><b>Evento</b><span>Expofeira 2026 - A Feira do Desenvolvimento</span></div>
+            <div class="info-row"><b>Período</b><span>8 a 16 de agosto de 2026</span></div>
+            <div class="info-row"><b>Local</b><span>Parque de Exposições da Fazendinha, Macapá, Amapá</span></div>
+            <div class="info-row"><b>Estrutura</b><span>312 mil m², cerca de 500 espaços para empresas expositoras, 3 palcos, 8 praças de alimentação e mais de 20 ambientes temáticos</span></div>
+            <div class="info-row"><b>Cultura</b><span>9 atrações nacionais, cerca de 500 atrações locais e Festival de Aparelhagens do Amapá</span></div>
+            <div class="info-row"><b>Segurança</b><span>Plano integrado com forças de segurança, trânsito, fiscalização, saúde e apoio operacional</span></div>
+          </div>
+          <div class="micro-box">
+            <b>Agenda local</b>
+            <p>Editais, credenciamentos, serviços ao público e bastidores de montagem são ganchos naturais para cobertura diária antes e durante a feira.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band-light" id="editais">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Editais e comercialização</p>
+            <h2>Como participar da feira</h2>
+          </div>
+          <p class="lead">Os chamamentos organizam a presença de empreendedores, marcas locais e espaços comerciais no Parque de Exposições da Fazendinha.</p>
+        </div>
+
+        <div class="edital-grid">
+          <article class="edital-card accent">
+            <h3>Edital da SETE</h3>
+            <p>Inscrições pela internet para empreendedores populares e artesanato/manualidades, com divulgação pelos canais oficiais da Expofeira e pelo Portal da SETE.</p>
+            <ul>
+              <li><strong>Empreendedores populares:</strong> 211 vagas.</li>
+              <li><strong>Artesanato e manualidades:</strong> 45 vagas.</li>
+              <li><strong>Canais:</strong> @expoamapa e www.sete.ap.gov.br.</li>
+            </ul>
+          </article>
+
+          <article class="edital-card">
+            <div class="edital-programs">
+              <img class="edital-logo" src="assets/selo-amapa.jpg" alt="Selo Amapá - Produto do Meio do Mundo">
+              <div>
+                <h3>Agência Amapá</h3>
+                <p>Editais voltados à presença de negócios locais com potencial de vitrine, certificação, comercialização e conexão com novos mercados.</p>
+              </div>
+            </div>
+            <ul>
+              <li><strong>Programa Selo Amapá:</strong> destaque para produtos com identidade local e origem no Amapá.</li>
+              <li><strong>Minha Primeira Empresa:</strong> oportunidade para novos negócios apresentarem soluções, produtos e serviços ao público da Expofeira.</li>
+              <li><strong>Espaços comerciais:</strong> atendimento no Parque de Exposições da Fazendinha, das 8h às 18h, a partir de segunda-feira, 13 de julho.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rainha">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Concurso</p>
+            <h2>Rainha da Expofeira 2026</h2>
+          </div>
+          <p class="lead">Beleza, cultura, identidade e representatividade das mulheres amapaenses também integram a programação da feira.</p>
+        </div>
+
+        <div class="queen-feature">
+          <img src="assets/rainha-expofeira.jpg" alt="Candidata do concurso Rainha da Expofeira em apresentação no palco">
+          <div class="queen-copy">
+            <h3>Representatividade amapaense em cena</h3>
+            <p>O concurso Rainha da Expofeira 2026 valoriza a beleza, a cultura, a identidade e a presença das mulheres amapaenses como parte da experiência popular e simbólica da feira.</p>
+            <p>Para imprensa e influenciadores, o concurso rende pautas de bastidores, perfis das candidatas, cobertura das inscrições e conteúdos sobre moda, cultura, autoestima e pertencimento.</p>
+            <div class="queen-details">
+              <div class="queen-detail">
+                <b>Inscrições</b>
+                <span>17 a 22 de julho de 2026</span>
+              </div>
+              <div class="queen-detail">
+                <b>Onde acessar</b>
+                <span>Link disponível no Instagram @expoamapa</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pautas">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Pautas sugeridas</p>
+            <h2>Ângulos para cobertura local</h2>
+          </div>
+          <p class="lead">Recortes pensados para imprensa, creators, páginas de bairro, perfis de cultura, negócios, turismo e economia popular.</p>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic" style="--accent: var(--green)">
+            <h3>A feira como política pública</h3>
+            <p>Como a retomada da Expofeira virou plataforma de negócios, emprego, renda e autoestima para o Amapá.</p>
+          </article>
+          <article class="topic" style="--accent: var(--blue)">
+            <h3>Da Fazendinha para o Brasil</h3>
+            <p>O Parque de Exposições como vitrine para produtores, empreendedores, artistas e novos investimentos.</p>
+          </article>
+          <article class="topic" style="--accent: var(--pink)">
+            <h3>Economia popular em evidência</h3>
+            <p>Empreendedores populares, gastronomia, artesanato, manualidades e pequenos negócios como personagens centrais.</p>
+          </article>
+          <article class="topic" style="--accent: var(--orange)">
+            <h3>Cultura que movimenta</h3>
+            <p>Shows nacionais, artistas locais, aparelhagens, cultura afroamapaense, cultura indígena e economia criativa.</p>
+          </article>
+          <article class="topic" style="--accent: var(--yellow)">
+            <h3>Bioeconomia e novas vocações</h3>
+            <p>Agro, pesca, tecnologia, energia, biodiversidade, turismo e inovação como motores de um novo ciclo.</p>
+          </article>
+          <article class="topic" style="--accent: var(--red)">
+            <h3>Serviço para o público</h3>
+            <p>Transporte, segurança, circulação, programação diária, áreas de alimentação e espaços de experiência.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="media-strip" aria-label="Sistema visual da Expofeira">
+      <div class="container">
+        <p class="kicker">Identidade visual</p>
+        <h2>Produção, conhecimento, cultura, inovação e investimento no mesmo espaço</h2>
+      </div>
+    </section>
+
+    <section class="section" id="programacao">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Programação nacional</p>
+            <h2>Shows e grandes encontros</h2>
+          </div>
+          <p class="lead">A agenda nacional combina pagodão baiano, sertanejo, música cristã contemporânea, arrocha, pop rock, forró e a força das aparelhagens amazônicas.</p>
+        </div>
+
+        <div class="artist-grid">
+          <article class="artist feature">
+            <img src="assets/leo-santana.jpg" alt="Léo Santana em apresentação">
+            <div class="artist-body">
+              <span class="date-pill">08/08</span>
+              <h3>Léo Santana</h3>
+              <p>O Gigante abre a sequência nacional com pagodão baiano, pop, funk e axé.</p>
+            </div>
+          </article>
+          <article class="artist feature">
+            <img src="assets/gusttavo-lima.jpg" alt="Gusttavo Lima no palco com guitarra">
+            <div class="artist-body">
+              <span class="date-pill">09/08</span>
+              <h3>Gusttavo Lima</h3>
+              <p>O Embaixador leva sertanejo, romantismo e grandes sucessos ao público da feira.</p>
+            </div>
+          </article>
+          <article class="artist">
+            <img src="assets/fabio-de-melo.jpg" alt="Padre Fábio de Melo cantando no palco">
+            <div class="artist-body">
+              <span class="date-pill">10/08</span>
+              <h3>Pe. Fábio de Melo</h3>
+              <p>Um encontro de música, fé, acolhimento e mensagem para diferentes gerações.</p>
+            </div>
+          </article>
+          <article class="artist">
+            <img src="assets/nattanzinho-lima.jpg" alt="Nattanzinho Lima cantando para o público">
+            <div class="artist-body">
+              <span class="date-pill">11/08</span>
+              <h3>Nattanzinho Lima</h3>
+              <p>Arrocha, romantismo e repertório popular com forte presença nas redes.</p>
+            </div>
+          </article>
+          <article class="artist">
+            <img src="assets/jota-quest.jpg" alt="Integrantes do Jota Quest">
+            <div class="artist-body">
+              <span class="date-pill">12/08</span>
+              <h3>Jota Quest</h3>
+              <p>Pop rock brasileiro com hits que atravessam mais de três décadas.</p>
+            </div>
+          </article>
+          <article class="artist">
+            <img src="assets/daniel.jpg" alt="Cantor Daniel">
+            <div class="artist-body">
+              <span class="date-pill">13/08</span>
+              <h3>Daniel</h3>
+              <p>Sertanejo romântico e clássicos de uma carreira consagrada.</p>
+            </div>
+          </article>
+          <article class="artist">
+            <img src="assets/wesley-safadao.jpg" alt="Wesley Safadão cantando">
+            <div class="artist-body">
+              <span class="date-pill">14/08</span>
+              <h3>Wesley Safadão</h3>
+              <p>Forró eletrônico, pop, sertanejo e repertório de grande apelo popular.</p>
+            </div>
+          </article>
+          <article class="artist feature">
+            <img src="assets/aparelhagens.jpg" alt="Festival de Aparelhagens com estrutura de som, luz e público">
+            <div class="artist-body">
+              <span class="date-pill">15/08</span>
+              <h3>Festival das Aparelhagens</h3>
+              <p>Com o Icônico Tupinambá em destaque e nove grandes aparelhagens do Amapá, celebrando tecnologia, dança e cultura popular amazônica.</p>
+            </div>
+          </article>
+          <article class="artist" aria-label="GET Worship em 16 de agosto">
+            <img src="assets/get-worship.jpg" alt="GET Worship, ministério de louvor e adoração">
+            <div class="artist-body">
+              <span class="date-pill">16/08</span>
+              <h3>GET Worship</h3>
+              <p>Ministério de louvor da Igreja Getsêmani, com worship congregacional, pop rock e canções como Altar, Só Quero Te Ver, Lugar Secreto e Tua Presença.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="aparelhagem-feature">
+          <img src="assets/tupinamba.jpg" alt="Icônico Tupinambá em apresentação de aparelhagem">
+          <div class="aparelhagem-copy">
+            <p class="kicker">Destaque das aparelhagens</p>
+            <h3>Icônico Tupinambá</h3>
+            <p>O Festival das Aparelhagens ganha um marco simbólico com a presença do Icônico Tupinambá, uma das estruturas mais reconhecidas da cultura sonora amazônica.</p>
+            <p>Na Expofeira, o encontro reforça a ponte entre tecnologia popular, dança, identidade regional e a potência dos sistemas de som que mobilizam multidões no Norte.</p>
+            <p class="photo-credit">Foto: <a href="https://www.flickr.com/photos/midianinja/55213366908/in/album-72177720333158083">Vinicius Gonçalves / CC Mídia NINJA</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band-ink" id="palcos-locais">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Artistas locais</p>
+            <h2>Quatro palcos para a cena do Amapá</h2>
+          </div>
+          <p class="lead">A programação local ocupa espaços com identidades próprias, abrindo vitrine para música, teatro, cultura afroamapaense, performances, tradição popular e novas linguagens.</p>
+        </div>
+
+        <div class="stage-grid">
+          <article class="stage-card" style="--accent: var(--yellow)">
+            <h3>Miniteatro Caboco</h3>
+            <p>Espaço para apresentações intimistas, circulação de artistas, contação de histórias, teatro, música e experiências de proximidade com o público.</p>
+          </article>
+          <article class="stage-card" style="--accent: var(--green)">
+            <h3>Palco AfroAmapaense</h3>
+            <p>Vitrine para ritmos, narrativas e expressões ligadas à cultura negra no Amapá, com força comunitária e identidade amazônica.</p>
+          </article>
+          <article class="stage-card" style="--accent: var(--pink)">
+            <h3>Palco da Rainha</h3>
+            <p>Programação com artistas locais, performances e encontros que valorizam presença cênica, diversidade e a energia popular da Expofeira.</p>
+          </article>
+          <article class="stage-card" style="--accent: var(--blue)">
+            <h3>Arena Amazonas</h3>
+            <p>Área de grande apelo para shows, manifestações culturais, público jovem e conteúdos de alto alcance para cobertura em tempo real.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band-light" id="incentivo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Novidade econômica</p>
+            <h2>Incentivo fiscal para ampliar negócios</h2>
+          </div>
+          <p class="lead">A Lei nº 3.511, de 3 de julho de 2026, cria crédito presumido do ICMS para operações comerciais realizadas durante a Expofeira.</p>
+        </div>
+
+        <div class="incentive">
+          <div class="incentive-main">
+            <h3>Menor custo, mais investimento</h3>
+            <p>O benefício reduz o custo de compras realizadas na feira e estimula produtores, empreendedores, indústria, comércio, pesca, aquicultura e cadeias rurais a ampliar ou modernizar suas atividades no território do Amapá.</p>
+          </div>
+          <div class="micro-box">
+            <b>Crédito presumido de ICMS</b>
+            <p>Válido para operações realizadas durante a Expofeira, com equipamentos, animais e insumos destinados ao uso produtivo no território do Amapá.</p>
+          </div>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-list">
+            <h3>Público atendido</h3>
+            <ul>
+              <li>Produtores rurais e agricultores familiares.</li>
+              <li>Pecuaristas, piscicultores e pescadores.</li>
+              <li>Empresários do agronegócio, cooperativas e associações rurais.</li>
+              <li>Empreendedores da agroindústria e empresas do setor industrial.</li>
+              <li>Comerciantes participantes da Expofeira.</li>
+              <li>Investidores interessados em ampliar ou modernizar empreendimentos.</li>
+            </ul>
+          </article>
+          <article class="benefit-list">
+            <h3>Itens cobertos</h3>
+            <ul>
+              <li><strong>Máquinas e tecnologia:</strong> tratores, retroescavadeiras, máquinas e implementos agrícolas, motobombas, grupos geradores, computadores e periféricos.</li>
+              <li><strong>Veículos e embarcações:</strong> veículos utilitários, botes de alumínio, motores de rabeta e motores de popa de 15 a 40 HP.</li>
+              <li><strong>Pecuária:</strong> vacas prenhes, matrizes bovinas, reprodutores bovinos, embriões animais congelados, ovinos, caprinos e equinos com registro genealógico.</li>
+              <li><strong>Pesca e aquicultura:</strong> redes e materiais para pesca, alimentadores automáticos para peixes, aeradores, kit multiparâmetro para análise da água, ração para peixes, incubadoras e hipófise para produção de alevinos.</li>
+              <li><strong>Insumos e apoio à produção:</strong> ureia, farelo de trigo, superfosfato simples, superfosfato triplo, carros de mão e outros equipamentos de apoio à produção rural.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="numeros">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Evolução 2023-2025</p>
+            <h2>Resultados que sustentam a edição de 2026</h2>
+          </div>
+          <p class="lead">Os números das três últimas edições mostram a retomada, a expansão e a consolidação da Expofeira como plataforma de desenvolvimento.</p>
+        </div>
+
+        <div class="numbers">
+          <article class="number-block">
+            <h3>2023</h3>
+            <ul>
+              <li><b>R$ 500 mi+</b><span>em negócios movimentados</span></li>
+              <li><b>800 mil+</b><span>visitantes</span></li>
+              <li><b>5.302</b><span>empregos diretos e indiretos gerados</span></li>
+              <li><b>R$ 41 mi</b><span>investidos na estrutura da feira</span></li>
+            </ul>
+          </article>
+          <article class="number-block">
+            <h3>2024</h3>
+            <ul>
+              <li><b>231 mil m²</b><span>de área do parque após expansão</span></li>
+              <li><b>1,5 mi+</b><span>visitantes</span></li>
+              <li><b>R$ 600 mi+</b><span>em negócios movimentados</span></li>
+              <li><b>1.200</b><span>empreendimentos participantes</span></li>
+            </ul>
+          </article>
+          <article class="number-block">
+            <h3>2025</h3>
+            <ul>
+              <li><b>R$ 1,1 bi</b><span>em negócios realizados e prospectados</span></li>
+              <li><b>2,2 mi</b><span>visitantes</span></li>
+              <li><b>587</b><span>empresas expositoras</span></li>
+              <li><b>98,6%</b><span>defenderam a continuidade da Expofeira</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="assets/expofeira-logo.png" alt="Expofeira 2026">
+      <p>Caderno de comunicação para revisão. Conteúdo padronizado com data de 8 a 16 de agosto, artistas revisados e indicador de 587 empresas expositoras em 2025.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
