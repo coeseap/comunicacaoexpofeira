@@ -795,6 +795,46 @@
       overflow-wrap: anywhere;
     }
 
+    .festival-labels {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 12px;
+    }
+
+    .festival-labels .date-pill {
+      margin-bottom: 0;
+    }
+
+    .festival-day {
+      display: inline-flex;
+      padding: 6px 9px;
+      color: #fff;
+      background: var(--green-dark);
+      font-size: .78rem;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+
+    .artist.festival-card h3 {
+      font-size: 1.75rem;
+    }
+
+    .artist.festival-card .photo-credit {
+      margin-top: 9px;
+      color: rgba(255,255,255,.68);
+      font-size: .68rem;
+      font-weight: 700;
+    }
+
+    .festival-highlight {
+      margin: 0 0 8px !important;
+      color: var(--yellow) !important;
+      font-size: 1.02rem !important;
+      font-weight: 950 !important;
+      text-transform: uppercase;
+    }
+
     .artist.feature {
       grid-column: span 2;
     }
@@ -1658,12 +1698,28 @@
               <p>Forró eletrônico, pop, sertanejo e repertório de grande apelo popular.</p>
             </div>
           </article>
-          <article class="artist feature">
-            <img src="assets/aparelhagens.jpg" alt="Festival de Aparelhagens com estrutura de som, luz e público">
+          <article class="artist festival-card">
+            <img src="assets/festival-dia-1.jpg" alt="Vista aérea do Festival das Aparelhagens na Expofeira">
             <div class="artist-body">
-              <span class="date-pill">15/08</span>
+              <div class="festival-labels">
+                <span class="date-pill">14/08</span>
+                <span class="festival-day">Dia 1</span>
+              </div>
               <h3>Festival das Aparelhagens</h3>
-              <p>Com o Icônico Tupinambá em destaque e nove grandes aparelhagens do Amapá, celebrando tecnologia, dança e cultura popular amazônica.</p>
+              <p>Primeira noite do festival com grandes aparelhagens do Amapá, potência sonora, luz, dança e cultura popular amazônica.</p>
+              <p class="photo-credit">Foto: Arthur Alves / SECOM GEA</p>
+            </div>
+          </article>
+          <article class="artist festival-card">
+            <img src="assets/tupinamba.jpg" alt="Icônico Tupinambá, destaque do segundo dia do Festival das Aparelhagens">
+            <div class="artist-body">
+              <div class="festival-labels">
+                <span class="date-pill">15/08</span>
+                <span class="festival-day">Dia 2</span>
+              </div>
+              <h3>Festival das Aparelhagens</h3>
+              <p class="festival-highlight">Com o Icônico Tupinambá</p>
+              <p>Segunda noite do encontro das grandes estruturas sonoras da Amazônia.</p>
             </div>
           </article>
           <article class="artist" aria-label="GET Worship em 16 de agosto">
@@ -1679,9 +1735,9 @@
         <div class="aparelhagem-feature">
           <img src="assets/tupinamba.jpg" alt="Icônico Tupinambá em apresentação de aparelhagem">
           <div class="aparelhagem-copy">
-            <p class="kicker">Destaque das aparelhagens</p>
+            <p class="kicker">15/08 · Dia 2</p>
             <h3>Icônico Tupinambá</h3>
-            <p>O Festival das Aparelhagens ganha um marco simbólico com a presença do Icônico Tupinambá, uma das estruturas mais reconhecidas da cultura sonora amazônica.</p>
+            <p>No segundo dia, o Festival das Aparelhagens ganha um marco simbólico com a presença do Icônico Tupinambá, uma das estruturas mais reconhecidas da cultura sonora amazônica.</p>
             <p>Na Expofeira, o encontro reforça a ponte entre tecnologia popular, dança, identidade regional e a potência dos sistemas de som que mobilizam multidões no Norte.</p>
             <p class="photo-credit">Foto: <a href="https://www.flickr.com/photos/midianinja/55213366908/in/album-72177720333158083">Vinicius Gonçalves / CC Mídia NINJA</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
           </div>
@@ -1713,7 +1769,7 @@
             <p>Programação com artistas locais, performances e encontros que valorizam presença cênica, diversidade e a energia popular da Expofeira.</p>
           </article>
           <article class="stage-card" style="--accent: var(--blue)">
-            <h3>Arena Amazonas</h3>
+            <h3>Arena Rio Amazonas</h3>
             <p>Área de grande apelo para shows, manifestações culturais, público jovem e conteúdos de alto alcance para cobertura em tempo real.</p>
           </article>
         </div>
