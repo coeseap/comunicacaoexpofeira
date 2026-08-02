@@ -131,6 +131,14 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "09/08",
+        "time": "17h",
+        "title": "Campeonato Assomap Motocross",
+        "location": "Pista do Motocross",
+        "category": "Experiências",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
         "time": "17h às 22h",
         "title": "ABERTURA OFICIAL DO 2º AMAPÁ AGROSUMMIT 2026",
         "location": "Arena Agro",
@@ -825,6 +833,14 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "14/08",
+        "time": "17h",
+        "title": "15º Fest Jeep",
+        "location": "Jeep Club",
+        "category": "Experiências",
+        "detail": ""
+      },
+      {
+        "date": "14/08",
         "time": "19h",
         "title": "Festival de Capoeira - Show de Bandas de Reggae",
         "location": "Palco AfroAmapaense",
@@ -983,6 +999,14 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "15/08",
+        "time": "17h",
+        "title": "15º Fest Jeep",
+        "location": "Jeep Club",
+        "category": "Experiências",
+        "detail": ""
+      },
+      {
+        "date": "15/08",
         "time": "19h",
         "title": "DJ - Shows",
         "location": "Palco AfroAmapaense",
@@ -1064,6 +1088,14 @@ window.EXPO_SCHEDULE = [
         "time": "8h às 14h",
         "title": "Troque e Pesque",
         "location": "Tanque da Sepaq",
+        "category": "Experiências",
+        "detail": ""
+      },
+      {
+        "date": "16/08",
+        "time": "17h",
+        "title": "15º Fest Jeep",
+        "location": "Jeep Club",
         "category": "Experiências",
         "detail": ""
       },
