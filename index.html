@@ -3,1882 +3,738 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Caderno de Comunicação - Expofeira 2026</title>
-  <meta name="description" content="Caderno de comunicação da Expofeira 2026 para imprensa e influenciadores locais.">
-  <meta property="og:title" content="Expofeira 2026 - Caderno de Comunicação">
-  <meta property="og:description" content="Informações oficiais, dados, programação nacional e pautas para cobertura da Expofeira 2026.">
-  <meta property="og:image" content="assets/aparelhagens.jpg">
-  <meta name="theme-color" content="#005be8">
-  <style>
-    :root {
-      --blue: #005be8;
-      --blue-dark: #07124b;
-      --sky: #24a8ff;
-      --green: #49d640;
-      --green-dark: #166d34;
-      --yellow: #ffd21a;
-      --pink: #ec008c;
-      --orange: #ff7a00;
-      --red: #e91b2d;
-      --ink: #08111f;
-      --muted: #5c6572;
-      --paper: #fffdf7;
-      --line: rgba(8, 17, 31, .13);
-      --shadow: 0 18px 50px rgba(8, 17, 31, .16);
-      --radius: 8px;
-      --max: 1180px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      overflow-x: hidden;
-    }
-
-    body {
-      margin: 0;
-      color: var(--ink);
-      background:
-        linear-gradient(90deg, rgba(73, 214, 64, .08) 0 12.5%, transparent 12.5% 25%, rgba(0, 91, 232, .06) 25% 37.5%, transparent 37.5% 50%, rgba(255, 210, 26, .08) 50% 62.5%, transparent 62.5% 75%, rgba(236, 0, 140, .06) 75% 87.5%, transparent 87.5%),
-        var(--paper);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.55;
-      overflow-x: hidden;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    .skip-link {
-      position: absolute;
-      left: 16px;
-      top: -80px;
-      z-index: 20;
-      padding: 10px 14px;
-      background: var(--yellow);
-      color: var(--ink);
-      font-weight: 900;
-      text-decoration: none;
-    }
-
-    .skip-link:focus {
-      top: 12px;
-    }
-
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(255, 253, 247, .9);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .topbar-inner {
-      width: min(var(--max), calc(100% - 32px));
-      margin: 0 auto;
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      gap: 18px;
-    }
-
-    .brand-mini {
-      width: 220px;
-      flex: 0 0 auto;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      flex: 1 1 auto;
-      margin-left: auto;
-      min-width: 0;
-      max-width: 100%;
-      overflow-x: auto;
-      scrollbar-width: none;
-    }
-
-    .nav::-webkit-scrollbar {
-      display: none;
-    }
-
-    .nav a,
-    .print-btn {
-      border: 0;
-      background: transparent;
-      color: var(--ink);
-      min-height: 38px;
-      padding: 9px 11px;
-      border-radius: 999px;
-      font: inherit;
-      font-size: .88rem;
-      font-weight: 850;
-      text-decoration: none;
-      white-space: nowrap;
-      cursor: pointer;
-    }
-
-    .nav a:hover,
-    .print-btn:hover {
-      background: rgba(0, 91, 232, .1);
-    }
-
-    .print-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #fff;
-      background: var(--blue-dark);
-    }
-
-    .print-btn:hover {
-      background: var(--blue);
-    }
-
-    .icon {
-      width: 17px;
-      height: 17px;
-      stroke-width: 2.6;
-    }
-
-    .hero {
-      min-height: min(760px, calc(100svh - 112px));
-      position: relative;
-      isolation: isolate;
-      display: grid;
-      align-items: end;
-      overflow: hidden;
-      color: #fff;
-      background: #090f22;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(90deg, rgba(7, 18, 75, .92) 0%, rgba(7, 18, 75, .65) 42%, rgba(7, 18, 75, .16) 76%),
-        linear-gradient(0deg, rgba(8, 17, 31, .92) 0%, rgba(8, 17, 31, .12) 48%);
-      z-index: -1;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto 0 0 0;
-      height: 14px;
-      background: linear-gradient(90deg, var(--green) 0 20%, var(--blue) 20% 40%, var(--yellow) 40% 60%, var(--pink) 60% 80%, var(--orange) 80%);
-    }
-
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      z-index: -2;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      filter: saturate(1.08) contrast(1.04);
-    }
-
-    .hero-inner {
-      width: min(var(--max), calc(100% - 32px));
-      margin: 0 auto;
-      padding: 58px 0 70px;
-      display: grid;
-      grid-template-columns: minmax(0, 760px) minmax(260px, 380px);
-      gap: 36px;
-      align-items: end;
-      min-width: 0;
-    }
-
-    .hero-inner > * {
-      min-width: 0;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      width: fit-content;
-      max-width: 100%;
-      min-height: 32px;
-      padding: 6px 10px;
-      margin: 0 0 18px;
-      color: var(--ink);
-      background: var(--yellow);
-      font-weight: 950;
-      text-transform: uppercase;
-      font-size: .78rem;
-      line-height: 1.15;
-      white-space: normal;
-      overflow-wrap: anywhere;
-      word-break: break-word;
-    }
-
-    h1,
-    h2,
-    h3,
-    p {
-      margin-top: 0;
-    }
-
-    h1,
-    h2,
-    h3 {
-      overflow-wrap: anywhere;
-    }
-
-    h1 {
-      max-width: 820px;
-      margin-bottom: 18px;
-      font-family: Impact, Haettenschweiler, "Arial Black", system-ui, sans-serif;
-      font-size: clamp(3.2rem, 8vw, 7.8rem);
-      line-height: .84;
-      letter-spacing: 0;
-      text-transform: uppercase;
-      text-wrap: balance;
-    }
-
-    .hero-copy {
-      max-width: 720px;
-      margin: 0;
-      color: rgba(255, 255, 255, .92);
-      font-size: clamp(1.06rem, 1.6vw, 1.34rem);
-      font-weight: 650;
-      overflow-wrap: anywhere;
-    }
-
-    .service-stack {
-      display: grid;
-      gap: 10px;
-      align-self: stretch;
-      min-width: 0;
-    }
-
-    .service-strip {
-      display: grid;
-      grid-template-columns: 94px minmax(0, 1fr);
-      min-height: 76px;
-      color: var(--ink);
-      background: #fff;
-      box-shadow: var(--shadow);
-      width: 100%;
-      max-width: 100%;
-      min-width: 0;
-    }
-
-    .service-strip > * {
-      min-width: 0;
-    }
-
-    .service-strip strong {
-      display: grid;
-      place-items: center;
-      padding: 12px;
-      color: #fff;
-      background: var(--pink);
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: 1.24rem;
-      letter-spacing: 0;
-    }
-
-    .service-strip span {
-      display: block;
-      align-self: center;
-      padding: 14px 16px;
-      font-weight: 900;
-      line-height: 1.22;
-      min-width: 0;
-      overflow-wrap: anywhere;
-    }
-
-    .service-strip:nth-child(2) strong {
-      background: var(--blue);
-    }
-
-    .service-strip:nth-child(3) strong {
-      background: var(--green-dark);
-    }
-
-    .service-strip:nth-child(4) strong {
-      background: var(--orange);
-    }
-
-    .section {
-      padding: 76px 0;
-    }
-
-    .section.tight {
-      padding: 50px 0;
-    }
-
-    .section.band-blue {
-      color: #fff;
-      background: var(--blue);
-    }
-
-    .section.band-ink {
-      color: #fff;
-      background: var(--blue-dark);
-    }
-
-    .section.band-light {
-      background: rgba(255, 255, 255, .7);
-      border-block: 1px solid var(--line);
-    }
-
-    .container {
-      width: min(var(--max), calc(100% - 32px));
-      margin: 0 auto;
-      min-width: 0;
-    }
-
-    .section-head {
-      display: grid;
-      grid-template-columns: minmax(0, .78fr) minmax(260px, .42fr);
-      gap: 28px;
-      align-items: end;
-      margin-bottom: 34px;
-    }
-
-    .kicker {
-      color: var(--pink);
-      font-size: .78rem;
-      font-weight: 950;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    .band-blue .kicker,
-    .band-ink .kicker {
-      color: var(--yellow);
-    }
-
-    h2 {
-      margin-bottom: 0;
-      font-family: Impact, Haettenschweiler, "Arial Black", system-ui, sans-serif;
-      font-size: clamp(2.2rem, 4.6vw, 5rem);
-      line-height: .9;
-      text-transform: uppercase;
-      letter-spacing: 0;
-      text-wrap: balance;
-    }
-
-    .lead {
-      color: var(--muted);
-      font-size: 1.05rem;
-      font-weight: 650;
-      min-width: 0;
-      overflow-wrap: anywhere;
-    }
-
-    .band-blue .lead,
-    .band-ink .lead {
-      color: rgba(255, 255, 255, .84);
-    }
-
-    .facts-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 12px;
-      min-width: 0;
-    }
-
-    .fact {
-      min-height: 150px;
-      padding: 20px;
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      min-width: 0;
-      max-width: 100%;
-    }
-
-    .fact b {
-      display: block;
-      margin-bottom: 8px;
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: clamp(2rem, 4vw, 3.7rem);
-      line-height: .9;
-      color: var(--blue);
-      letter-spacing: 0;
-    }
-
-    .fact:nth-child(2) b {
-      color: var(--green-dark);
-    }
-
-    .fact:nth-child(3) b {
-      color: var(--pink);
-    }
-
-    .fact:nth-child(4) b {
-      color: var(--orange);
-    }
-
-    .fact span {
-      color: var(--muted);
-      font-weight: 800;
-      overflow-wrap: anywhere;
-    }
-
-    .release-layout {
-      display: grid;
-      grid-template-columns: minmax(0, .9fr) minmax(280px, .45fr);
-      gap: 34px;
-      align-items: start;
-    }
-
-    .prose {
-      font-size: 1.05rem;
-    }
-
-    .prose p {
-      margin-bottom: 18px;
-    }
-
-    .pull-quote {
-      position: sticky;
-      top: 98px;
-      padding: 28px;
-      color: #fff;
-      background: var(--pink);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .pull-quote img {
-      width: 100%;
-      margin-bottom: 22px;
-    }
-
-    .pull-quote p {
-      margin: 0;
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: clamp(2rem, 3.2vw, 3.2rem);
-      line-height: .9;
-      text-transform: uppercase;
-    }
-
-    .topic-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .topic {
-      min-height: 210px;
-      padding: 22px;
-      border-radius: var(--radius);
-      color: var(--ink);
-      background: #fff;
-      border: 1px solid var(--line);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .topic::before {
-      content: "";
-      position: absolute;
-      inset: 0 auto 0 0;
-      width: 10px;
-      background: var(--accent, var(--blue));
-    }
-
-    .topic h3 {
-      margin-bottom: 10px;
-      font-size: 1.18rem;
-      line-height: 1.15;
-    }
-
-    .topic p {
-      margin: 0;
-      color: var(--muted);
-      font-weight: 650;
-      overflow-wrap: anywhere;
-    }
-
-    .edital-grid {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 16px;
-      align-items: stretch;
-    }
-
-    .edital-card {
-      position: relative;
-      min-width: 0;
-      padding: 24px;
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      overflow: hidden;
-    }
-
-    .edital-card.accent {
-      color: #fff;
-      background: var(--blue-dark);
-      border-color: rgba(255,255,255,.18);
-    }
-
-    .edital-card h3 {
-      margin-bottom: 12px;
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: clamp(2rem, 3vw, 3rem);
-      line-height: .9;
-      text-transform: uppercase;
-      letter-spacing: 0;
-    }
-
-    .edital-card p {
-      margin-bottom: 16px;
-      color: var(--muted);
-      font-weight: 700;
-    }
-
-    .edital-card.accent p {
-      color: rgba(255,255,255,.86);
-    }
-
-    .edital-card ul,
-    .benefit-list ul,
-    .stage-card ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 10px;
-    }
-
-    .edital-card li,
-    .benefit-list li,
-    .stage-card li {
-      padding-top: 10px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-weight: 700;
-    }
-
-    .edital-card.accent li {
-      color: rgba(255,255,255,.88);
-      border-top-color: rgba(255,255,255,.22);
-    }
-
-    .edital-programs {
-      display: grid;
-      grid-template-columns: 170px 1fr;
-      gap: 18px;
-      align-items: center;
-    }
-
-    .edital-logo {
-      width: 150px;
-      aspect-ratio: 1;
-      object-fit: contain;
-      border-radius: 999px;
-      background: #fff;
-      box-shadow: 0 12px 28px rgba(8, 17, 31, .12);
-    }
-
-    .queen-feature {
-      display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(320px, .64fr);
-      gap: 0;
-      color: #fff;
-      background: var(--blue-dark);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
-
-    .queen-feature img {
-      width: 100%;
-      height: 100%;
-      min-height: 430px;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    .queen-copy {
-      padding: 34px;
-      display: grid;
-      align-content: center;
-      background:
-        linear-gradient(135deg, rgba(236, 0, 140, .96), rgba(255, 122, 0, .88)),
-        var(--pink);
-    }
-
-    .queen-copy h3 {
-      margin-bottom: 16px;
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: clamp(2.4rem, 4.2vw, 4.6rem);
-      line-height: .88;
-      text-transform: uppercase;
-      letter-spacing: 0;
-    }
-
-    .queen-copy p {
-      margin-bottom: 18px;
-      color: rgba(255,255,255,.9);
-      font-weight: 760;
-    }
-
-    .queen-details {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-    }
-
-    .queen-detail {
-      min-width: 0;
-      padding: 14px;
-      color: var(--ink);
-      background: rgba(255,255,255,.94);
-      border-radius: var(--radius);
-    }
-
-    .queen-detail b {
-      display: block;
-      margin-bottom: 4px;
-      color: var(--pink);
-      font-size: .75rem;
-      text-transform: uppercase;
-      letter-spacing: 0;
-    }
-
-    .queen-detail span {
-      font-weight: 900;
-      line-height: 1.18;
-      overflow-wrap: anywhere;
-    }
-
-    .service-panel {
-      display: grid;
-      grid-template-columns: minmax(0, .9fr) minmax(280px, .5fr);
-      gap: 20px;
-      align-items: stretch;
-    }
-
-    .info-list {
-      display: grid;
-      gap: 10px;
-    }
-
-    .info-row {
-      display: grid;
-      grid-template-columns: 160px 1fr;
-      min-height: 58px;
-      border: 1px solid rgba(255,255,255,.22);
-      background: rgba(255,255,255,.08);
-    }
-
-    .info-row b {
-      display: flex;
-      align-items: center;
-      padding: 12px 16px;
-      color: var(--yellow);
-      border-right: 1px solid rgba(255,255,255,.22);
-      text-transform: uppercase;
-      font-size: .8rem;
-    }
-
-    .info-row span {
-      display: flex;
-      align-items: center;
-      padding: 12px 16px;
-      font-weight: 750;
-      min-width: 0;
-      overflow-wrap: anywhere;
-    }
-
-    .micro-box {
-      padding: 22px;
-      color: var(--ink);
-      background: var(--yellow);
-      border-radius: var(--radius);
-      display: grid;
-      align-content: center;
-    }
-
-    .micro-box b {
-      display: block;
-      margin-bottom: 12px;
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: 2.4rem;
-      line-height: .9;
-      text-transform: uppercase;
-    }
-
-    .micro-box p {
-      margin: 0;
-      font-weight: 800;
-    }
-
-    .artist-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .artist {
-      position: relative;
-      min-height: 420px;
-      overflow: hidden;
-      border-radius: var(--radius);
-      color: #fff;
-      background: var(--blue-dark);
-      box-shadow: 0 10px 24px rgba(8, 17, 31, .12);
-    }
-
-    .artist img {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      inset: 0;
-      object-fit: cover;
-      object-position: center;
-      transition: transform .45s ease;
-    }
-
-    .artist:hover img {
-      transform: scale(1.04);
-    }
-
-    .artist::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(0deg, rgba(7, 18, 75, .95) 0%, rgba(7, 18, 75, .58) 42%, rgba(7, 18, 75, .08) 70%);
-    }
-
-    .artist-body {
-      position: absolute;
-      inset: auto 0 0;
-      z-index: 1;
-      padding: 18px;
-    }
-
-    .date-pill {
-      display: inline-flex;
-      margin-bottom: 12px;
-      padding: 6px 9px;
-      color: var(--ink);
-      background: var(--yellow);
-      font-weight: 950;
-    }
-
-    .artist h3 {
-      margin: 0 0 8px;
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: 2rem;
-      line-height: .92;
-      text-transform: uppercase;
-      letter-spacing: 0;
-    }
-
-    .artist p {
-      margin: 0;
-      color: rgba(255,255,255,.84);
-      font-size: .92rem;
-      font-weight: 650;
-      overflow-wrap: anywhere;
-    }
-
-    .festival-labels {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      margin-bottom: 12px;
-    }
-
-    .festival-labels .date-pill {
-      margin-bottom: 0;
-    }
-
-    .festival-day {
-      display: inline-flex;
-      padding: 6px 9px;
-      color: #fff;
-      background: var(--green-dark);
-      font-size: .78rem;
-      font-weight: 950;
-      text-transform: uppercase;
-    }
-
-    .artist.festival-card h3 {
-      font-size: 1.75rem;
-    }
-
-    .artist.festival-card .photo-credit {
-      margin-top: 9px;
-      color: rgba(255,255,255,.68);
-      font-size: .68rem;
-      font-weight: 700;
-    }
-
-    .festival-highlight {
-      margin: 0 0 8px !important;
-      color: var(--yellow) !important;
-      font-size: 1.02rem !important;
-      font-weight: 950 !important;
-      text-transform: uppercase;
-    }
-
-    .artist.feature {
-      grid-column: span 2;
-    }
-
-    .artist.feature h3 {
-      font-size: clamp(2.6rem, 4vw, 4.3rem);
-    }
-
-    .artist.mystery {
-      background:
-        linear-gradient(135deg, var(--pink), var(--orange) 55%, var(--yellow));
-    }
-
-    .artist.mystery::before {
-      content: "?";
-      position: absolute;
-      right: 20px;
-      top: 8px;
-      z-index: 0;
-      color: rgba(255,255,255,.32);
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: 14rem;
-      line-height: .8;
-    }
-
-    .artist.mystery::after {
-      background: linear-gradient(0deg, rgba(7, 18, 75, .82), rgba(7, 18, 75, .08));
-    }
-
-    .aparelhagem-feature {
-      margin-top: 18px;
-      display: grid;
-      grid-template-columns: minmax(0, .95fr) minmax(300px, .65fr);
-      gap: 18px;
-      align-items: stretch;
-      color: #fff;
-      background: var(--blue-dark);
-      border-radius: var(--radius);
-      overflow: hidden;
-    }
-
-    .aparelhagem-feature img {
-      width: 100%;
-      height: 100%;
-      min-height: 360px;
-      object-fit: cover;
-    }
-
-    .aparelhagem-copy {
-      padding: 30px;
-      display: grid;
-      align-content: center;
-    }
-
-    .aparelhagem-copy h3 {
-      margin-bottom: 16px;
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: clamp(2.8rem, 4.5vw, 5.2rem);
-      line-height: .86;
-      text-transform: uppercase;
-      letter-spacing: 0;
-    }
-
-    .aparelhagem-copy p {
-      margin-bottom: 16px;
-      color: rgba(255,255,255,.86);
-      font-weight: 700;
-    }
-
-    .photo-credit {
-      color: rgba(255,255,255,.68);
-      font-size: .78rem;
-      font-weight: 700;
-    }
-
-    .photo-credit a {
-      color: #fff;
-      text-decoration-thickness: 2px;
-    }
-
-    .stage-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .stage-card {
-      min-width: 0;
-      min-height: 260px;
-      padding: 22px;
-      color: #fff;
-      background: var(--blue-dark);
-      border-radius: var(--radius);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .stage-card::before {
-      content: "";
-      position: absolute;
-      inset: 0 0 auto;
-      height: 10px;
-      background: var(--accent, var(--yellow));
-    }
-
-    .stage-card h3 {
-      margin: 22px 0 14px;
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: clamp(1.8rem, 2.6vw, 2.7rem);
-      line-height: .92;
-      text-transform: uppercase;
-      letter-spacing: 0;
-    }
-
-    .stage-card p,
-    .stage-card li {
-      color: rgba(255,255,255,.84);
-      font-weight: 700;
-    }
-
-    .stage-card li {
-      border-top-color: rgba(255,255,255,.18);
-    }
-
-    .numbers {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .number-block {
-      padding: 24px;
-      background: #fff;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-    }
-
-    .number-block h3 {
-      margin-bottom: 16px;
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: 2.2rem;
-      line-height: .9;
-      color: var(--blue);
-      letter-spacing: 0;
-    }
-
-    .number-block ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      display: grid;
-      gap: 10px;
-    }
-
-    .number-block li {
-      display: grid;
-      grid-template-columns: 78px 1fr;
-      gap: 10px;
-      padding-top: 10px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-weight: 650;
-    }
-
-    .number-block li b {
-      color: var(--ink);
-    }
-
-    .incentive {
-      display: grid;
-      grid-template-columns: minmax(0, .55fr) minmax(0, .45fr);
-      gap: 20px;
-      align-items: stretch;
-    }
-
-    .incentive-main {
-      padding: 34px;
-      color: #fff;
-      background: var(--green-dark);
-      border-radius: var(--radius);
-    }
-
-    .incentive-main h3 {
-      margin-bottom: 18px;
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: clamp(2.4rem, 4.5vw, 5rem);
-      line-height: .88;
-      text-transform: uppercase;
-      letter-spacing: 0;
-    }
-
-    .incentive-main p {
-      margin-bottom: 0;
-      color: rgba(255,255,255,.9);
-      font-weight: 700;
-    }
-
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      align-content: start;
-      padding: 22px;
-      background: #fff;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-    }
-
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      min-height: 36px;
-      padding: 8px 11px;
-      color: var(--ink);
-      background: rgba(0, 91, 232, .08);
-      border: 1px solid rgba(0, 91, 232, .16);
-      border-radius: 999px;
-      font-size: .9rem;
-      font-weight: 850;
-    }
-
-    .benefit-grid {
-      display: grid;
-      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-      gap: 16px;
-      margin-top: 16px;
-    }
-
-    .benefit-list {
-      min-width: 0;
-      padding: 24px;
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-    }
-
-    .benefit-list h3 {
-      margin-bottom: 14px;
-      font-family: Impact, "Arial Black", sans-serif;
-      font-size: clamp(2rem, 3vw, 3rem);
-      line-height: .9;
-      color: var(--blue);
-      text-transform: uppercase;
-      letter-spacing: 0;
-    }
-
-    .benefit-list li strong {
-      color: var(--ink);
-    }
-
-    .media-strip {
-      min-height: 310px;
-      background-image:
-        linear-gradient(90deg, rgba(8, 17, 31, .76), rgba(8, 17, 31, .1)),
-        url("assets/elementos-expofeira.jpg");
-      background-size: cover;
-      background-position: center;
-      display: grid;
-      align-items: center;
-      color: #fff;
-    }
-
-    .media-strip h2 {
-      max-width: 720px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 14px;
-      align-items: stretch;
-    }
-
-    .gallery-main,
-    .gallery-side {
-      display: grid;
-      gap: 14px;
-    }
-
-    .photo-card {
-      position: relative;
-      overflow: hidden;
-      border-radius: var(--radius);
-      min-height: 260px;
-      background: var(--blue-dark);
-    }
-
-    .photo-card.tall {
-      min-height: 534px;
-    }
-
-    .photo-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      inset: 0;
-    }
-
-    .photo-card span {
-      position: absolute;
-      left: 14px;
-      bottom: 14px;
-      z-index: 1;
-      padding: 6px 10px;
-      color: #fff;
-      background: rgba(7, 18, 75, .82);
-      font-weight: 900;
-    }
-
-    .footer {
-      padding: 38px 0;
-      color: #fff;
-      background: var(--ink);
-    }
-
-    .footer-inner {
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 24px;
-      align-items: center;
-    }
-
-    .footer p {
-      margin: 0;
-      color: rgba(255,255,255,.72);
-      font-weight: 650;
-    }
-
-    .footer img {
-      width: 210px;
-    }
-
-    @media (max-width: 1000px) {
-      .topbar-inner {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 12px 0;
-        gap: 8px;
-      }
-
-      .nav {
-        width: 100%;
-        margin-left: 0;
-      }
-
-      .hero {
-        min-height: 720px;
-      }
-
-      .hero-inner,
-      .section-head,
-      .release-layout,
-      .service-panel,
-      .incentive,
-      .benefit-grid,
-      .edital-grid,
-      .edital-programs,
-      .queen-feature,
-      .queen-details,
-      .aparelhagem-feature,
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-
-      .facts-grid,
-      .artist-grid,
-      .numbers,
-      .stage-grid,
-      .topic-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .artist.feature {
-        grid-column: span 1;
-      }
-
-      .pull-quote {
-        position: static;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .section {
-        padding: 54px 0;
-      }
-
-      h2 {
-        font-size: clamp(1.85rem, 8.8vw, 2.35rem);
-        line-height: .92;
-        text-wrap: wrap;
-        word-break: break-word;
-      }
-
-      h1,
-      h3 {
-        text-wrap: wrap;
-      }
-
-      .artist.feature h3,
-      .aparelhagem-copy h3,
-      .incentive-main h3 {
-        font-size: clamp(2rem, 9.5vw, 2.65rem);
-        line-height: .92;
-      }
-
-      .brand-mini {
-        width: 170px;
-      }
-
-      .hero {
-        min-height: 710px;
-      }
-
-      .hero-inner {
-        padding-bottom: 52px;
-      }
-
-      .service-strip {
-        grid-template-columns: 72px minmax(0, 1fr);
-      }
-
-      .eyebrow {
-        width: 100%;
-        font-size: .68rem;
-      }
-
-      .hero-copy {
-        font-size: .98rem;
-        line-height: 1.42;
-      }
-
-      .service-strip strong {
-        padding: 8px;
-        font-size: 1rem;
-      }
-
-      .service-strip span {
-        padding: 12px;
-        font-size: .82rem;
-        line-height: 1.18;
-        word-break: break-word;
-      }
-
-      .fact {
-        min-height: 132px;
-        padding: 18px;
-      }
-
-      .fact span {
-        font-size: .88rem;
-      }
-
-      .facts-grid,
-      .artist-grid,
-      .numbers,
-      .stage-grid,
-      .topic-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .artist,
-      .artist.feature,
-      .queen-feature img,
-      .photo-card,
-      .photo-card.tall {
-        min-height: 390px;
-      }
-
-      .info-row {
-        grid-template-columns: 1fr;
-      }
-
-      .info-row b {
-        border-right: 0;
-        border-bottom: 1px solid rgba(255,255,255,.22);
-      }
-
-      .footer-inner {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 420px) {
-      .topbar-inner,
-      .hero-inner,
-      .container {
-        width: calc(100% - 28px);
-      }
-
-      .hero {
-        min-height: 690px;
-      }
-
-      h1 {
-        font-size: 3.05rem;
-      }
-
-      h2 {
-        font-size: clamp(1.72rem, 8.2vw, 2.08rem);
-      }
-
-      .eyebrow {
-        font-size: .62rem;
-      }
-
-      .service-strip {
-        grid-template-columns: 64px minmax(0, 1fr);
-      }
-
-      .service-strip span {
-        font-size: .76rem;
-      }
-
-      .fact b {
-        font-size: 2.45rem;
-      }
-    }
-
-    @media print {
-      body {
-        background: #fff;
-      }
-
-      .topbar,
-      .print-btn {
-        display: none;
-      }
-
-      .hero {
-        min-height: auto;
-        color: var(--ink);
-        background: #fff;
-        break-after: page;
-      }
-
-      .hero-bg,
-      .hero::before,
-      .hero::after {
-        display: none;
-      }
-
-      .service-strip,
-      .fact,
-      .topic,
-      .number-block,
-      .incentive-main,
-      .chips {
-        box-shadow: none;
-        break-inside: avoid;
-      }
-
-      .section {
-        padding: 28px 0;
-      }
-
-      .artist,
-      .photo-card {
-        break-inside: avoid;
-      }
-    }
-  </style>
+  <title>Caderno de Comunicação 2.0 | Expofeira 2026</title>
+  <meta name="description" content="Informações, programação, segurança, inclusão e orientações oficiais da Expofeira do Amapá 2026.">
+  <meta name="theme-color" content="#0b42e8">
+  <meta property="og:title" content="Expofeira 2026 | Caderno de Comunicação 2.0">
+  <meta property="og:description" content="A Feira do Desenvolvimento, de 8 a 16 de agosto, no Parque de Exposições da Fazendinha.">
+  <meta property="og:image" content="assets/hero-arena-2025.webp">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="programacao-data.js"></script>
+  <script defer src="news-data.js"></script>
+  <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script defer src="app.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-  <header class="topbar" aria-label="Navegação principal">
-    <div class="topbar-inner">
-      <a href="#inicio" aria-label="Expofeira 2026">
-        <img class="brand-mini" src="assets/expofeira-logo.png" alt="Expofeira 2026">
-      </a>
-      <nav class="nav" aria-label="Seções">
-        <a href="#release">Release</a>
-        <a href="#servico">Serviço</a>
-        <a href="#editais">Editais</a>
-        <a href="#rainha">Rainha</a>
-        <a href="#pautas">Pautas</a>
-        <a href="#programacao">Programação</a>
-        <a href="#palcos-locais">Palcos locais</a>
-        <a href="#numeros">Números</a>
-        <button class="print-btn" type="button" onclick="window.print()">
-          <i data-lucide="printer" class="icon" aria-hidden="true"></i>
-          Imprimir
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="brand-button" type="button" data-open-tab="principal" aria-label="Abrir página principal">
+        <img src="assets/expofeira-logo.png" alt="Expofeira 2026">
+      </button>
+
+      <nav class="tab-nav" role="tablist" aria-label="Caderno de comunicação">
+        <button class="tab-button is-active" id="tab-principal" type="button" role="tab" aria-selected="true" aria-controls="principal" data-tab="principal">
+          <i data-lucide="home" aria-hidden="true"></i><span>Principal</span>
+        </button>
+        <button class="tab-button" id="tab-programacao" type="button" role="tab" aria-selected="false" aria-controls="programacao" data-tab="programacao">
+          <i data-lucide="calendar-days" aria-hidden="true"></i><span>Programação</span>
+        </button>
+        <button class="tab-button" id="tab-expositores" type="button" role="tab" aria-selected="false" aria-controls="expositores" data-tab="expositores">
+          <i data-lucide="map-pinned" aria-hidden="true"></i><span>Expositores</span>
+        </button>
+        <button class="tab-button" id="tab-icms" type="button" role="tab" aria-selected="false" aria-controls="icms" data-tab="icms">
+          <i data-lucide="badge-percent" aria-hidden="true"></i><span>Decreto do ICMS</span>
+        </button>
+        <button class="tab-button" id="tab-inclusao" type="button" role="tab" aria-selected="false" aria-controls="inclusao" data-tab="inclusao">
+          <i data-lucide="shield-check" aria-hidden="true"></i><span>Inclusão e Segurança</span>
+        </button>
+        <button class="tab-button" id="tab-recomendacoes" type="button" role="tab" aria-selected="false" aria-controls="recomendacoes" data-tab="recomendacoes">
+          <i data-lucide="badge-check" aria-hidden="true"></i><span>Recomendações</span>
+        </button>
+        <button class="tab-button" id="tab-noticias" type="button" role="tab" aria-selected="false" aria-controls="noticias" data-tab="noticias">
+          <i data-lucide="radio" aria-hidden="true"></i><span>Na mídia</span>
         </button>
       </nav>
+
+      <button class="icon-button" id="print-page" type="button" title="Imprimir página" aria-label="Imprimir página">
+        <i data-lucide="printer" aria-hidden="true"></i>
+      </button>
     </div>
   </header>
 
   <main id="conteudo">
-    <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <img class="hero-bg" src="assets/aparelhagens.jpg" alt="Show de aparelhagens com palco iluminado e público na Expofeira">
-      <div class="hero-inner">
-        <div>
-          <p class="eyebrow">Caderno de comunicação para imprensa e influenciadores</p>
-          <h1 id="hero-title">Expofeira 2026</h1>
-          <p class="hero-copy">A Feira do Desenvolvimento reúne negócios, cultura, inovação, bioeconomia, turismo e oportunidades para projetar o Amapá para o Brasil e para o mundo.</p>
-        </div>
-        <aside class="service-stack" aria-label="Informações rápidas">
-          <div class="service-strip"><strong>08-16</strong><span>agosto de 2026</span></div>
-          <div class="service-strip"><strong>Local</strong><span>Parque de Exposições da Fazendinha, Macapá</span></div>
-          <div class="service-strip"><strong>312</strong><span>mil m² preparados para receber o público</span></div>
-          <div class="service-strip"><strong>500</strong><span>atrações locais e 9 atrações nacionais</span></div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section band-light" aria-label="Dados rápidos">
-      <div class="container">
-        <div class="facts-grid">
-          <article class="fact">
-            <b>R$ 2,2 bi</b>
-            <span>em negócios movimentados nas três últimas edições</span>
-          </article>
-          <article class="fact">
-            <b>4,5 mi</b>
-            <span>de visitantes somados entre 2023 e 2025</span>
-          </article>
-          <article class="fact">
-            <b>587</b>
-            <span>empresas expositoras na edição de 2025</span>
-          </article>
-          <article class="fact">
-            <b>20+</b>
-            <span>ambientes temáticos e atividades econômicas representadas</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="release">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="kicker">Release oficial</p>
-            <h2>A maior vitrine de desenvolvimento do Amapá</h2>
-          </div>
-          <p class="lead">A edição de 2026 consolida a Expofeira como plataforma de negócios, encontro popular, agenda cultural e espaço de afirmação das vocações econômicas do estado.</p>
-        </div>
-
-        <div class="release-layout">
-          <div class="prose">
-            <p>O Governo do Amapá promove, de <strong>8 a 16 de agosto</strong>, no Parque de Exposições da Fazendinha, em Macapá, a <strong>Expofeira 2026</strong>, com o tema <strong>A Feira do Desenvolvimento</strong>. O evento simboliza a consolidação de um projeto econômico que voltou a fazer parte da vida dos amapaenses e hoje ocupa papel estratégico no desenvolvimento do estado.</p>
-            <p>Retomada em 2023, a Expofeira ganhou uma nova dimensão. O que antes era conhecido principalmente como exposição agropecuária passou a reunir oportunidades de negócios, inovação, turismo, cultura, empreendedorismo, investimentos e serviços públicos.</p>
-            <p>Em três edições, a feira movimentou <strong>mais de R$ 2,2 bilhões em negócios</strong> e recebeu <strong>mais de 4,5 milhões de visitantes</strong>, impulsionando cadeias produtivas, fortalecendo pequenos e grandes empreendedores, estimulando o comércio, gerando empregos e abrindo oportunidades para diferentes setores da economia.</p>
-            <p>O legado da Expofeira vai além dos indicadores econômicos. Ao reunir famílias, produtores, artistas, estudantes, pesquisadores, empresários e visitantes, o evento também ajuda a fortalecer o orgulho de ser amapaense, valorizando a cultura local e as potencialidades do estado.</p>
-            <p><strong>Do Amapá para o Mundo</strong>, a Expofeira 2026 apresenta um estado que preserva suas raízes, valoriza sua identidade, amplia horizontes e se posiciona como nova fronteira nacional e internacional de oportunidades na Amazônia.</p>
-          </div>
-
-          <aside class="pull-quote" aria-label="Síntese do conceito">
-            <img src="assets/expofeira-logo.png" alt="Marca Expofeira 2026">
-            <p>Do Amapá para o mundo</p>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section band-ink" id="servico">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="kicker">Serviço</p>
-            <h2>O que a imprensa precisa ter à mão</h2>
-          </div>
-          <p class="lead">Dados essenciais para notas, chamadas, legendas, cards, entradas ao vivo e conteúdos de serviço.</p>
-        </div>
-
-        <div class="service-panel">
-          <div class="info-list">
-            <div class="info-row"><b>Evento</b><span>Expofeira 2026 - A Feira do Desenvolvimento</span></div>
-            <div class="info-row"><b>Período</b><span>8 a 16 de agosto de 2026</span></div>
-            <div class="info-row"><b>Local</b><span>Parque de Exposições da Fazendinha, Macapá, Amapá</span></div>
-            <div class="info-row"><b>Estrutura</b><span>312 mil m², cerca de 500 espaços para empresas expositoras, 3 palcos, 8 praças de alimentação e mais de 20 ambientes temáticos</span></div>
-            <div class="info-row"><b>Cultura</b><span>9 atrações nacionais, cerca de 500 atrações locais e Festival de Aparelhagens do Amapá</span></div>
-            <div class="info-row"><b>Segurança</b><span>Plano integrado com forças de segurança, trânsito, fiscalização, saúde e apoio operacional</span></div>
-          </div>
-          <div class="micro-box">
-            <b>Agenda local</b>
-            <p>Editais, credenciamentos, serviços ao público e bastidores de montagem são ganchos naturais para cobertura diária antes e durante a feira.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section band-light" id="editais">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="kicker">Editais e comercialização</p>
-            <h2>Como participar da feira</h2>
-          </div>
-          <p class="lead">Os chamamentos organizam a presença de empreendedores, marcas locais e espaços comerciais no Parque de Exposições da Fazendinha.</p>
-        </div>
-
-        <div class="edital-grid">
-          <article class="edital-card accent">
-            <h3>Edital da SETE</h3>
-            <p>Inscrições pela internet para empreendedores populares e artesanato/manualidades, com divulgação pelos canais oficiais da Expofeira e pelo Portal da SETE.</p>
-            <ul>
-              <li><strong>Empreendedores populares:</strong> 211 vagas.</li>
-              <li><strong>Artesanato e manualidades:</strong> 45 vagas.</li>
-              <li><strong>Canais:</strong> @expoamapa e www.sete.ap.gov.br.</li>
-            </ul>
-          </article>
-
-          <article class="edital-card">
-            <div class="edital-programs">
-              <img class="edital-logo" src="assets/selo-amapa.jpg" alt="Selo Amapá - Produto do Meio do Mundo">
-              <div>
-                <h3>Agência Amapá</h3>
-                <p>Editais voltados à presença de negócios locais com potencial de vitrine, certificação, comercialização e conexão com novos mercados.</p>
-              </div>
+    <section class="tab-panel is-active" id="principal" role="tabpanel" aria-labelledby="tab-principal">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-media" src="assets/hero-arena-2025.webp" alt="Grande público na Arena Rio Amazonas durante a Expofeira 2025" fetchpriority="high">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <span class="version-label">Caderno de Comunicação 2.0</span>
+            <h1 id="hero-title">Expofeira 2026</h1>
+            <p class="hero-kicker">A Feira do Desenvolvimento</p>
+            <div class="hero-service">
+              <span><i data-lucide="calendar" aria-hidden="true"></i>8 a 16 de agosto</span>
+              <span><i data-lucide="map-pin" aria-hidden="true"></i>Parque de Exposições da Fazendinha</span>
             </div>
-            <ul>
-              <li><strong>Programa Selo Amapá:</strong> destaque para produtos com identidade local e origem no Amapá.</li>
-              <li><strong>Minha Primeira Empresa:</strong> oportunidade para novos negócios apresentarem soluções, produtos e serviços ao público da Expofeira.</li>
-              <li><strong>Espaços comerciais:</strong> atendimento no Parque de Exposições da Fazendinha, das 8h às 18h, a partir de segunda-feira, 13 de julho.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="rainha">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="kicker">Concurso</p>
-            <h2>Rainha da Expofeira 2026</h2>
+            <div class="hero-actions">
+              <button class="button button-primary" type="button" data-open-tab="programacao">
+                <i data-lucide="calendar-search" aria-hidden="true"></i>Ver programação
+              </button>
+              <button class="button button-light" type="button" data-open-tab="inclusao">
+                <i data-lucide="heart-handshake" aria-hidden="true"></i>Inclusão e segurança
+              </button>
+            </div>
           </div>
-          <p class="lead">Beleza, cultura, identidade e representatividade das mulheres amapaenses também integram a programação da feira.</p>
+          <span class="hero-photo-credit">Arena Rio Amazonas · Arquivo Expofeira 2025</span>
         </div>
+      </section>
 
-        <div class="queen-feature">
-          <img src="assets/rainha-expofeira.jpg" alt="Candidata do concurso Rainha da Expofeira em apresentação no palco">
-          <div class="queen-copy">
-            <h3>Representatividade amapaense em cena</h3>
-            <p>O concurso Rainha da Expofeira 2026 valoriza a beleza, a cultura, a identidade e a presença das mulheres amapaenses como parte da experiência popular e simbólica da feira.</p>
-            <p>Para imprensa e influenciadores, o concurso rende pautas de bastidores, perfis das candidatas, cobertura das inscrições e conteúdos sobre moda, cultura, autoestima e pertencimento.</p>
-            <div class="queen-details">
-              <div class="queen-detail">
-                <b>Inscrições</b>
-                <span>17 a 22 de julho de 2026</span>
-              </div>
-              <div class="queen-detail">
-                <b>Onde acessar</b>
-                <span>Link disponível no Instagram @expoamapa</span>
+      <section class="metrics-band" aria-label="Dimensão da Expofeira 2026">
+        <div class="metric metric-green"><strong>9</strong><span>dias de programação</span></div>
+        <div class="metric metric-blue"><strong>312 mil m²</strong><span>de área preparada</span></div>
+        <div class="metric metric-yellow"><strong>500+</strong><span>espaços para empresas</span></div>
+        <div class="metric metric-pink"><strong>20+</strong><span>atividades econômicas</span></div>
+      </section>
+
+      <section class="queen-feature" aria-labelledby="rainha-title">
+        <div class="queen-media">
+          <img src="assets/rainha-expofeira.webp" alt="Rainha da Expofeira em apresentação no palco" loading="lazy">
+        </div>
+        <div class="queen-copy">
+          <span class="section-tag tag-pink">Destaque · 9 de agosto</span>
+          <h2 id="rainha-title">A identidade do Amapá sobe ao palco</h2>
+          <p>O concurso Rainha da Expofeira 2026 valoriza a beleza, a cultura, a identidade e a representatividade das mulheres amapaenses.</p>
+          <div class="feature-service">
+            <span><i data-lucide="crown" aria-hidden="true"></i>Concurso Rainha da Expofeira 2026</span>
+            <span><i data-lucide="map-pin" aria-hidden="true"></i>Arena da Rainha</span>
+          </div>
+          <button class="text-link" type="button" data-open-tab="programacao">Ver agenda de 9 de agosto <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+        </div>
+      </section>
+
+      <section class="section section-attractions" aria-labelledby="atracoes-title">
+        <div class="container">
+          <div class="section-heading attractions-heading">
+            <span class="section-tag tag-blue">Grandes encontros</span>
+            <h2 id="atracoes-title">Atrações nacionais e festivais</h2>
+            <p>Todas as atrações em uma única visão, organizadas por data.</p>
+          </div>
+
+          <div class="artist-grid" id="artist-grid" aria-label="Atrações da Expofeira 2026">
+            <article class="artist-card">
+              <img src="assets/leo-santana.webp" alt="Léo Santana no palco">
+              <div class="artist-body"><time datetime="2026-08-08">08 AGO</time><h3>Léo Santana</h3><p>Abertura</p></div>
+            </article>
+            <article class="artist-card">
+              <img src="assets/gusttavo-lima.webp" alt="Gusttavo Lima em apresentação">
+              <div class="artist-body"><time datetime="2026-08-09">09 AGO</time><h3>Gusttavo Lima</h3><p>Arena Rio Amazonas</p></div>
+            </article>
+            <article class="artist-card">
+              <img src="assets/fabio-de-melo.webp" alt="Padre Fábio de Melo cantando">
+              <div class="artist-body"><time datetime="2026-08-10">10 AGO</time><h3>Pe. Fábio de Melo</h3><p>Arena Rio Amazonas</p></div>
+            </article>
+            <article class="artist-card artist-card-contain artist-card-green">
+              <img src="assets/diante-do-trono.webp" alt="Vocalista do Diante do Trono">
+              <div class="artist-body"><time datetime="2026-08-10">10 AGO</time><h3>Diante do Trono</h3><p>Arena Rio Amazonas</p></div>
+            </article>
+            <article class="artist-card">
+              <img src="assets/jota-quest.webp" alt="Integrantes da banda Jota Quest">
+              <div class="artist-body"><time datetime="2026-08-11">11 AGO</time><h3>Jota Quest</h3><p>Arena Rio Amazonas</p></div>
+            </article>
+            <article class="artist-card artist-card-contain artist-card-yellow">
+              <img src="assets/ana-castela.webp" alt="Ana Castela">
+              <div class="artist-body"><time datetime="2026-08-12">12 AGO</time><h3>Ana Castela</h3><p>Arena Rio Amazonas</p></div>
+            </article>
+            <article class="artist-card">
+              <img src="assets/wesley-safadao.webp" alt="Wesley Safadão cantando">
+              <div class="artist-body"><time datetime="2026-08-13">13 AGO</time><h3>Wesley Safadão</h3><p>Arena Rio Amazonas</p></div>
+            </article>
+            <article class="artist-card">
+              <img src="assets/daniel.webp" alt="Cantor Daniel">
+              <div class="artist-body"><time datetime="2026-08-14">14 AGO</time><h3>Daniel</h3><p>Arena Rio Amazonas</p></div>
+            </article>
+            <article class="artist-card artist-card-wide">
+              <img src="assets/festival-aparelhagens.webp" alt="Estrutura iluminada do Festival das Aparelhagens">
+              <div class="artist-body"><time datetime="2026-08-14">14 AGO</time><h3>Festival das Aparelhagens</h3><p>Dia 1 · Arena da Rainha</p></div>
+            </article>
+            <article class="artist-card artist-card-wide">
+              <img src="assets/tupinamba.webp" alt="Aparelhagem Tupinambá em apresentação">
+              <div class="artist-body"><time datetime="2026-08-15">15 AGO</time><h3>Tupinambá no Festival</h3><p>Dia 2 · Arena da Rainha</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="visual-story" aria-labelledby="experiencia-title">
+        <div class="container visual-story-heading">
+          <span class="section-tag tag-green">A feira em movimento</span>
+          <h2 id="experiencia-title">Negócios, tradição e cultura no mesmo parque</h2>
+        </div>
+        <div class="visual-story-grid">
+          <figure>
+            <img src="assets/negocios-2025.webp" alt="Público circulando entre os pavilhões comerciais da Expofeira 2025">
+            <figcaption><strong>Economia ativa</strong><span>Pavilhões, produtos e oportunidades</span></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/rodeio-2025.webp" alt="Competição de rodeio na Expofeira 2025">
+            <figcaption><strong>Tradição</strong><span>Agro, esporte e experiências</span></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/cultura-2025.webp" alt="Roda de capoeira durante a Expofeira 2025">
+            <figcaption><strong>Cultura amapaense</strong><span>Artistas e manifestações locais</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="impact-section" aria-labelledby="impacto-title">
+        <div class="container">
+          <div class="impact-copy impact-heading">
+            <span class="section-tag tag-yellow">Um projeto que cresce</span>
+            <h2 id="impacto-title">Resultados que colocam a Expofeira em outra escala</h2>
+            <p>Desde a retomada, a feira ampliou sua presença na economia, no turismo e na vida dos amapaenses.</p>
+          </div>
+          <div class="impact-feature">
+            <figure class="impact-photo">
+              <img src="assets/arena-publico-2025.webp" alt="Arena Rio Amazonas lotada durante a Expofeira 2025">
+              <figcaption>Arena Rio Amazonas · Expofeira 2025</figcaption>
+            </figure>
+            <div class="impact-data-panel">
+              <span class="impact-year">Resultados de 2025</span>
+              <div class="impact-numbers" aria-label="Resultados de 2025">
+                <div><strong>R$ 1,1 bi</strong><span>em negócios</span></div>
+                <div><strong>2,2 milhões</strong><span>de visitantes</span></div>
+                <div><strong>1.647</strong><span>empreendedores</span></div>
+                <div><strong>587</strong><span>empresas expositoras</span></div>
+                <div><strong>503</strong><span>atrações locais e nacionais</span></div>
+                <div><strong>98%</strong><span>de ocupação hoteleira</span></div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="pautas">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="kicker">Pautas sugeridas</p>
-            <h2>Ângulos para cobertura local</h2>
+          <div class="history-summary" aria-label="Resultados acumulados desde 2023">
+            <span>Acumulado de 2023 a 2025</span>
+            <div><strong>R$ 2,2 bilhões</strong><small>movimentados em negócios</small></div>
+            <div><strong>4,5 milhões</strong><small>de visitantes em três edições</small></div>
           </div>
-          <p class="lead">Recortes pensados para imprensa, creators, páginas de bairro, perfis de cultura, negócios, turismo e economia popular.</p>
         </div>
-
-        <div class="topic-grid">
-          <article class="topic" style="--accent: var(--green)">
-            <h3>A feira como política pública</h3>
-            <p>Como a retomada da Expofeira virou plataforma de negócios, emprego, renda e autoestima para o Amapá.</p>
-          </article>
-          <article class="topic" style="--accent: var(--blue)">
-            <h3>Da Fazendinha para o Brasil</h3>
-            <p>O Parque de Exposições como vitrine para produtores, empreendedores, artistas e novos investimentos.</p>
-          </article>
-          <article class="topic" style="--accent: var(--pink)">
-            <h3>Economia popular em evidência</h3>
-            <p>Empreendedores populares, gastronomia, artesanato, manualidades e pequenos negócios como personagens centrais.</p>
-          </article>
-          <article class="topic" style="--accent: var(--orange)">
-            <h3>Cultura que movimenta</h3>
-            <p>Shows nacionais, artistas locais, aparelhagens, cultura afroamapaense, cultura indígena e economia criativa.</p>
-          </article>
-          <article class="topic" style="--accent: var(--yellow)">
-            <h3>Bioeconomia e novas vocações</h3>
-            <p>Agro, pesca, tecnologia, energia, biodiversidade, turismo e inovação como motores de um novo ciclo.</p>
-          </article>
-          <article class="topic" style="--accent: var(--red)">
-            <h3>Serviço para o público</h3>
-            <p>Transporte, segurança, circulação, programação diária, áreas de alimentação e espaços de experiência.</p>
-          </article>
-        </div>
-      </div>
+      </section>
     </section>
 
-    <section class="media-strip" aria-label="Sistema visual da Expofeira">
-      <div class="container">
-        <p class="kicker">Identidade visual</p>
-        <h2>Produção, conhecimento, cultura, inovação e investimento no mesmo espaço</h2>
-      </div>
-    </section>
-
-    <section class="section" id="programacao">
-      <div class="container">
-        <div class="section-head">
+    <section class="tab-panel" id="programacao" role="tabpanel" aria-labelledby="tab-programacao" hidden>
+      <header class="page-intro intro-blue">
+        <div class="container page-intro-inner">
           <div>
-            <p class="kicker">Programação nacional</p>
-            <h2>Shows e grandes encontros</h2>
+            <span class="section-tag tag-yellow">Agenda da feira</span>
+            <h1>Programação</h1>
+            <p>Nove dias de negócios, conhecimento, cultura, serviços e grandes encontros.</p>
           </div>
-          <p class="lead">A agenda nacional combina pagodão baiano, sertanejo, música cristã contemporânea, pop rock, forró, datas em atualização e a força das aparelhagens amazônicas.</p>
+          <i data-lucide="calendar-range" aria-hidden="true"></i>
         </div>
+      </header>
 
-        <div class="artist-grid">
-          <article class="artist feature">
-            <img src="assets/leo-santana.jpg" alt="Léo Santana em apresentação">
-            <div class="artist-body">
-              <span class="date-pill">08/08</span>
-              <h3>Léo Santana</h3>
-              <p>O Gigante abre a sequência nacional com pagodão baiano, pop, funk e axé.</p>
+      <div class="version-notice" role="status">
+        <div class="container version-notice-inner">
+          <i data-lucide="refresh-cw" aria-hidden="true"></i>
+          <p><strong>Programação preliminar.</strong> Versão recebida em 1º de agosto de 2026, às 17h07. Datas, horários, atrações e locais podem ser atualizados.</p>
+        </div>
+      </div>
+
+      <section class="section schedule-section" aria-labelledby="agenda-title">
+        <div class="container">
+          <div class="schedule-toolbar">
+            <label class="search-field" for="schedule-search">
+              <i data-lucide="search" aria-hidden="true"></i>
+              <input id="schedule-search" type="search" autocomplete="off" placeholder="Buscar atividade ou local">
+            </label>
+            <div class="date-filter" id="date-filter" aria-label="Selecionar data"></div>
+            <div class="category-filter" id="category-filter" aria-label="Filtrar por assunto"></div>
+          </div>
+
+          <div class="schedule-heading">
+            <div>
+              <span class="schedule-date-label" id="schedule-date-label">Sábado</span>
+              <h2 id="agenda-title">8 de agosto</h2>
             </div>
-          </article>
-          <article class="artist feature">
-            <img src="assets/gusttavo-lima.jpg" alt="Gusttavo Lima no palco com guitarra">
-            <div class="artist-body">
-              <span class="date-pill">09/08</span>
-              <h3>Gusttavo Lima</h3>
-              <p>O Embaixador leva sertanejo, romantismo e grandes sucessos ao público da feira.</p>
+            <span class="result-count" id="result-count"></span>
+          </div>
+
+          <div class="schedule-list" id="schedule-list" aria-live="polite"></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="expositores" role="tabpanel" aria-labelledby="tab-expositores" hidden>
+      <header class="page-intro intro-green">
+        <div class="container page-intro-inner">
+          <div>
+            <span class="section-tag tag-blue">Mapa comercial</span>
+            <h1>Expositores</h1>
+            <p>Empresas, empreendimentos, produtos e serviços distribuídos pelo parque.</p>
+          </div>
+          <i data-lucide="store" aria-hidden="true"></i>
+        </div>
+      </header>
+
+      <section class="construction-section" aria-labelledby="expositores-construcao">
+        <div class="container construction-copy">
+          <span class="construction-status"><i data-lucide="cone" aria-hidden="true"></i>Em construção</span>
+          <h2 id="expositores-construcao">Nomes e localização serão publicados nesta aba</h2>
+          <p>A organização está consolidando a relação dos expositores e a identificação de cada espaço no Parque de Exposições.</p>
+          <div class="construction-numbers">
+            <span><strong>500+</strong> espaços previstos</span>
+            <span><strong>20+</strong> atividades econômicas</span>
+            <span><strong>29</strong> ambientes e espaços</span>
+          </div>
+        </div>
+        <figure class="map-preview">
+          <img src="assets/mapa-expofeira.webp" alt="Mapa geral da Expofeira 2026 com os principais espaços do parque" loading="lazy">
+          <figcaption>Mapa geral de referência · identificação individual em atualização</figcaption>
+        </figure>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="icms" role="tabpanel" aria-labelledby="tab-icms" hidden>
+      <header class="page-intro intro-icms">
+        <div class="container page-intro-inner">
+          <div>
+            <span class="section-tag tag-yellow">Incentivo aos negócios</span>
+            <h1>Decreto do ICMS</h1>
+            <p>Como funciona o crédito presumido para operações comerciais realizadas durante a Expofeira 2026.</p>
+          </div>
+          <i data-lucide="badge-percent" aria-hidden="true"></i>
+        </div>
+      </header>
+
+      <section class="icms-lead" aria-labelledby="icms-resumo">
+        <div class="container icms-lead-grid">
+          <div class="icms-lead-copy">
+            <span class="section-tag tag-green">Lei nº 3.511/2026 · Decreto nº 5.655/2026</span>
+            <h2 id="icms-resumo">Crédito presumido para movimentar as cadeias produtivas</h2>
+            <p>O decreto regulamenta o incentivo fiscal aplicado às operações autorizadas durante a feira. O crédito corresponde ao ICMS devido na operação contemplada e busca reduzir custos, ampliar investimentos e fortalecer os negócios realizados no evento.</p>
+            <div class="icms-period"><i data-lucide="calendar-range" aria-hidden="true"></i><div><strong>8 a 16 de agosto de 2026</strong><span>Aplicação exclusiva no período oficial da Expofeira</span></div></div>
+          </div>
+          <div class="icms-principles" aria-label="Condições essenciais do benefício">
+            <div><span>01</span><strong>Quem pode vender?</strong><p>Contribuintes expositores credenciados pela organização da feira e previamente habilitados pela Sefaz.</p></div>
+            <div><span>02</span><strong>Quem pode comprar?</strong><p>Produtores, empreendedores, cooperativas, empresas e investidores ligados às cadeias produtivas, conforme as regras de cada item.</p></div>
+            <div><span>03</span><strong>Quais produtos?</strong><p>Máquinas, veículos, embarcações, animais, equipamentos, insumos e demais bens previstos na Lei e no ato anual.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section icms-document-section" aria-labelledby="icms-documentos">
+        <div class="container">
+          <div class="document-library-heading">
+            <div>
+              <span class="section-tag tag-blue">Base legal</span>
+              <h2 id="icms-documentos">Lei e decreto na íntegra</h2>
             </div>
-          </article>
-          <article class="artist">
-            <img src="assets/fabio-de-melo.jpg" alt="Padre Fábio de Melo cantando no palco">
-            <div class="artist-body">
-              <span class="date-pill">10/08</span>
-              <h3>Pe. Fábio de Melo</h3>
-              <p>Um encontro de música, fé, acolhimento e mensagem para diferentes gerações.</p>
-            </div>
-          </article>
-          <article class="artist mystery" aria-label="Atração a definir em 11 de agosto">
-            <div class="artist-body">
-              <span class="date-pill">11/08</span>
-            </div>
-          </article>
-          <article class="artist">
-            <img src="assets/jota-quest.jpg" alt="Integrantes do Jota Quest">
-            <div class="artist-body">
-              <span class="date-pill">12/08</span>
-              <h3>Jota Quest</h3>
-              <p>Pop rock brasileiro com hits que atravessam mais de três décadas.</p>
-            </div>
-          </article>
-          <article class="artist">
-            <img src="assets/daniel.jpg" alt="Cantor Daniel">
-            <div class="artist-body">
-              <span class="date-pill">13/08</span>
-              <h3>Daniel</h3>
-              <p>Sertanejo romântico e clássicos de uma carreira consagrada.</p>
-            </div>
-          </article>
-          <article class="artist">
-            <img src="assets/wesley-safadao.jpg" alt="Wesley Safadão cantando">
-            <div class="artist-body">
-              <span class="date-pill">14/08</span>
-              <h3>Wesley Safadão</h3>
-              <p>Forró eletrônico, pop, sertanejo e repertório de grande apelo popular.</p>
-            </div>
-          </article>
-          <article class="artist festival-card">
-            <img src="assets/festival-dia-1.jpg" alt="Vista aérea do Festival das Aparelhagens na Expofeira">
-            <div class="artist-body">
-              <div class="festival-labels">
-                <span class="date-pill">14/08</span>
-                <span class="festival-day">Dia 1</span>
+            <p>Recortes das publicações oficiais do Diário Oficial do Estado do Amapá, disponíveis para leitura e download.</p>
+          </div>
+          <div class="document-grid">
+            <article class="document-card document-card-law">
+              <div class="document-icon"><i data-lucide="landmark" aria-hidden="true"></i><span>PDF</span></div>
+              <div class="document-card-copy">
+                <span>Lei Estadual</span>
+                <h3>Lei nº 3.511, de 3 de julho de 2026</h3>
+                <p>Institui o benefício fiscal de crédito presumido do ICMS para operações realizadas durante a Expofeira.</p>
+                <div class="document-meta"><span>DOE nº 8.689 Extra</span><span>4 páginas</span><span>234 KB</span></div>
               </div>
-              <h3>Festival das Aparelhagens</h3>
-              <p>Primeira noite do festival com grandes aparelhagens do Amapá, potência sonora, luz, dança e cultura popular amazônica.</p>
-              <p class="photo-credit">Foto: Arthur Alves / SECOM GEA</p>
-            </div>
-          </article>
-          <article class="artist festival-card">
-            <img src="assets/tupinamba.jpg" alt="Icônico Tupinambá, destaque do segundo dia do Festival das Aparelhagens">
-            <div class="artist-body">
-              <div class="festival-labels">
-                <span class="date-pill">15/08</span>
-                <span class="festival-day">Dia 2</span>
+              <div class="document-actions">
+                <a class="button button-outline" href="docs/lei-3511-2026-icms-expofeira.pdf" target="_blank" rel="noopener"><i data-lucide="external-link" aria-hidden="true"></i>Abrir PDF</a>
+                <a class="document-download" href="docs/lei-3511-2026-icms-expofeira.pdf" download title="Baixar Lei nº 3.511/2026" aria-label="Baixar Lei nº 3.511 de 2026"><i data-lucide="download" aria-hidden="true"></i></a>
               </div>
-              <h3>Festival das Aparelhagens</h3>
-              <p class="festival-highlight">Com o Icônico Tupinambá</p>
-              <p>Segunda noite do encontro das grandes estruturas sonoras da Amazônia.</p>
+            </article>
+            <article class="document-card document-card-decree">
+              <div class="document-icon"><i data-lucide="scroll-text" aria-hidden="true"></i><span>PDF</span></div>
+              <div class="document-card-copy">
+                <span>Decreto Estadual</span>
+                <h3>Decreto nº 5.655, de 29 de julho de 2026</h3>
+                <p>Regulamenta a aplicação do crédito presumido, a habilitação, o controle fiscal e as operações alcançadas.</p>
+                <div class="document-meta"><span>DOE nº 8.707</span><span>5 páginas</span><span>185 KB</span></div>
+              </div>
+              <div class="document-actions">
+                <a class="button button-outline" href="docs/decreto-5655-2026-icms-expofeira.pdf" target="_blank" rel="noopener"><i data-lucide="external-link" aria-hidden="true"></i>Abrir PDF</a>
+                <a class="document-download" href="docs/decreto-5655-2026-icms-expofeira.pdf" download title="Baixar Decreto nº 5.655/2026" aria-label="Baixar Decreto nº 5.655 de 2026"><i data-lucide="download" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section icms-people-section" aria-labelledby="icms-publico">
+        <div class="container">
+          <div class="section-heading icms-section-heading">
+            <span class="section-tag tag-blue">Público atendido</span>
+            <h2 id="icms-publico">Quem participa e quem é alcançado</h2>
+            <p>O decreto diferencia quem utiliza o crédito fiscal das cadeias produtivas que a política busca fortalecer.</p>
+          </div>
+          <div class="icms-people-grid">
+            <article class="icms-eligibility">
+              <i data-lucide="store" aria-hidden="true"></i>
+              <span>Quem pode utilizar o crédito</span>
+              <h3>Expositores regularmente credenciados</h3>
+              <p>É necessário cumprir os requisitos do decreto, manter regularidade perante o Fisco Estadual e realizar o credenciamento específico junto à Secretaria da Fazenda.</p>
+            </article>
+            <article class="icms-audience">
+              <i data-lucide="users" aria-hidden="true"></i>
+              <span>Público produtivo atendido</span>
+              <ul>
+                <li>Produtores rurais e agricultores familiares</li>
+                <li>Pecuaristas, piscicultores e pescadores</li>
+                <li>Cooperativas, associações e agroindústrias</li>
+                <li>Empresas industriais e comerciantes participantes</li>
+                <li>Investidores em expansão e modernização produtiva</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section icms-products-section" aria-labelledby="icms-itens">
+        <div class="container">
+          <div class="section-heading icms-section-heading">
+            <span class="section-tag tag-pink">Itens contemplados</span>
+            <h2 id="icms-itens">O que pode estar coberto pelo benefício</h2>
+            <p>A aplicação depende do enquadramento da operação e do cumprimento das condições fiscais.</p>
+          </div>
+          <div class="icms-product-grid">
+            <article><i data-lucide="tractor" aria-hidden="true"></i><h3>Máquinas e tecnologia</h3><p>Tratores, retroescavadeiras, implementos agrícolas, motobombas, geradores, computadores e periféricos.</p></article>
+            <article><i data-lucide="ship-wheel" aria-hidden="true"></i><h3>Veículos e embarcações</h3><p>Veículos utilitários, botes de alumínio, motores de rabeta e motores de popa de 15 a 40 HP.</p></article>
+            <article><i data-lucide="beef" aria-hidden="true"></i><h3>Pecuária</h3><p>Vacas prenhes, matrizes, reprodutores, embriões congelados, ovinos, caprinos e equinos registrados.</p></article>
+            <article><i data-lucide="fish" aria-hidden="true"></i><h3>Pesca e aquicultura</h3><p>Redes, alimentadores, aeradores, kits de análise da água, ração, incubadoras e hormônios para alevinos.</p></article>
+            <article><i data-lucide="package-open" aria-hidden="true"></i><h3>Insumos de produção</h3><p>Ureia, farelo de trigo, superfosfatos, carros de mão e equipamentos de apoio à produção rural.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section icms-process-section" aria-labelledby="icms-processo">
+        <div class="container">
+          <div class="section-heading icms-section-heading">
+            <span class="section-tag tag-green">Habilitação</span>
+            <h2 id="icms-processo">O caminho para usar o incentivo</h2>
+          </div>
+          <ol class="icms-process">
+            <li><span>1</span><div><strong>Credenciamento</strong><p>Estar regularmente credenciado pela organização da Expofeira.</p></div></li>
+            <li><span>2</span><div><strong>Habilitação na Sefaz</strong><p>Realizar o cadastro específico e comprovar regularidade fiscal.</p></div></li>
+            <li><span>3</span><div><strong>Documentação fiscal</strong><p>Emitir corretamente os documentos e cumprir as obrigações acessórias.</p></div></li>
+            <li><span>4</span><div><strong>Comprovação e controle</strong><p>Comprovar a destinação dos produtos quando exigido e atender à fiscalização.</p></div></li>
+          </ol>
+          <div class="icms-warning">
+            <i data-lucide="triangle-alert" aria-hidden="true"></i>
+            <div><strong>Uso irregular cancela o benefício</strong><p>Informações falsas, descumprimento das condições ou falhas tributárias podem exigir o recolhimento do imposto, com multas, juros e demais encargos.</p></div>
+          </div>
+          <p class="icms-note">Resumo informativo elaborado a partir do Decreto nº 5.655/2026. A concessão depende da análise da Sefaz e do enquadramento de cada operação.</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="inclusao" role="tabpanel" aria-labelledby="tab-inclusao" hidden>
+      <header class="page-intro intro-pink">
+        <div class="container page-intro-inner">
+          <div>
+            <span class="section-tag tag-yellow">Cuidado em todas as frentes</span>
+            <h1>Inclusão e Segurança</h1>
+            <p>Prevenção, acolhimento, saúde, trânsito e proteção para todos os públicos.</p>
+          </div>
+          <i data-lucide="shield-plus" aria-hidden="true"></i>
+        </div>
+      </header>
+
+      <section class="safety-lead" aria-labelledby="seguranca-title">
+        <figure class="safety-photo">
+          <img src="assets/seguranca-expofeira.webp" alt="Vista aérea da Expofeira com grande circulação de público no parque de exposições" loading="eager">
+          <figcaption>A dimensão do público orienta toda a operação integrada</figcaption>
+        </figure>
+        <div class="safety-copy">
+          <span class="section-tag tag-green">Operação 2026</span>
+          <h2 id="seguranca-title">Estrutura preparada para receber, orientar e proteger</h2>
+          <p>A operação reúne órgãos estaduais, federais e municipais, com equipes de segurança, saúde, trânsito, prevenção e proteção social durante os nove dias.</p>
+          <div class="safety-highlights">
+            <div><strong>700</strong><span>operadores de segurança por dia</span></div>
+            <div><strong>3</strong><span>centrais de videomonitoramento</span></div>
+            <div><strong>4</strong><span>drones</span></div>
+            <div><strong>39</strong><span>pontos de observação</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section operations-section" aria-labelledby="operacao-title">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag tag-blue">Estrutura operacional</span>
+            <h2 id="operacao-title">Proteção do acesso ao atendimento</h2>
+          </div>
+          <div class="operation-grid">
+            <article class="operation-card operation-red">
+              <i data-lucide="flame-kindling" aria-hidden="true"></i>
+              <h3>Prevenção</h3>
+              <ul>
+                <li>1.278 operadores do Corpo de Bombeiros</li>
+                <li>450 brigadistas</li>
+                <li>150 seguranças privados</li>
+                <li>3 portões exclusivos de emergência</li>
+                <li>10 pontos de hidratação</li>
+              </ul>
+            </article>
+            <article class="operation-card operation-green">
+              <i data-lucide="heart-pulse" aria-hidden="true"></i>
+              <h3>Saúde</h3>
+              <ul>
+                <li>57 profissionais de saúde</li>
+                <li>5 viaturas do Samu e Corpo de Bombeiros</li>
+                <li>2 postos de saúde</li>
+                <li>1 UTI aérea no helicóptero Gavião 04</li>
+              </ul>
+            </article>
+            <article class="operation-card operation-yellow">
+              <i data-lucide="traffic-cone" aria-hidden="true"></i>
+              <h3>Trânsito e transporte</h3>
+              <ul>
+                <li>40 operadores de trânsito</li>
+                <li>14 viaturas e 4 guinchos</li>
+                <li>Terminais de ônibus para Macapá e Santana</li>
+                <li>Pontos exclusivos para táxi, aplicativo e mototáxi</li>
+              </ul>
+            </article>
+            <article class="operation-card operation-blue">
+              <i data-lucide="scan-eye" aria-hidden="true"></i>
+              <h3>Monitoramento</h3>
+              <ul>
+                <li>Cobertura da rotatória do Marco Zero ao Igarapé da Fortaleza</li>
+                <li>Centro móvel de comando e controle</li>
+                <li>Apoio aéreo do Gavião 01</li>
+                <li>Policiamento ostensivo dentro e no entorno do parque</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="safety-field-gallery" aria-label="Registros das frentes de segurança da Expofeira">
+            <figure>
+              <img src="assets/seguranca-monitoramento.webp" alt="Agente acompanha câmeras no centro de monitoramento" loading="eager">
+              <figcaption><strong>Monitoramento</strong><span>Centrais acompanham o parque e o entorno em tempo real.</span></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/seguranca-emergencia.webp" alt="Equipes de emergência percorrem a área da Expofeira" loading="eager">
+              <figcaption><strong>Resposta rápida</strong><span>Equipes móveis atuam na prevenção e no atendimento.</span></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/seguranca-transito.webp" alt="Agente orienta o trânsito nas proximidades da Expofeira" loading="eager">
+              <figcaption><strong>Mobilidade</strong><span>Ordenamento de vias, embarque e desembarque.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="inclusion-section" aria-labelledby="acolhimento-title">
+        <div class="container">
+          <div class="section-heading light-heading">
+            <span class="section-tag tag-yellow">Acolher Amapá</span>
+            <h2 id="acolhimento-title">Acolhimento para diferentes necessidades</h2>
+          </div>
+          <div class="inclusion-overview">
+            <div class="inclusion-overview-symbol" aria-hidden="true"><i data-lucide="accessibility"></i></div>
+            <div class="inclusion-overview-copy">
+              <span>Inclusão na prática</span>
+              <h3>Autonomia, acolhimento e participação</h3>
+              <p>A estrutura combina acessibilidade física, atendimento prioritário e apoio especializado para ampliar a experiência de todos os públicos.</p>
             </div>
-          </article>
-          <article class="artist" aria-label="GET Worship em 16 de agosto">
-            <img src="assets/get-worship.jpg" alt="GET Worship, ministério de louvor e adoração">
-            <div class="artist-body">
-              <span class="date-pill">16/08</span>
-              <h3>GET Worship</h3>
-              <p>Ministério de louvor da Igreja Getsêmani, com worship congregacional, pop rock e canções como Altar, Só Quero Te Ver, Lugar Secreto e Tua Presença.</p>
+            <div class="inclusion-overview-points">
+              <div><i data-lucide="route" aria-hidden="true"></i><span><strong>Circulação acessível</strong>Rotas, estacionamento e apoio à mobilidade.</span></div>
+              <div><i data-lucide="messages-square" aria-hidden="true"></i><span><strong>Comunicação acessível</strong>Libras, orientação e visitas guiadas.</span></div>
+              <div><i data-lucide="heart-handshake" aria-hidden="true"></i><span><strong>Acolhimento</strong>Escuta, proteção e suporte sensorial.</span></div>
             </div>
-          </article>
-        </div>
-
-        <div class="aparelhagem-feature">
-          <img src="assets/tupinamba.jpg" alt="Icônico Tupinambá em apresentação de aparelhagem">
-          <div class="aparelhagem-copy">
-            <p class="kicker">15/08 · Dia 2</p>
-            <h3>Icônico Tupinambá</h3>
-            <p>No segundo dia, o Festival das Aparelhagens ganha um marco simbólico com a presença do Icônico Tupinambá, uma das estruturas mais reconhecidas da cultura sonora amazônica.</p>
-            <p>Na Expofeira, o encontro reforça a ponte entre tecnologia popular, dança, identidade regional e a potência dos sistemas de som que mobilizam multidões no Norte.</p>
-            <p class="photo-credit">Foto: <a href="https://www.flickr.com/photos/midianinja/55213366908/in/album-72177720333158083">Vinicius Gonçalves / CC Mídia NINJA</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
+          </div>
+          <div class="inclusion-grid">
+            <article>
+              <i data-lucide="person-standing" aria-hidden="true"></i>
+              <h3>Mulheres</h3>
+              <p>Central de acolhimento, prevenção ao assédio e à violência, escuta com sigilo e encaminhamento para a rede de direitos.</p>
+            </article>
+            <article>
+              <i data-lucide="baby" aria-hidden="true"></i>
+              <h3>Crianças e adolescentes</h3>
+              <p>Identificação, protocolo de localização e reencontro, orientação às famílias e fiscalização para prevenir o trabalho infantil.</p>
+            </article>
+            <article>
+              <i data-lucide="accessibility" aria-hidden="true"></i>
+              <h3>Pessoa idosa, PCD e TEA</h3>
+              <p>Espaço reservado na Arena Rio Amazonas, estacionamento prioritário, cadeiras de rodas, andadores e apoio à mobilidade.</p>
+            </article>
+            <article>
+              <i data-lucide="ear" aria-hidden="true"></i>
+              <h3>Comunicação e apoio sensorial</h3>
+              <p>Atendimento a pessoas surdas, visitas guiadas para baixa visão e Espaço Acolher para pessoas com TEA.</p>
+            </article>
+          </div>
+          <div class="accessibility-strip">
+            <span><strong>2</strong> banheiros químicos acessíveis</span>
+            <span><strong>6</strong> banheiros fixos com acessibilidade</span>
+            <span>Banheiro adaptado para pessoas ostomizadas</span>
+            <span>Fraldário e espaço para amamentação</span>
           </div>
         </div>
-      </div>
+      </section>
     </section>
 
-    <section class="section band-ink" id="palcos-locais">
-      <div class="container">
-        <div class="section-head">
+    <section class="tab-panel" id="recomendacoes" role="tabpanel" aria-labelledby="tab-recomendacoes" hidden>
+      <header class="page-intro intro-recommendations">
+        <div class="container page-intro-inner">
           <div>
-            <p class="kicker">Artistas locais</p>
-            <h2>Quatro palcos para a cena do Amapá</h2>
+            <span class="section-tag tag-yellow">Informação que protege</span>
+            <h1>Recomendações</h1>
+            <p>Orientações essenciais para uma feira segura, acessível e com relações de consumo transparentes.</p>
           </div>
-          <p class="lead">A programação local ocupa espaços com identidades próprias, abrindo vitrine para música, teatro, cultura afroamapaense, performances, tradição popular e novas linguagens.</p>
+          <i data-lucide="clipboard-check" aria-hidden="true"></i>
         </div>
+      </header>
 
-        <div class="stage-grid">
-          <article class="stage-card" style="--accent: var(--yellow)">
-            <h3>Miniteatro Caboco</h3>
-            <p>Espaço para apresentações intimistas, circulação de artistas, contação de histórias, teatro, música e experiências de proximidade com o público.</p>
-          </article>
-          <article class="stage-card" style="--accent: var(--green)">
-            <h3>Palco AfroAmapaense</h3>
-            <p>Vitrine para ritmos, narrativas e expressões ligadas à cultura negra no Amapá, com força comunitária e identidade amazônica.</p>
-          </article>
-          <article class="stage-card" style="--accent: var(--pink)">
-            <h3>Palco da Rainha</h3>
-            <p>Programação com artistas locais, performances e encontros que valorizam presença cênica, diversidade e a energia popular da Expofeira.</p>
-          </article>
-          <article class="stage-card" style="--accent: var(--blue)">
-            <h3>Arena Rio Amazonas</h3>
-            <p>Área de grande apelo para shows, manifestações culturais, público jovem e conteúdos de alto alcance para cobertura em tempo real.</p>
-          </article>
+      <section class="recommendation-alert" aria-label="Orientação de segurança em destaque">
+        <div class="container recommendation-alert-inner">
+          <i data-lucide="glass-water" aria-hidden="true"></i>
+          <div><strong>Na Expofeira, vidro não entra.</strong><span>Bebidas devem ser servidas em recipientes plásticos ou descartáveis não cortantes.</span></div>
         </div>
-      </div>
+      </section>
+
+      <section class="section recommendation-overview" aria-labelledby="recomendacoes-resumo">
+        <div class="container">
+          <div class="recommendation-lead recommendation-lead-text">
+            <div class="recommendation-lead-copy">
+              <span class="section-tag tag-pink">Leitura rápida</span>
+              <h2 id="recomendacoes-resumo">Dois documentos, um compromisso público</h2>
+              <p>As recomendações do Ministério Público e do Procon orientam a organização, os expositores e os fornecedores. Aqui estão os pontos de maior impacto para o público e os arquivos integrais para consulta.</p>
+              <div class="recommendation-focus-list">
+                <span><i data-lucide="shield-check" aria-hidden="true"></i>Segurança e resposta a emergências</span>
+                <span><i data-lucide="accessibility" aria-hidden="true"></i>Acessibilidade e atendimento prioritário</span>
+                <span><i data-lucide="receipt-text" aria-hidden="true"></i>Preços, pagamentos e proteção do consumidor</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="document-library" aria-labelledby="documentos-title">
+            <div class="document-library-heading">
+              <div><span class="section-tag tag-blue">Documentos oficiais</span><h2 id="documentos-title">Recomendações na íntegra</h2></div>
+              <p>Arquivos em PDF disponíveis para leitura, consulta e download.</p>
+            </div>
+            <div class="document-grid">
+              <article class="document-card document-card-mp">
+                <div class="document-icon"><i data-lucide="file-check-2" aria-hidden="true"></i><span>PDF</span></div>
+                <div class="document-card-copy">
+                  <span>Ministério Público do Amapá</span>
+                  <h3>Recomendação nº 0000004/2026-PJDC</h3>
+                  <p>Segurança, acessibilidade, proteção de grupos vulneráveis, mobilidade e prevenção de riscos.</p>
+                  <div class="document-meta"><span>30/07/2026</span><span>12 páginas</span><span>657 KB</span></div>
+                </div>
+                <div class="document-actions">
+                  <a class="button button-outline" href="docs/recomendacao-mp-2026.pdf" target="_blank" rel="noopener"><i data-lucide="external-link" aria-hidden="true"></i>Abrir PDF</a>
+                  <a class="document-download" href="docs/recomendacao-mp-2026.pdf" download title="Baixar recomendação do MP" aria-label="Baixar recomendação do Ministério Público"><i data-lucide="download" aria-hidden="true"></i></a>
+                </div>
+              </article>
+              <article class="document-card document-card-procon">
+                <div class="document-icon"><i data-lucide="file-check-2" aria-hidden="true"></i><span>PDF</span></div>
+                <div class="document-card-copy">
+                  <span>Procon Amapá</span>
+                  <h3>Recomendação nº 001/2026</h3>
+                  <p>Informação ao consumidor, preços, meios de pagamento, higiene e práticas comerciais.</p>
+                  <div class="document-meta"><span>29/07/2026</span><span>5 páginas</span><span>232 KB</span></div>
+                </div>
+                <div class="document-actions">
+                  <a class="button button-outline" href="docs/recomendacao-procon-2026.pdf" target="_blank" rel="noopener"><i data-lucide="external-link" aria-hidden="true"></i>Abrir PDF</a>
+                  <a class="document-download" href="docs/recomendacao-procon-2026.pdf" download title="Baixar recomendação do Procon" aria-label="Baixar recomendação do Procon"><i data-lucide="download" aria-hidden="true"></i></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section recommendations-section" aria-labelledby="mp-title">
+        <div class="container">
+          <div class="recommendation-source">
+            <div>
+              <span class="section-tag tag-green">Ministério Público do Amapá</span>
+              <h2 id="mp-title">Segurança, acessibilidade e respeito aos direitos</h2>
+            </div>
+            <span>Recomendação nº 0000004/2026-PJDC · 30/07/2026</span>
+          </div>
+          <div class="recommendation-grid">
+            <article><i data-lucide="scan-line" aria-hidden="true"></i><span class="recommendation-number">01</span><h3>Acesso seguro</h3><p>Revistas, detectores de metal, contagem de público, iluminação e controle de materiais perigosos.</p></article>
+            <article><i data-lucide="siren" aria-hidden="true"></i><span class="recommendation-number">02</span><h3>Emergência preparada</h3><p>Brigada de incêndio, ambulâncias, equipes de atendimento, hidratação e rotas de fuga sinalizadas.</p></article>
+            <article><i data-lucide="accessibility" aria-hidden="true"></i><span class="recommendation-number">03</span><h3>Acessibilidade plena</h3><p>Vagas, rampas, banheiros adaptados, prioridade, Libras e áreas acessíveis nos shows.</p></article>
+            <article><i data-lucide="cooking-pot" aria-hidden="true"></i><span class="recommendation-number">04</span><h3>Fogo sob controle</h3><p>Preparo com fogo somente em estruturas autorizadas, vistoriadas e com licença sanitária.</p></article>
+            <article><i data-lucide="bus-front" aria-hidden="true"></i><span class="recommendation-number">05</span><h3>Mobilidade organizada</h3><p>Rotas alternativas, embarque e desembarque sinalizados e acessos livres para veículos de socorro.</p></article>
+            <article><i data-lucide="recycle" aria-hidden="true"></i><span class="recommendation-number">06</span><h3>Ambiente cuidado</h3><p>Limpeza permanente, descarte correto, controle de ruído e proteção das áreas verdes.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="consumer-section" aria-labelledby="procon-title">
+        <div class="container">
+          <div class="recommendation-source light-heading">
+            <div>
+              <span class="section-tag tag-yellow">Procon Amapá</span>
+              <h2 id="procon-title">Preço claro, produto seguro e atendimento justo</h2>
+            </div>
+            <span>Recomendação nº 001/2026 · 29/07/2026</span>
+          </div>
+          <div class="consumer-rules">
+            <div><span>01</span><p><strong>Informação clara.</strong> Produtos e serviços devem apresentar características, quantidade e condições de forma objetiva.</p></div>
+            <div><span>02</span><p><strong>Preços visíveis.</strong> Cardápios, adicionais, combos, taxas e formas de pagamento devem estar claros.</p></div>
+            <div><span>03</span><p><strong>Sem valor mínimo no cartão.</strong> É proibido exigir compra mínima em meio de pagamento aceito.</p></div>
+            <div><span>04</span><p><strong>Atendimento prioritário.</strong> Pessoas com deficiência, idosos, gestantes, lactantes e pessoas com criança de colo têm prioridade.</p></div>
+            <div><span>05</span><p><strong>Higiene e validade.</strong> Alimentos devem ser manipulados corretamente e produtos vencidos não podem ser vendidos.</p></div>
+            <div><span>06</span><p><strong>Ponto identificado.</strong> Nome do responsável, CPF ou CNPJ e canal de atendimento devem estar visíveis.</p></div>
+            <div><span>07</span><p><strong>Taxa de serviço opcional.</strong> Gorjeta ou percentual adicional deve aparecer como opcional na comanda.</p></div>
+            <div><span>08</span><p><strong>Sem abuso.</strong> É vedado elevar preços sem justa causa ou oferecer produtos deteriorados e fraudados.</p></div>
+          </div>
+        </div>
+      </section>
     </section>
 
-    <section class="section band-light" id="incentivo">
-      <div class="container">
-        <div class="section-head">
+    <section class="tab-panel" id="noticias" role="tabpanel" aria-labelledby="tab-noticias" hidden>
+      <header class="page-intro intro-news">
+        <div class="container page-intro-inner">
           <div>
-            <p class="kicker">Novidade econômica</p>
-            <h2>Incentivo fiscal para ampliar negócios</h2>
+            <span class="section-tag tag-yellow">Expofeira na imprensa</span>
+            <h1>Na mídia</h1>
+            <p>Chamadas e links de reportagens publicadas sobre a Expofeira 2026.</p>
           </div>
-          <p class="lead">A Lei nº 3.511, de 3 de julho de 2026, cria crédito presumido do ICMS para operações comerciais realizadas durante a Expofeira.</p>
+          <i data-lucide="newspaper" aria-hidden="true"></i>
         </div>
+      </header>
 
-        <div class="incentive">
-          <div class="incentive-main">
-            <h3>Menor custo, mais investimento</h3>
-            <p>O benefício reduz o custo de compras realizadas na feira e estimula produtores, empreendedores, indústria, comércio, pesca, aquicultura e cadeias rurais a ampliar ou modernizar suas atividades no território do Amapá.</p>
+      <section class="section news-section" aria-labelledby="noticias-title">
+        <div class="container">
+          <div class="news-heading">
+            <div>
+              <span class="section-tag tag-pink">Monitoramento de imprensa</span>
+              <h2 id="noticias-title">Expofeira 2026 na imprensa</h2>
+            </div>
+            <p><strong>Período monitorado: 21 a 30 de julho de 2026.</strong> Os links abrem as publicações originais; consulte a aba Programação para a agenda mais recente.</p>
           </div>
-          <div class="micro-box">
-            <b>Crédito presumido de ICMS</b>
-            <p>Válido para operações realizadas durante a Expofeira, com equipamentos, animais e insumos destinados ao uso produtivo no território do Amapá.</p>
-          </div>
-        </div>
 
-        <div class="benefit-grid">
-          <article class="benefit-list">
-            <h3>Público atendido</h3>
-            <ul>
-              <li>Produtores rurais e agricultores familiares.</li>
-              <li>Pecuaristas, piscicultores e pescadores.</li>
-              <li>Empresários do agronegócio, cooperativas e associações rurais.</li>
-              <li>Empreendedores da agroindústria e empresas do setor industrial.</li>
-              <li>Comerciantes participantes da Expofeira.</li>
-              <li>Investidores interessados em ampliar ou modernizar empreendimentos.</li>
-            </ul>
-          </article>
-          <article class="benefit-list">
-            <h3>Itens cobertos</h3>
-            <ul>
-              <li><strong>Máquinas e tecnologia:</strong> tratores, retroescavadeiras, máquinas e implementos agrícolas, motobombas, grupos geradores, computadores e periféricos.</li>
-              <li><strong>Veículos e embarcações:</strong> veículos utilitários, botes de alumínio, motores de rabeta e motores de popa de 15 a 40 HP.</li>
-              <li><strong>Pecuária:</strong> vacas prenhes, matrizes bovinas, reprodutores bovinos, embriões animais congelados, ovinos, caprinos e equinos com registro genealógico.</li>
-              <li><strong>Pesca e aquicultura:</strong> redes e materiais para pesca, alimentadores automáticos para peixes, aeradores, kit multiparâmetro para análise da água, ração para peixes, incubadoras e hipófise para produção de alevinos.</li>
-              <li><strong>Insumos e apoio à produção:</strong> ureia, farelo de trigo, superfosfato simples, superfosfato triplo, carros de mão e outros equipamentos de apoio à produção rural.</li>
-            </ul>
-          </article>
+          <div class="news-toolbar">
+            <label class="search-field" for="news-search">
+              <i data-lucide="search" aria-hidden="true"></i>
+              <input id="news-search" type="search" autocomplete="off" placeholder="Buscar título, veículo ou assunto">
+            </label>
+            <div class="news-filter" id="news-filter" aria-label="Filtrar notícias por assunto"></div>
+          </div>
+
+          <div class="news-results-heading">
+            <h3>Matérias publicadas</h3>
+            <span id="news-result-count"></span>
+          </div>
+          <div class="media-list" id="news-grid" aria-live="polite"></div>
         </div>
-      </div>
+      </section>
     </section>
-
-    <section class="section" id="numeros">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="kicker">Evolução 2023-2025</p>
-            <h2>Resultados que sustentam a edição de 2026</h2>
-          </div>
-          <p class="lead">Os números das três últimas edições mostram a retomada, a expansão e a consolidação da Expofeira como plataforma de desenvolvimento.</p>
-        </div>
-
-        <div class="numbers">
-          <article class="number-block">
-            <h3>2023</h3>
-            <ul>
-              <li><b>R$ 500 mi+</b><span>em negócios movimentados</span></li>
-              <li><b>800 mil+</b><span>visitantes</span></li>
-              <li><b>5.302</b><span>empregos diretos e indiretos gerados</span></li>
-              <li><b>R$ 41 mi</b><span>investidos na estrutura da feira</span></li>
-            </ul>
-          </article>
-          <article class="number-block">
-            <h3>2024</h3>
-            <ul>
-              <li><b>231 mil m²</b><span>de área do parque após expansão</span></li>
-              <li><b>1,5 mi+</b><span>visitantes</span></li>
-              <li><b>R$ 600 mi+</b><span>em negócios movimentados</span></li>
-              <li><b>1.200</b><span>empreendimentos participantes</span></li>
-            </ul>
-          </article>
-          <article class="number-block">
-            <h3>2025</h3>
-            <ul>
-              <li><b>R$ 1,1 bi</b><span>em negócios realizados e prospectados</span></li>
-              <li><b>2,2 mi</b><span>visitantes</span></li>
-              <li><b>587</b><span>empresas expositoras</span></li>
-              <li><b>98,6%</b><span>defenderam a continuidade da Expofeira</span></li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-inner">
       <img src="assets/expofeira-logo.png" alt="Expofeira 2026">
-      <p>Caderno de comunicação para revisão. Conteúdo padronizado com data de 8 a 16 de agosto, artistas revisados e indicador de 587 empresas expositoras em 2025.</p>
+      <div>
+        <strong>Caderno de Comunicação 2.0</strong>
+        <span>Versão 2.0 · Atualizado em 2 de agosto de 2026</span>
+      </div>
+      <a href="https://www.instagram.com/expoamapa" target="_blank" rel="noopener"><i data-lucide="instagram" aria-hidden="true"></i>@expoamapa</a>
+      <div class="footer-credit">
+        <span><strong>Textos e produção da página:</strong> Elissandro Araújo e Rodrigo Juarez</span>
+        <span><strong>Responsabilidade institucional:</strong> Comissão de Eventos da Expofeira 2026</span>
+      </div>
     </div>
   </footer>
-
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script>
-    if (window.lucide) {
-      window.lucide.createIcons();
-    }
-  </script>
 </body>
 </html>
