@@ -1103,6 +1103,55 @@ h3 {
   background: var(--yellow);
 }
 
+.category-shows {
+  --category-bg: #fff2f8;
+  --category-strip: #ffd6e9;
+  --category-accent: #b90b68;
+}
+
+.category-cultura {
+  --category-bg: #eefaff;
+  --category-strip: #cfefff;
+  --category-accent: #0876a8;
+}
+
+.category-agro {
+  --category-bg: #f1faee;
+  --category-strip: #d9f2d4;
+  --category-accent: #2d6e39;
+}
+
+.category-conhecimento {
+  --category-bg: #f4f1ff;
+  --category-strip: #e1d8ff;
+  --category-accent: #55409b;
+}
+
+.category-experiencias {
+  --category-bg: #fff8eb;
+  --category-strip: #ffe4b8;
+  --category-accent: #9a4a00;
+}
+
+.category-servicos {
+  --category-bg: #f3f6fa;
+  --category-strip: #dee6ef;
+  --category-accent: #435066;
+}
+
+.category-button[class*="category-"] {
+  color: var(--category-accent);
+  border-color: var(--category-strip);
+  background: var(--category-bg);
+}
+
+.category-button[class*="category-"]:hover,
+.category-button[class*="category-"].is-active {
+  color: var(--white);
+  border-color: var(--category-accent);
+  background: var(--category-accent);
+}
+
 .schedule-heading {
   margin: 48px 0 18px;
   display: flex;
@@ -1141,7 +1190,8 @@ h3 {
   align-items: center;
   gap: 16px;
   border-bottom: 1px solid var(--line);
-  background: var(--white);
+  border-left: 5px solid var(--category-accent, var(--blue));
+  background: var(--category-bg, var(--white));
 }
 
 .schedule-item time {
@@ -1150,7 +1200,7 @@ h3 {
   display: flex;
   align-items: center;
   color: var(--ink);
-  background: var(--yellow);
+  background: var(--category-strip, var(--yellow));
   font-size: .95rem;
   font-weight: 950;
 }
@@ -1162,6 +1212,8 @@ h3 {
   place-items: center;
   border: 1px solid var(--line);
   border-radius: 50%;
+  color: var(--category-accent, var(--blue));
+  background: rgba(255, 255, 255, .72);
 }
 
 .schedule-icon svg {
@@ -1199,7 +1251,7 @@ h3 {
   padding: 3px 6px;
   border-radius: 3px;
   color: var(--white);
-  background: var(--blue);
+  background: var(--category-accent, var(--blue));
   font-size: .75rem;
   text-transform: uppercase;
 }

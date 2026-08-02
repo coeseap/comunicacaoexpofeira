@@ -89,6 +89,14 @@
     Experiências: "sparkles",
     Serviços: "landmark",
   };
+  const classByCategory = {
+    Shows: "category-shows",
+    Cultura: "category-cultura",
+    "Agro e negócios": "category-agro",
+    Conhecimento: "category-conhecimento",
+    Experiências: "category-experiencias",
+    Serviços: "category-servicos",
+  };
 
   const state = {
     date: schedule[0]?.date || "08/08",
@@ -136,7 +144,7 @@
 
     if (categoryFilter) {
       categoryFilter.innerHTML = categories.map((category) => `
-        <button class="category-button${category === state.category ? " is-active" : ""}" type="button" data-category="${escapeHtml(category)}" aria-pressed="${category === state.category}">
+        <button class="category-button${category === state.category ? " is-active" : ""} ${classByCategory[category] || ""}" type="button" data-category="${escapeHtml(category)}" aria-pressed="${category === state.category}">
           ${escapeHtml(category)}
         </button>
       `).join("");
@@ -174,9 +182,10 @@
 
     scheduleList.innerHTML = events.map((event) => {
       const icon = iconByCategory[event.category] || "calendar-check";
+      const categoryClass = classByCategory[event.category] || "";
       const detail = event.detail ? `<p>${escapeHtml(event.detail)}</p>` : "";
       return `
-        <article class="schedule-item">
+        <article class="schedule-item ${categoryClass}">
           <time>${escapeHtml(event.time)}</time>
           <span class="schedule-icon" aria-hidden="true"><i data-lucide="${icon}"></i></span>
           <div class="schedule-main">
