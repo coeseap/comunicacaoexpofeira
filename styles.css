@@ -698,6 +698,15 @@ h3 {
   font-weight: 950;
 }
 
+.map-card-date {
+  display: block;
+  margin: -4px 0 14px;
+  color: var(--blue);
+  font-size: .82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 .map-card p {
   min-height: 58px;
   margin-bottom: 24px;
