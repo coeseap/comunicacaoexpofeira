@@ -2,6 +2,7 @@
   const tabButtons = [...document.querySelectorAll("[data-tab]")];
   const panels = [...document.querySelectorAll(".tab-panel")];
   const openTabButtons = [...document.querySelectorAll("[data-open-tab]")];
+  const openScheduleButtons = [...document.querySelectorAll("[data-open-schedule]")];
   const validTabs = new Set(panels.map((panel) => panel.id));
   const titleByTab = {
     principal: "Caderno de Comunicação 2.0 | Expofeira 2026",
@@ -78,7 +79,7 @@
   const agendaTitle = document.getElementById("agenda-title");
   const resultCount = document.getElementById("result-count");
 
-  const preferredCategoryOrder = ["Todos", "Shows", "Cultura", "Agro e negócios", "Conhecimento", "Experiências", "Serviços"];
+  const preferredCategoryOrder = ["Todos", "Petróleo, gás e energia", "Agosto Lilás", "Shows", "Cultura", "Agro e negócios", "Conhecimento", "Experiências", "Serviços"];
   const categorySet = new Set(schedule.flatMap((day) => day.events.map((event) => event.category)));
   const categories = preferredCategoryOrder.filter((category) => category === "Todos" || categorySet.has(category));
   const iconByCategory = {
@@ -88,6 +89,8 @@
     Conhecimento: "presentation",
     Experiências: "sparkles",
     Serviços: "landmark",
+    "Petróleo, gás e energia": "ship",
+    "Agosto Lilás": "ribbon",
   };
   const classByCategory = {
     Shows: "category-shows",
@@ -96,6 +99,8 @@
     Conhecimento: "category-conhecimento",
     Experiências: "category-experiencias",
     Serviços: "category-servicos",
+    "Petróleo, gás e energia": "category-energy",
+    "Agosto Lilás": "category-lilac",
   };
 
   const state = {
@@ -205,6 +210,19 @@
   scheduleSearch?.addEventListener("input", (event) => {
     state.query = event.target.value;
     renderSchedule();
+  });
+
+  openScheduleButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.date = button.dataset.scheduleDate || state.date;
+      state.category = button.dataset.scheduleCategory || "Todos";
+      state.query = "";
+      if (scheduleSearch) scheduleSearch.value = "";
+      activateTab("programacao", { scroll: false });
+      renderFilters();
+      renderSchedule();
+      document.querySelector(".schedule-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   });
 
   renderFilters();
