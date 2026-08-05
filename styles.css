@@ -1160,6 +1160,12 @@ h3 {
   --category-accent: #7c2d91;
 }
 
+.category-agrosummit {
+  --category-bg: #edf8ef;
+  --category-strip: #cfe8d3;
+  --category-accent: #245f38;
+}
+
 .category-button[class*="category-"] {
   color: var(--category-accent);
   border-color: var(--category-strip);
@@ -2708,6 +2714,55 @@ h3 {
   object-position: center;
 }
 
+.topical-card-energy {
+  grid-column: 1 / -1;
+  min-height: 460px;
+}
+
+.topical-card-energy .topical-card-copy {
+  min-height: 460px;
+}
+
+.topical-card-agro {
+  min-height: 520px;
+}
+
+.topical-card-agro > img {
+  object-position: center 58%;
+}
+
+.topical-card-agro .topical-card-shade {
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(10, 48, 28, 0.98) 0%, rgba(22, 78, 43, 0.88) 43%, rgba(22, 78, 43, 0.18) 76%);
+}
+
+.topical-card-agro .topical-card-copy {
+  min-height: 520px;
+  max-width: 720px;
+  justify-content: center;
+}
+
+.topical-card-agro h3 {
+  font-size: clamp(1.95rem, 2.7vw, 3rem);
+}
+
+.topical-agro-logo {
+  display: block;
+  width: min(330px, 70%);
+  height: auto;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.topical-card-agro .topical-date {
+  color: #173e26;
+  background: #d7efd8;
+}
+
+.topical-card-agro .topical-kicker {
+  color: #bfe9c8;
+}
+
 .topical-card-energy .topical-card-shade {
   z-index: -1;
   background: linear-gradient(90deg, rgba(2, 35, 50, 0.96) 0%, rgba(4, 55, 70, 0.85) 48%, rgba(4, 55, 70, 0.08) 82%);
@@ -2815,6 +2870,55 @@ h3 {
   cursor: pointer;
 }
 
+.topical-actions,
+.schedule-spotlight-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 22px;
+}
+
+.topical-register,
+.schedule-register {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 46px;
+  padding: 11px 16px;
+  border-radius: 4px;
+  color: #173e26;
+  background: #d7efd8;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.topical-register:hover,
+.schedule-register:hover {
+  color: #ffffff;
+  background: #245f38;
+}
+
+.topical-register svg,
+.schedule-register svg {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
+}
+
+.schedule-spotlight-actions {
+  margin-top: 2px;
+}
+
+.schedule-spotlight-actions .schedule-register {
+  color: #ffffff;
+  background: #245f38;
+}
+
+.schedule-spotlight-actions .schedule-register:hover {
+  background: #17482b;
+}
+
 .schedule-spotlights {
   padding: 38px 0 0;
   background: #f7f9fc;
@@ -2844,6 +2948,42 @@ h3 {
 
 .schedule-spotlight-energy > img {
   object-position: 72% center;
+}
+
+.schedule-spotlight-energy {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(300px, 0.95fr) minmax(0, 1.3fr);
+  min-height: 340px;
+}
+
+.schedule-spotlight-agro {
+  grid-template-columns: minmax(250px, 0.9fr) minmax(0, 1.1fr);
+  min-height: 360px;
+  border-color: #cfe8d3;
+  background: #edf8ef;
+}
+
+.schedule-spotlight-agro > img {
+  object-position: 66% center;
+}
+
+.schedule-spotlight-agro .schedule-spotlight-copy {
+  color: #17482b;
+}
+
+.schedule-spotlight-agro .schedule-spotlight-copy > span {
+  color: #245f38;
+}
+
+.schedule-spotlight-agro .schedule-spotlight-copy p {
+  color: #43624c;
+}
+
+.schedule-agro-logo {
+  display: block;
+  width: min(310px, 76%);
+  height: auto;
+  margin-bottom: 18px;
 }
 
 .schedule-spotlight-lilac {
@@ -2917,12 +3057,20 @@ h3 {
     min-height: 420px;
   }
 
+  .topical-card-agro {
+    min-height: 440px;
+  }
+
   .topical-card-lilac .topical-card-copy {
     max-width: 620px;
   }
 
   .schedule-spotlight-lilac {
     grid-template-columns: minmax(220px, 0.78fr) minmax(0, 1.22fr);
+  }
+
+  .schedule-spotlight-agro {
+    grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr);
   }
 
   .brand-button { width: 155px; }
@@ -2963,7 +3111,25 @@ h3 {
   }
 
   .topical-card-energy .topical-card-copy {
+    min-height: 520px;
     justify-content: flex-end;
+  }
+
+  .topical-card-agro,
+  .topical-card-agro .topical-card-copy {
+    min-height: 570px;
+  }
+
+  .topical-card-agro .topical-card-copy {
+    justify-content: flex-end;
+  }
+
+  .topical-card-agro .topical-card-shade {
+    background: linear-gradient(0deg, rgba(10, 48, 28, 0.99) 0%, rgba(22, 78, 43, 0.86) 58%, rgba(22, 78, 43, 0.08) 100%);
+  }
+
+  .topical-card-agro > img {
+    object-position: 67% center;
   }
 
   .topical-card-energy .topical-card-shade {
@@ -2989,7 +3155,22 @@ h3 {
     font-size: 2rem;
   }
 
+  .topical-actions,
+  .schedule-spotlight-actions {
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topical-register,
+  .schedule-register,
+  .topical-actions .topical-action,
+  .schedule-spotlight-actions button {
+    width: 100%;
+  }
+
   .schedule-spotlight,
+  .schedule-spotlight-agro,
   .schedule-spotlight-lilac {
     grid-template-columns: 1fr;
   }

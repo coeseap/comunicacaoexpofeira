@@ -79,7 +79,7 @@
   const agendaTitle = document.getElementById("agenda-title");
   const resultCount = document.getElementById("result-count");
 
-  const preferredCategoryOrder = ["Todos", "Petróleo, gás e energia", "Agosto Lilás", "Shows", "Cultura", "Agro e negócios", "Conhecimento", "Experiências", "Serviços"];
+  const preferredCategoryOrder = ["Todos", "Petróleo, gás e energia", "Amapá AgroSummit", "Agosto Lilás", "Shows", "Cultura", "Agro e negócios", "Conhecimento", "Experiências", "Serviços"];
   const categorySet = new Set(schedule.flatMap((day) => day.events.map((event) => event.category)));
   const categories = preferredCategoryOrder.filter((category) => category === "Todos" || categorySet.has(category));
   const iconByCategory = {
@@ -91,6 +91,7 @@
     Serviços: "landmark",
     "Petróleo, gás e energia": "ship",
     "Agosto Lilás": "ribbon",
+    "Amapá AgroSummit": "tractor",
   };
   const classByCategory = {
     Shows: "category-shows",
@@ -101,6 +102,7 @@
     Serviços: "category-servicos",
     "Petróleo, gás e energia": "category-energy",
     "Agosto Lilás": "category-lilac",
+    "Amapá AgroSummit": "category-agrosummit",
   };
 
   const state = {
@@ -235,7 +237,7 @@
   const newsFilter = document.getElementById("news-filter");
   const newsGrid = document.getElementById("news-grid");
   const newsResultCount = document.getElementById("news-result-count");
-  const newsGroups = ["Todos", "Agro", "Cultura", "Economia", "Infraestrutura e negócios", "Inovação e tecnologia", "Segurança", "Outros"]
+  const newsGroups = ["Todos", "Petróleo, gás e energia", "Agro", "Cultura", "Economia", "Infraestrutura e negócios", "Inovação e tecnologia", "Segurança", "Outros"]
     .filter((group) => group === "Todos" || newsItems.some((item) => item.group === group));
   const newsState = { group: "Todos", query: "" };
 
@@ -284,7 +286,7 @@
           <span class="news-source">${escapeHtml(item.source)} · ${displayNewsDate(item.date)}</span>
           <h3>${escapeHtml(item.title)}</h3>
         </div>
-        <span class="news-link">Abrir publicação <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+        <span class="news-link">${item.medium === "Material para imprensa" ? "Ler material" : "Abrir publicação"} <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
       </a>
     `).join("");
     refreshIcons();

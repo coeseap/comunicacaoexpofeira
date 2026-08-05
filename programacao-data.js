@@ -1,30 +1,38 @@
 window.EXPO_SCHEDULE = [
   {
     "date": "08/08",
-    "weekday": "Sáb",
+    "weekday": "Sab",
     "events": [
       {
         "date": "08/08",
+        "time": "17h às 22h",
+        "title": "Showroom, coquetel e networking do 2º Amapá AgroSummit",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Vídeos institucionais, equipamentos, implementos agrícolas e conexões entre produtores rurais e empresas."
+      },
+      {
+        "date": "08/08",
+        "time": "17h às 19h40",
+        "title": "Carreta Banco do Brasil - Pessoa Física",
+        "location": "Carreta do Banco do Brasil",
+        "category": "Serviços",
+        "detail": "Move Brasil para táxis e aplicativos; renovação de frota e financiamento de veículos; mobilidade sustentável; energia solar e financiamento para geração própria."
+      },
+      {
+        "date": "08/08",
         "time": "16h30",
-        "title": "Concentração da Cavalgada",
-        "location": "Estacionamento do Balneário da Fazendinha",
-        "category": "Experiências",
+        "title": "Cortejão da Alegria e Carroça da Alegria",
+        "location": "Balneário da Fazendinha",
+        "category": "Cultura",
         "detail": ""
       },
       {
         "date": "08/08",
         "time": "17h",
         "title": "Saída da Cavalgada",
-        "location": "Balneário da Fazendinha",
+        "location": "Estacionamento do Balneário da Fazendinha",
         "category": "Experiências",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "A confirmar",
-        "title": "Recepção do cortejo artístico",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
         "detail": ""
       },
       {
@@ -45,8 +53,24 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "08/08",
-        "time": "21h",
-        "title": "Capoeira + Show",
+        "time": "16h30",
+        "title": "Arte e Luta Capoeira",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "18h",
+        "title": "Grupo de Capoeira ACD Aruandê",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": "Apresentador: Rodiney Santos - O preto joia da Amazônia · DJ Insane"
+      },
+      {
+        "date": "08/08",
+        "time": "22h30",
+        "title": "22h30 - Verônica dos Tambores",
         "location": "Palco AfroAmapaense",
         "category": "Cultura",
         "detail": ""
@@ -54,7 +78,31 @@ window.EXPO_SCHEDULE = [
       {
         "date": "08/08",
         "time": "19h",
-        "title": "Música - Voz e Violão",
+        "title": "Apresentadora: Irlan Paixão",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": "Dj Robson Alucinado"
+      },
+      {
+        "date": "08/08",
+        "time": "21h",
+        "title": "Michelle Maycoth",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "22h",
+        "title": "João Amorim",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "23h",
+        "title": "Nivito Guedes",
         "location": "Miniteatro Caboco",
         "category": "Cultura",
         "detail": ""
@@ -85,8 +133,64 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "08/08",
+        "time": "19h",
+        "title": "Apresentador: Elson Summer",
+        "location": "Arena da Rainha",
+        "category": "Cultura",
+        "detail": "DJ Pirão"
+      },
+      {
+        "date": "08/08",
         "time": "21h",
-        "title": "DJ + Show",
+        "title": "Caravana Janete Silva Show",
+        "location": "Arena da Rainha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "21h30",
+        "title": "Banda Show Rithmos",
+        "location": "Arena da Rainha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "22h",
+        "title": "Clay Sam",
+        "location": "Arena da Rainha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "22h30",
+        "title": "Mônica Lins",
+        "location": "Arena da Rainha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "23h",
+        "title": "Banda Nativus",
+        "location": "Arena da Rainha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "23h30",
+        "title": "Neyzinho e Bena Niss",
+        "location": "Arena da Rainha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "00h",
+        "title": "Junior Moral",
         "location": "Arena da Rainha",
         "category": "Cultura",
         "detail": ""
@@ -102,7 +206,7 @@ window.EXPO_SCHEDULE = [
       {
         "date": "08/08",
         "time": "A confirmar",
-        "title": "Léo Santana",
+        "title": "Leo Santana",
         "location": "Arena Rio Amazonas",
         "category": "Shows",
         "detail": ""
@@ -123,18 +227,18 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "09/08",
+        "time": "17h às 19h50",
+        "title": "Carreta Banco do Brasil - Pessoa Jurídica",
+        "location": "Carreta do Banco do Brasil",
+        "category": "Serviços",
+        "detail": "Mulheres empreendedoras; linhas de crédito empresarial; capital de giro, investimento e expansão; soluções Realiza PJ e espaço de negócios."
+      },
+      {
+        "date": "09/08",
         "time": "8h às 17h",
         "title": "Troque e Pesque",
         "location": "Tanque da Sepaq",
         "category": "Experiências",
-        "detail": ""
-      },
-      {
-        "date": "09/08",
-        "time": "17h às 22h",
-        "title": "ABERTURA OFICIAL DO 2º AMAPÁ AGROSUMMIT 2026",
-        "location": "Arena Agro",
-        "category": "Agro e negócios",
         "detail": ""
       },
       {
@@ -159,6 +263,62 @@ window.EXPO_SCHEDULE = [
         "title": "Curso Café",
         "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
         "category": "Conhecimento",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "17h às 22h",
+        "title": "Abertura oficial do 2º Amapá AgroSummit 2026",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Abertura da segunda edição do encontro."
+      },
+      {
+        "date": "09/08",
+        "time": "18h",
+        "title": "Apresentador: Marcelo Stuart",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": "DJ Delson Moreno"
+      },
+      {
+        "date": "09/08",
+        "time": "19h",
+        "title": "19h - Dança Indígena do Turé",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "19h30",
+        "title": "19h30 - Dança Indígena do Kuty",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "21h",
+        "title": "21h - Mayara Braga",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "22h",
+        "title": "Tambores Tucuju",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "23h",
+        "title": "23h - Judas Sacaca",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
         "detail": ""
       },
       {
@@ -241,6 +401,14 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "10/08",
+        "time": "17h às 19h50",
+        "title": "Carreta Banco do Brasil - Agronegócio",
+        "location": "Carreta do Banco do Brasil",
+        "category": "Serviços",
+        "detail": "Crédito rural; soluções para o produtor; investimentos em energia solar, máquinas e infraestrutura; sustentabilidade no campo e espaço de negócios."
+      },
+      {
+        "date": "10/08",
         "time": "16h",
         "title": "Lançamento da campanha Amapá Lilás",
         "location": "Miniteatro Caboco",
@@ -257,19 +425,19 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "10/08",
-        "time": "17h às 22h",
-        "title": "STARTUP DAY - Startups do agro: soluções inteligentes para os desafios do campo",
-        "location": "Arena Agro",
-        "category": "Agro e negócios",
-        "detail": ""
-      },
-      {
-        "date": "10/08",
         "time": "8h às 12h - 14h às 18h",
         "title": "Curso Cacau e Cupuaçu",
         "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
         "category": "Conhecimento",
         "detail": ""
+      },
+      {
+        "date": "10/08",
+        "time": "17h às 22h",
+        "title": "Startup Day",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Startups do agro apresentam soluções inteligentes, palestras e pitches de cinco minutos."
       },
       {
         "date": "10/08",
@@ -321,18 +489,10 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "10/08",
-        "time": "22h",
-        "title": "Rodeio regional",
-        "location": "Arena Rio Amazonas",
-        "category": "Experiências",
-        "detail": ""
-      },
-      {
-        "date": "10/08",
         "time": "23h",
-        "title": "Pe. Fábio de Melo",
+        "title": "Pe. Fabio de Melo",
         "location": "Arena Rio Amazonas",
-        "category": "Shows",
+        "category": "Conhecimento",
         "detail": ""
       },
       {
@@ -359,42 +519,66 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "11/08",
-        "time": "15h às 15:40h",
-        "title": "PALESTRA - Agregação de valor ao cupuaçu: alimentos, cosméticos e novos mercados - Dr. Antônio Cláudio de Almeida Carvalho (EMBRAPA-AP)",
-        "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
+        "time": "17h às 20h20",
+        "title": "Carreta Banco do Brasil - Soluções que conectam e protegem",
+        "location": "Carreta do Banco do Brasil",
+        "category": "Serviços",
+        "detail": "BB Consórcios; Cielo; seguros e previdência; Ourocap Capitalização; planejamento financeiro e espaço de negócios."
       },
       {
         "date": "11/08",
-        "time": "15h50 às 16:30",
-        "title": "PALESTRA - Cadeia produtiva do abacaxi: tecnologia, qualidade e mercado para uma fruticultura mais competitiva - Edilson Braga Rodrigues (EMBRAPA-PA)",
+        "time": "15h às 15h40",
+        "title": "Agregação de valor ao cupuaçu",
         "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
+        "category": "Amapá AgroSummit",
+        "detail": "Alimentos, cosméticos e novos mercados, com Dr. Antônio Cláudio de Almeida Carvalho, da Embrapa Amapá."
       },
       {
         "date": "11/08",
-        "time": "16:40 às 17:20",
-        "title": "PALESTRA - Além da dose: como fazer uma correção eficiente nos solos do Amapá - Dra. Ana Paula Carrara Vinha (EMBRAPA-AP)",
+        "time": "15h50 às 16h30",
+        "title": "Cadeia produtiva do abacaxi",
         "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
+        "category": "Amapá AgroSummit",
+        "detail": "Tecnologia, qualidade e mercado, com Edilson Braga Rodrigues, da Embrapa Pará."
       },
       {
         "date": "11/08",
-        "time": "17:50 às 18:20",
-        "title": "PALESTRA - Açaí Irrigado: como produzir com eficiência e lucratividade - Arcídio Ornela Filho (Amapái-PA)",
+        "time": "16h40 às 17h20",
+        "title": "Correção eficiente nos solos do Amapá",
         "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
+        "category": "Amapá AgroSummit",
+        "detail": "Além da dose, com Dra. Ana Paula Carrara Vinha, da Embrapa Amapá."
       },
       {
         "date": "11/08",
-        "time": "18:30 às 19:30",
-        "title": "PALESTRA - Produção e escolha de clones de café: estratégias para maior produtividade e sustentabilidade - Dr. Marcos Santana Moraes (Raiz do Norte Consultoria Agrícola-RO)",
+        "time": "17h30 às 17h45",
+        "title": "Coffee break",
         "location": "Arena Agro",
-        "category": "Conhecimento",
+        "category": "Amapá AgroSummit",
+        "detail": "Intervalo da programação técnica."
+      },
+      {
+        "date": "11/08",
+        "time": "17h50 às 18h20",
+        "title": "Açaí irrigado: eficiência e lucratividade",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Com Arcídio Ornela Filho, Amapaí/PA."
+      },
+      {
+        "date": "11/08",
+        "time": "18h30 às 19h30",
+        "title": "Produção e escolha de clones de café",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Estratégias para produtividade e sustentabilidade, com Dr. Marcos Santana Moraes."
+      },
+      {
+        "date": "11/08",
+        "time": "15h às 18h",
+        "title": "Gincana das Escolas",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
         "detail": ""
       },
       {
@@ -447,8 +631,8 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "11/08",
-        "time": "A confirmar",
-        "title": "FESTIVAL TOCA TUDO",
+        "time": "19h",
+        "title": "Festival Toca Tudo",
         "location": "Arena da Rainha",
         "category": "Shows",
         "detail": ""
@@ -493,34 +677,50 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "12/08",
-        "time": "15h às 15:50h",
-        "title": "PALESTRA - Piscicultura: da produção ao mercado - como fortalecer a cadeia do pescado - Dra. Stefane Santos Corrêa (PESCAP-AP)",
+        "time": "15h às 15h50",
+        "title": "Piscicultura: da produção ao mercado",
         "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
+        "category": "Amapá AgroSummit",
+        "detail": "Fortalecimento da cadeia do pescado, com Dra. Stefane Santos Corrêa, da Pescap/AP."
       },
       {
         "date": "12/08",
-        "time": "16h às 16:50h",
-        "title": "PALESTRA - Abelhas da Amazônia: a importância da apicultura e da meliponicultura para a produção, a biodiversidade e a bioeconomia - Dra. Caroline Pessoa (IFAP-AP)",
+        "time": "16h às 16h50",
+        "title": "Abelhas da Amazônia",
         "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
+        "category": "Amapá AgroSummit",
+        "detail": "Apicultura, meliponicultura, biodiversidade e bioeconomia, com Dra. Caroline Pessoa da Silva, do Ifap/AP."
       },
       {
         "date": "12/08",
-        "time": "17:30h às 18:20",
-        "title": "PALESTRA - Produção de Ovos Caipiras: manejo, custos e oportunidades de mercado - Me. Ernesto Guevara (RN)",
+        "time": "17h às 17h20",
+        "title": "Coffee break",
         "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
+        "category": "Amapá AgroSummit",
+        "detail": "Intervalo da programação técnica."
       },
       {
         "date": "12/08",
-        "time": "18:30 às 19:30",
-        "title": "PALESTRA - Suinocultura de Resultado: manejo inteligente e viabilidade econômica - Me. Ernesto Guevara (RN)",
+        "time": "17h30 às 18h20",
+        "title": "Produção de ovos caipiras",
         "location": "Arena Agro",
-        "category": "Conhecimento",
+        "category": "Amapá AgroSummit",
+        "detail": "Manejo, custos e oportunidades de mercado, com Me. Ernesto Guevara Bezerra Silva."
+      },
+      {
+        "date": "12/08",
+        "time": "18h30 às 19h30",
+        "title": "Suinocultura de resultado",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Manejo inteligente e viabilidade econômica, com Me. Ernesto Guevara Bezerra Silva."
+      },
+      {
+        "date": "12/08",
+        "time": "15h às 18h",
+        "title": "Gincana das Escolas",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
         "detail": ""
       },
       {
@@ -582,7 +782,7 @@ window.EXPO_SCHEDULE = [
       {
         "date": "12/08",
         "time": "19h",
-        "title": "FESTIVAL TOCA TUDO",
+        "title": "Festival Toca Tudo",
         "location": "Arena da Rainha",
         "category": "Shows",
         "detail": ""
@@ -627,42 +827,98 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "13/08",
+        "time": "16h às 16h30",
+        "title": "Amapá: uma nova fronteira de investimentos - da bioeconomia ao petróleo",
+        "location": "Auditório SDR",
+        "category": "Petróleo, gás e energia",
+        "detail": "Painelistas: Wandenberg Pitaluga, presidente da Agência Amapá, e Antonio Batista, diretor da Agência Amapá."
+      },
+      {
+        "date": "13/08",
+        "time": "16h30 às 17h",
+        "title": "O mercado brasileiro de OSVs",
+        "location": "Auditório SDR",
+        "category": "Petróleo, gás e energia",
+        "detail": "Navios de apoio offshore, com Marcos Tinti, CEO do Grupo CBO."
+      },
+      {
+        "date": "13/08",
+        "time": "17h às 17h30",
+        "title": "Atividades de perfuração - Óleo & Gás",
+        "location": "Auditório SDR",
+        "category": "Petróleo, gás e energia",
+        "detail": "Com Charles Galloti, gerente executivo de Operações da Constellation."
+      },
+      {
+        "date": "13/08",
+        "time": "17h30 às 18h10",
+        "title": "Perfuração do Poço Morpho no Amapá",
+        "location": "Auditório SDR",
+        "category": "Petróleo, gás e energia",
+        "detail": "Com Cezar Gomes Carneiro, coordenador operacional de Projetos de Parcerias da Petrobras."
+      },
+      {
+        "date": "13/08",
+        "time": "18h10 às 18h50",
+        "title": "Como fazer negócios com a Petrobras?",
+        "location": "Auditório SDR",
+        "category": "Petróleo, gás e energia",
+        "detail": "Com Felipe Pagiola de Oliveira, gerente-geral de Relacionamento com o Mercado Fornecedor da Petrobras."
+      },
+      {
+        "date": "13/08",
         "time": "15h às 15h40",
-        "title": "PALESTRA - Estratégias nutricionais para bovinos e bubalinos na Amazônia - Me. Higo Gregório (IFAP-AP)",
+        "title": "Estratégias nutricionais para bovinos e bubalinos",
         "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
+        "category": "Amapá AgroSummit",
+        "detail": "Com Me. Higo Gregório Silva Favacho, do Ifap/AP."
       },
       {
         "date": "13/08",
-        "time": "15:50 às 16:30",
-        "title": "PALESTRA - Sistemas Integrados na Amazônia: novos caminhos para a produção animal - Dr. Thiago da Silva (UFNT-TO)",
+        "time": "15h50 às 16h30",
+        "title": "Sistemas integrados na Amazônia",
         "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
+        "category": "Amapá AgroSummit",
+        "detail": "Novos caminhos para a produção animal, com Dr. Thiago da Silva Carvalho, da UFNT/TO."
       },
       {
         "date": "13/08",
-        "time": "16:40 às 17:20",
-        "title": "PALESTRA - Brasil: o celeiro que sustenta o planeta - na Amazônia estão as melhores vitrines de sustentabilidade - Guilherme Minssen",
+        "time": "16h40 às 17h20",
+        "title": "Brasil: o celeiro que sustenta o planeta",
         "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
+        "category": "Amapá AgroSummit",
+        "detail": "Na Amazônia estão as melhores vitrines de sustentabilidade, com Guilherme Minssen."
       },
       {
         "date": "13/08",
-        "time": "17:50 às 18:20",
-        "title": "PALESTRA - Melhoramento Genético na Bubalinocultura Amazônica: da pesquisa à produção - Dr. José Ribamar (EMBRAPA-AP)",
+        "time": "17h30 às 17h45",
+        "title": "Coffee break",
         "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
+        "category": "Amapá AgroSummit",
+        "detail": "Intervalo da programação técnica."
       },
       {
         "date": "13/08",
-        "time": "18:30 às 19:30",
-        "title": "PALESTRA - Aplicação de Biotecnologias da Reprodução para bovinos e bubalinos como alternativas sustentáveis de produção - Dr. Sebastião Tavares",
+        "time": "17h50 às 18h20",
+        "title": "Melhoramento genético na bubalinocultura amazônica",
         "location": "Arena Agro",
-        "category": "Conhecimento",
+        "category": "Amapá AgroSummit",
+        "detail": "Da pesquisa à produção, com Dr. José Ribamar Felipe Marques, da Embrapa/PA."
+      },
+      {
+        "date": "13/08",
+        "time": "18h30 às 19h30",
+        "title": "Biotecnologias da reprodução para bovinos e bubalinos",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Alternativas sustentáveis de produção, com Dr. Sebastião Tavares Rolim Filho, da UFPA/PA."
+      },
+      {
+        "date": "13/08",
+        "time": "15h às 18h",
+        "title": "Gincana das Escolas",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
         "detail": ""
       },
       {
@@ -680,54 +936,6 @@ window.EXPO_SCHEDULE = [
         "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
         "category": "Conhecimento",
         "detail": ""
-      },
-      {
-        "date": "13/08",
-        "time": "16h às 16h20",
-        "title": "Amapá: uma nova fronteira de investimentos - da bioeconomia ao petróleo",
-        "location": "Auditório SDR",
-        "category": "Petróleo, gás e energia",
-        "detail": "Wandenberg Pitaluga e Antonio Batista, da Agência Amapá."
-      },
-      {
-        "date": "13/08",
-        "time": "16h20 às 16h50",
-        "title": "Dilemas do planejamento energético brasileiro",
-        "location": "Auditório SDR",
-        "category": "Petróleo, gás e energia",
-        "detail": "Como o PDE 2035 e o PNE 2055 orientam o futuro do país e do Amapá. Painelista: representante da EPE."
-      },
-      {
-        "date": "13/08",
-        "time": "16h50 às 17h20",
-        "title": "O mercado brasileiro de OSVs",
-        "location": "Auditório SDR",
-        "category": "Petróleo, gás e energia",
-        "detail": "Navios de apoio offshore. Painelista: Marcos Tinti, CEO do Grupo CBO."
-      },
-      {
-        "date": "13/08",
-        "time": "17h20 às 17h50",
-        "title": "Perfuração do Poço Morpho no Amapá",
-        "location": "Auditório SDR",
-        "category": "Petróleo, gás e energia",
-        "detail": "Painelista: Cezar Gomes Carneiro, coordenador operacional de projetos de parcerias da Petrobras."
-      },
-      {
-        "date": "13/08",
-        "time": "17h50 às 18h30",
-        "title": "Como fazer negócios com a Petrobras?",
-        "location": "Auditório SDR",
-        "category": "Petróleo, gás e energia",
-        "detail": "Painelista: Felipe Pagiola de Oliveira, gerente-geral de relacionamento com o mercado fornecedor da Petrobras."
-      },
-      {
-        "date": "13/08",
-        "time": "A partir das 19h",
-        "title": "Atividades na área de exposição - Petróleo & Gás",
-        "location": "Área de Exposição - Petróleo & Gás",
-        "category": "Petróleo, gás e energia",
-        "detail": "Programação complementar do seminário na área expositiva da Expofeira."
       },
       {
         "date": "13/08",
@@ -780,7 +988,7 @@ window.EXPO_SCHEDULE = [
       {
         "date": "13/08",
         "time": "22h",
-        "title": "Rodeio nacional",
+        "title": "Rodeio regional",
         "location": "Arena Rio Amazonas",
         "category": "Experiências",
         "detail": ""
@@ -788,9 +996,9 @@ window.EXPO_SCHEDULE = [
       {
         "date": "13/08",
         "time": "23h",
-        "title": "Wesley Safadão",
+        "title": "Wesley Safadao",
         "location": "Arena Rio Amazonas",
-        "category": "Shows",
+        "category": "Conhecimento",
         "detail": ""
       }
     ]
@@ -877,31 +1085,31 @@ window.EXPO_SCHEDULE = [
         "title": "Recursos humanos para o setor de petróleo e gás",
         "location": "Auditório SDR",
         "category": "Petróleo, gás e energia",
-        "detail": "Oportunidades e desafios para o Amapá, com representantes da Unifap, UEAP, Senai/AP e Ifap."
+        "detail": "Oportunidades e desafios para o Amapá, com José Luis de Almeida (Senai-Cimatec), Claudia Chelala (Unifap), Pedro Henrique (Senai/AP) e Sandra Meinen da Cruz (Ifap). Mediação: Elissandro Araújo (Esap)."
       },
       {
         "date": "14/08",
         "time": "17h às 17h30",
-        "title": "Proteção à fauna e simulados de emergência para petróleo",
+        "title": "Plano de proteção à fauna e simulados de emergência para petróleo",
         "location": "Auditório SDR",
         "category": "Petróleo, gás e energia",
-        "detail": "Painelista: Claudio Souza, gerente de projetos da Mineral Engenharia e Meio Ambiente."
+        "detail": "Com Claudio Souza, gerente de Projetos da Mineral Engenharia e Meio Ambiente."
       },
       {
         "date": "14/08",
         "time": "17h30 às 18h30",
-        "title": "Tecnologia, inovação, meio ambiente e sustentabilidade no setor",
+        "title": "Tecnologia, inovação, meio ambiente e sustentabilidade no setor de petróleo e gás",
         "location": "Auditório SDR",
         "category": "Petróleo, gás e energia",
-        "detail": "Painelista: André Bueno Portes, gerente de Sustentabilidade e Meio Ambiente do Cenpes/Petrobras."
+        "detail": "Com André Bueno Portes, gerente de Sustentabilidade e Meio Ambiente do Cenpes/Petrobras."
       },
       {
         "date": "14/08",
-        "time": "A partir das 19h",
-        "title": "Atividades na área de exposição - Petróleo & Gás",
-        "location": "Área de Exposição - Petróleo & Gás",
-        "category": "Petróleo, gás e energia",
-        "detail": "Programação complementar do seminário na área expositiva da Expofeira."
+        "time": "13h30 às 18h30",
+        "title": "Circuito AgroSummit: visita técnica a propriedades rurais",
+        "location": "Propriedades rurais",
+        "category": "Amapá AgroSummit",
+        "detail": "Da soja ao confinamento: uma experiência prática sobre sistemas produtivos, integração, manejo, tecnologia e agregação de valor no campo."
       },
       {
         "date": "14/08",
@@ -979,7 +1187,7 @@ window.EXPO_SCHEDULE = [
   },
   {
     "date": "15/08",
-    "weekday": "Sáb",
+    "weekday": "Sab",
     "events": [
       {
         "date": "15/08",
@@ -1015,46 +1223,6 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "15/08",
-        "time": "15h às 15:20",
-        "title": "Abertura e Apresentação do Movimento AGROMULHERES AMAPÁ - Melissa Favacho (Empresária e Produtora Rural)",
-        "location": "Arena Agro",
-        "category": "Agro e negócios",
-        "detail": ""
-      },
-      {
-        "date": "15/08",
-        "time": "15:30 às 16:10",
-        "title": "PALESTRA - Elas lideram o Agro: coragem para ocupar espaços e construir legados - Carla Aquino (Escritora e Mentora)",
-        "location": "Arena Agro",
-        "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "15/08",
-        "time": "16:15 às 17:40",
-        "title": "Posicionamento e Influência Feminina - Ana Cristina Kalandra (Ascensão Empreendedora)",
-        "location": "Arena Agro",
-        "category": "Agro e negócios",
-        "detail": ""
-      },
-      {
-        "date": "15/08",
-        "time": "18:10 às 18:40",
-        "title": "Agro Talk - Show de Experiências",
-        "location": "Arena Agro",
-        "category": "Agro e negócios",
-        "detail": ""
-      },
-      {
-        "date": "15/08",
-        "time": "18:45 às 19:30",
-        "title": "Sucessão: uma visão que atravessa gerações - Rossi Cavalcante (Médica Veterinária e Produtora Rural)",
-        "location": "Arena Agro",
-        "category": "Agro e negócios",
-        "detail": ""
-      },
-      {
-        "date": "15/08",
         "time": "17h",
         "title": "Apresentação de drone e aeromodelos",
         "location": "Clube de Aeromodelismo",
@@ -1068,6 +1236,62 @@ window.EXPO_SCHEDULE = [
         "location": "Jeep Club",
         "category": "Experiências",
         "detail": ""
+      },
+      {
+        "date": "15/08",
+        "time": "15h às 15h20",
+        "title": "Abertura do AgroMulheres Day",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Apresentação do movimento AgroMulheres Amapá, com Melissa Favacho."
+      },
+      {
+        "date": "15/08",
+        "time": "15h30 às 16h10",
+        "title": "Elas lideram o agro",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Coragem para ocupar espaços e construir legados, com Carla Aquino."
+      },
+      {
+        "date": "15/08",
+        "time": "16h15 às 17h40",
+        "title": "Posicionamento e influência feminina",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Com Ana Cristina Kalandra, da Ascensão Empreendedora."
+      },
+      {
+        "date": "15/08",
+        "time": "17h45 às 18h",
+        "title": "Coffee break",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Intervalo da programação."
+      },
+      {
+        "date": "15/08",
+        "time": "18h10 às 18h40",
+        "title": "AgroTalk",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Show de experiências com mulheres que transformam o agro."
+      },
+      {
+        "date": "15/08",
+        "time": "18h45 às 19h30",
+        "title": "Sucessão: uma visão que atravessa gerações",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Com Rossi Cavalcante, médica veterinária e produtora rural."
+      },
+      {
+        "date": "15/08",
+        "time": "19h30 às 21h",
+        "title": "Música ao vivo",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Encerramento do AgroMulheres Day."
       },
       {
         "date": "15/08",
@@ -1120,7 +1344,7 @@ window.EXPO_SCHEDULE = [
       {
         "date": "15/08",
         "time": "21h",
-        "title": "Final do rodeio nacional",
+        "title": "Rodeio nacional",
         "location": "Arena Rio Amazonas",
         "category": "Experiências",
         "detail": ""
@@ -1173,6 +1397,14 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "16/08",
+        "time": "17h às 21h",
+        "title": "Showroom, coquetel e networking",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Ambiente para novas conexões e encerramento do 2º Amapá AgroSummit."
+      },
+      {
+        "date": "16/08",
         "time": "19h",
         "title": "DJ - Shows",
         "location": "Palco AfroAmapaense",
@@ -1213,11 +1445,11 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "16/08",
-        "time": "A confirmar",
-        "title": "Programação das arenas em atualização",
-        "location": "Arena da Rainha e Arena Rio Amazonas",
-        "category": "Cultura",
-        "detail": "Atrações e horários não informados na planilha recebida em 4 de agosto."
+        "time": "21h",
+        "title": "Rodeio nacional",
+        "location": "Arena Rio Amazonas",
+        "category": "Experiências",
+        "detail": ""
       }
     ]
   }

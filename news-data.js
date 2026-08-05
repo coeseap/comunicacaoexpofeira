@@ -382,5 +382,17 @@ window.EXPO_NEWS = [
     "summary": "Detalha os espaços voltados ao agronegócio, agricultura familiar e cadeia produtiva do açaí.",
     "url": "https://www.diariodoamapa.com.br/cadernos/cidades/expofeira-2026-contara-com-arena-do-agro-servicos-e-incentivo-a-producao-rural/",
     "group": "Agro"
+  },
+  {
+    "number": 33,
+    "title": "Espaço de Óleo e Gás reúne gigantes globais com faturamento superior a meio trilhão de reais",
+    "date": "05/08/2026",
+    "source": "Expofeira 2026",
+    "medium": "Material para imprensa",
+    "topic": "Petróleo, gás e energia",
+    "author": "Comissão de Eventos da Expofeira 2026",
+    "summary": "Petrobras, Transpetro, Constellation, OceanPact, Grupo CBO e outras empresas integram o espaço dedicado à cadeia de óleo e gás.",
+    "url": "docs/materia-expofeira-oleo-gas.html",
+    "group": "Petróleo, gás e energia"
   }
 ];
