@@ -10,11 +10,12 @@
   <meta property="og:description" content="A Feira do Desenvolvimento, de 8 a 16 de agosto, no Parque de Exposições da Fazendinha.">
   <meta property="og:image" content="assets/hero-arena-2025.webp">
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="programacao-data.js"></script>
-  <script defer src="news-data.js?v=20260805-2"></script>
+  <link rel="stylesheet" href="styles.css?v=20260806-7">
+  <script defer src="programacao-data.js?v=20260806-3"></script>
+  <script defer src="expositores-data.js?v=20260806-8"></script>
+  <script defer src="news-data.js?v=20260805-3"></script>
   <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-  <script defer src="app.js?v=20260805-2"></script>
+  <script defer src="app.js?v=20260806-7"></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -70,7 +71,7 @@
               <span><i data-lucide="map-pin" aria-hidden="true"></i>Parque de Exposições da Fazendinha</span>
             </div>
             <div class="hero-actions">
-              <button class="button button-primary" type="button" data-open-tab="programacao">
+              <button class="button button-primary" type="button" data-open-schedule data-schedule-date="08/08" data-schedule-category="Todos">
                 <i data-lucide="calendar-search" aria-hidden="true"></i>Ver programação
               </button>
               <button class="button button-light" type="button" data-open-tab="inclusao">
@@ -140,7 +141,7 @@
                   <a class="topical-register" href="https://www.even3.com.br/amapa-agrossumit-2026-o-maior-evento-de-agronegocios-do-amapa-761411/" target="_blank" rel="noopener noreferrer">
                     <i data-lucide="ticket-check" aria-hidden="true"></i>Inscreva-se
                   </a>
-                  <button class="topical-action" type="button" data-open-schedule data-schedule-date="14/08" data-schedule-category="Amapá AgroSummit">
+                  <button class="topical-action" type="button" data-open-schedule data-schedule-date="08/08" data-schedule-category="Amapá AgroSummit">
                     Ver programação <i data-lucide="arrow-right" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -333,7 +334,7 @@
       <div class="version-notice" role="status">
         <div class="container version-notice-inner">
           <i data-lucide="refresh-cw" aria-hidden="true"></i>
-          <p><strong>Programação preliminar.</strong> Versão recebida em 5 de agosto de 2026, às 17h39. Datas, horários, atrações e locais podem ser atualizados.</p>
+          <p><strong>Programação oficial.</strong> Atualizada em 6 de agosto de 2026, às 15h11.</p>
         </div>
       </div>
 
@@ -357,7 +358,7 @@
               <p>Programação técnica, inovação, conexões de negócios e experiências de campo. No dia 14, o Circuito AgroSummit realiza visita técnica a propriedades rurais, das 13h30 às 18h30.</p>
               <div class="schedule-spotlight-actions">
                 <a class="schedule-register" href="https://www.even3.com.br/amapa-agrossumit-2026-o-maior-evento-de-agronegocios-do-amapa-761411/" target="_blank" rel="noopener noreferrer"><i data-lucide="ticket-check" aria-hidden="true"></i>Inscreva-se</a>
-                <button type="button" data-open-schedule data-schedule-date="14/08" data-schedule-category="Amapá AgroSummit">Exibir atividades <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+                <button type="button" data-open-schedule data-schedule-date="08/08" data-schedule-category="Amapá AgroSummit">Exibir atividades <i data-lucide="arrow-right" aria-hidden="true"></i></button>
               </div>
             </div>
           </article>
@@ -409,23 +410,43 @@
         </div>
       </header>
 
-      <section class="construction-section" aria-labelledby="expositores-construcao">
-        <div class="container construction-copy">
-          <span class="construction-status"><i data-lucide="cone" aria-hidden="true"></i>Em construção</span>
-          <h2 id="expositores-construcao">Nomes e localização serão publicados nesta aba</h2>
-          <p>A organização está consolidando a relação dos expositores e a identificação de cada espaço no Parque de Exposições.</p>
-          <div class="construction-numbers">
-            <span><strong>500+</strong> espaços previstos</span>
-            <span><strong>20+</strong> atividades econômicas</span>
-            <span><strong>29</strong> ambientes e espaços</span>
+      <section class="section exhibitor-directory" aria-labelledby="exhibitor-directory-title">
+        <div class="container">
+          <div class="exhibitor-directory-heading">
+            <div>
+              <span class="section-tag tag-pink">Relação atualizada</span>
+              <h2 id="exhibitor-directory-title">Empresas por pavilhão e segmento</h2>
+              <p>A relação apresenta as áreas e os nomes já confirmados. A numeração dos estandes será incorporada após a consolidação do mapa comercial.</p>
+            </div>
+            <a class="exhibitor-map-link" href="docs/mapa-geral-expofeira-2026.pdf" target="_blank" rel="noopener"><i data-lucide="map" aria-hidden="true"></i>Mapa geral</a>
+          </div>
+
+          <div class="exhibitor-toolbar">
+            <label class="directory-field directory-search" for="exhibitor-search">
+              <span>Buscar</span>
+              <span class="directory-input-wrap"><i data-lucide="search" aria-hidden="true"></i><input id="exhibitor-search" type="search" autocomplete="off" placeholder="Empresa, pavilhão ou segmento"></span>
+            </label>
+            <label class="directory-field" for="exhibitor-pavilion">
+              <span>Pavilhão</span>
+              <select id="exhibitor-pavilion"><option value="Todos">Todos os pavilhões</option></select>
+            </label>
+            <label class="directory-field" for="exhibitor-segment">
+              <span>Segmento</span>
+              <select id="exhibitor-segment"><option value="Todos">Todos os segmentos</option></select>
+            </label>
+          </div>
+
+          <div class="exhibitor-results-heading">
+            <h3>Relação de expositores</h3>
+            <span id="exhibitor-result-count"></span>
+          </div>
+          <div class="exhibitor-pavilion-list" id="exhibitor-list" aria-live="polite"></div>
+
+          <div class="exhibitor-source-note">
+            <i data-lucide="info" aria-hidden="true"></i>
+            <p><strong>Atualizado em 6 de agosto de 2026.</strong> A relação apresenta somente empresas e instituições já identificadas na planilha e nas atualizações oficiais.</p>
           </div>
         </div>
-        <figure class="map-preview">
-          <a href="docs/mapa-geral-expofeira-2026.pdf" target="_blank" rel="noopener" aria-label="Abrir mapa geral da Expofeira 2026 em PDF">
-            <img src="assets/mapa-geral-expofeira-2026.webp" alt="Mapa geral da Expofeira 2026 com os principais espaços do parque" loading="lazy">
-          </a>
-          <figcaption>Mapa geral oficial · atualizado em 02.08.2026 · <a href="docs/mapa-geral-expofeira-2026.pdf" target="_blank" rel="noopener">Abrir PDF</a></figcaption>
-        </figure>
       </section>
     </section>
 
@@ -871,7 +892,7 @@
       <img src="assets/expofeira-logo.png" alt="Expofeira 2026">
       <div>
         <strong>Caderno de Comunicação 2.0</strong>
-              <span>Versão 2.0 · Atualizado em 5 de agosto de 2026</span>
+              <span>Versão 2.0 · Atualizado em 6 de agosto de 2026</span>
       </div>
       <a href="https://www.instagram.com/expoamapa" target="_blank" rel="noopener"><i data-lucide="instagram" aria-hidden="true"></i>@expoamapa</a>
       <div class="footer-credit">

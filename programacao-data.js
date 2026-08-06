@@ -5,6 +5,38 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "08/08",
+        "time": "00h",
+        "title": "Junior Moral",
+        "location": "Arena da Rainha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "14h às 18h",
+        "title": "Curso SENAI: Fabricação de cookies",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "08/08",
+        "time": "16h30",
+        "title": "Cortejão da Alegria e Carroça da Alegria",
+        "location": "Balneário da Fazendinha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "16h30",
+        "title": "Arte e Luta Capoeira",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
         "time": "17h às 22h",
         "title": "Showroom, coquetel e networking do 2º Amapá AgroSummit",
         "location": "Arena Agro",
@@ -21,14 +53,6 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "08/08",
-        "time": "16h30",
-        "title": "Cortejão da Alegria e Carroça da Alegria",
-        "location": "Balneário da Fazendinha",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
         "time": "17h",
         "title": "Saída da Cavalgada",
         "location": "Estacionamento do Balneário da Fazendinha",
@@ -37,82 +61,10 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "08/08",
-        "time": "18h",
-        "title": "Abertura oficial",
-        "location": "Parque de Exposições da Fazendinha",
-        "category": "Serviços",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
         "time": "17h",
         "title": "Abertura dos pavilhões e serviços",
         "location": "Parque de Exposições da Fazendinha",
         "category": "Serviços",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "16h30",
-        "title": "Arte e Luta Capoeira",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "18h",
-        "title": "Grupo de Capoeira ACD Aruandê",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": "Apresentador: Rodiney Santos - O preto joia da Amazônia · DJ Insane"
-      },
-      {
-        "date": "08/08",
-        "time": "22h30",
-        "title": "22h30 - Verônica dos Tambores",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "19h",
-        "title": "Apresentadora: Irlan Paixão",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": "Dj Robson Alucinado"
-      },
-      {
-        "date": "08/08",
-        "time": "21h",
-        "title": "Michelle Maycoth",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "22h",
-        "title": "João Amorim",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "23h",
-        "title": "Nivito Guedes",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "19h",
-        "title": "Contação de histórias - Espetáculos de Circo - Espetáculos de Dança - Espetáculos de Teatro",
-        "location": "Circo Meio do Mundo",
-        "category": "Cultura",
         "detail": ""
       },
       {
@@ -133,11 +85,67 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "08/08",
+        "time": "18h",
+        "title": "Abertura oficial",
+        "location": "Parque de Exposições da Fazendinha",
+        "category": "Serviços",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "18h",
+        "title": "Grupo de Capoeira ACD Aruandê",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": "Apresentador: Rodiney Santos - O preto joia da Amazônia · DJ Insane"
+      },
+      {
+        "date": "08/08",
+        "time": "18h às 22h",
+        "title": "IFAP Cursos Rápidos",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "Atividade coordenada pela SETEC."
+      },
+      {
+        "date": "08/08",
+        "time": "18h às 22h",
+        "title": "Curso SENAI: Fabricação de brownies",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "08/08",
+        "time": "19h",
+        "title": "Apresentadora: Irlan Paixão",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": "Dj Robson Alucinado"
+      },
+      {
+        "date": "08/08",
+        "time": "19h",
+        "title": "Contação de histórias - Espetáculos de Circo - Espetáculos de Dança - Espetáculos de Teatro",
+        "location": "Circo Meio do Mundo",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
         "time": "19h",
         "title": "Apresentador: Elson Summer",
         "location": "Arena da Rainha",
         "category": "Cultura",
         "detail": "DJ Pirão"
+      },
+      {
+        "date": "08/08",
+        "time": "21h",
+        "title": "Michelle Maycoth",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": ""
       },
       {
         "date": "08/08",
@@ -158,8 +166,24 @@ window.EXPO_SCHEDULE = [
       {
         "date": "08/08",
         "time": "22h",
+        "title": "João Amorim",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "22h",
         "title": "Clay Sam",
         "location": "Arena da Rainha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "22h30",
+        "title": "22h30 - Verônica dos Tambores",
+        "location": "Palco AfroAmapaense",
         "category": "Cultura",
         "detail": ""
       },
@@ -174,23 +198,15 @@ window.EXPO_SCHEDULE = [
       {
         "date": "08/08",
         "time": "23h",
+        "title": "Nivito Guedes",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "23h",
         "title": "Banda Nativus",
-        "location": "Arena da Rainha",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "23h30",
-        "title": "Neyzinho e Bena Niss",
-        "location": "Arena da Rainha",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "00h",
-        "title": "Junior Moral",
         "location": "Arena da Rainha",
         "category": "Cultura",
         "detail": ""
@@ -200,6 +216,14 @@ window.EXPO_SCHEDULE = [
         "time": "23h",
         "title": "Apresentadores - DJ",
         "location": "Arena Rio Amazonas",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "23h30",
+        "title": "Neyzinho e Bena Niss",
+        "location": "Arena da Rainha",
         "category": "Cultura",
         "detail": ""
       },
@@ -219,6 +243,30 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "09/08",
+        "time": "8h às 17h",
+        "title": "Troque e Pesque",
+        "location": "Tanque da Sepaq",
+        "category": "Experiências",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "14h às 18h",
+        "title": "Curso SENAI: Fabricação de salgado para lanchonete",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "09/08",
+        "time": "16h às 19h",
+        "title": "Agenda do Vice-Governador",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Serviços",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
         "time": "17h às 23h",
         "title": "Serviços de cidadania e Justiça",
         "location": "Stands e unidades móveis",
@@ -235,34 +283,10 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "09/08",
-        "time": "8h às 17h",
-        "title": "Troque e Pesque",
-        "location": "Tanque da Sepaq",
-        "category": "Experiências",
-        "detail": ""
-      },
-      {
-        "date": "09/08",
         "time": "17h",
         "title": "Campeonato Assomap Motocross",
         "location": "Pista do Motocross",
         "category": "Experiências",
-        "detail": ""
-      },
-      {
-        "date": "09/08",
-        "time": "8h às 12h - 14h às 17h",
-        "title": "Curso Cacau e Cupuaçu",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
-        "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "09/08",
-        "time": "8h às 12h - 14h às 17h",
-        "title": "Curso Café",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
-        "category": "Conhecimento",
         "detail": ""
       },
       {
@@ -275,11 +299,43 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "09/08",
+        "time": "17h às 23h",
+        "title": "Contação de histórias - Espetáculos de Circo - Espetáculos de Dança - Espetáculos de Teatro",
+        "location": "Circo Meio do Mundo",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "17h às 23h",
+        "title": "Exposição de artistas visuais e artesanato",
+        "location": "Galeria R. Peixe",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "17h às 23h",
+        "title": "Exposição, artesanato, moda e mostras indígenas",
+        "location": "Maloca da Cultura Indígena",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
         "time": "18h",
         "title": "Apresentador: Marcelo Stuart",
         "location": "Palco AfroAmapaense",
         "category": "Cultura",
         "detail": "DJ Delson Moreno"
+      },
+      {
+        "date": "09/08",
+        "time": "18h às 22h",
+        "title": "Curso SENAI: Fabricação de pizzas",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
       },
       {
         "date": "09/08",
@@ -291,9 +347,33 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "09/08",
+        "time": "19h",
+        "title": "Música - Voz e Violão",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
         "time": "19h30",
         "title": "19h30 - Dança Indígena do Kuty",
         "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "20h",
+        "title": "DJ",
+        "location": "Arena da Rainha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "Após 20h",
+        "title": "Concurso Rainha da Expofeira 2026",
+        "location": "Arena da Rainha",
         "category": "Cultura",
         "detail": ""
       },
@@ -323,54 +403,6 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "09/08",
-        "time": "19h",
-        "title": "Música - Voz e Violão",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "09/08",
-        "time": "17h às 23h",
-        "title": "Contação de histórias - Espetáculos de Circo - Espetáculos de Dança - Espetáculos de Teatro",
-        "location": "Circo Meio do Mundo",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "09/08",
-        "time": "17h às 23h",
-        "title": "Exposição de artistas visuais e artesanato",
-        "location": "Galeria R. Peixe",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "09/08",
-        "time": "17h às 23h",
-        "title": "Exposição, artesanato, moda e mostras indígenas",
-        "location": "Maloca da Cultura Indígena",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "09/08",
-        "time": "20h",
-        "title": "DJ",
-        "location": "Arena da Rainha",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "09/08",
-        "time": "Após 20h",
-        "title": "Concurso Rainha da Expofeira 2026",
-        "location": "Arena da Rainha",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "09/08",
         "time": "23h",
         "title": "APRESENTADORES + DJ",
         "location": "Arena Rio Amazonas",
@@ -393,6 +425,38 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "10/08",
+        "time": "8h às 17h",
+        "title": "Troque e Pesque",
+        "location": "Tanque da Sepaq",
+        "category": "Experiências",
+        "detail": ""
+      },
+      {
+        "date": "10/08",
+        "time": "8h às 12h e 14h às 17h",
+        "title": "Curso Cacau e Cupuaçu",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "Responsável: Cabral."
+      },
+      {
+        "date": "10/08",
+        "time": "14h às 18h",
+        "title": "Curso SENAI: Fabricação de massa folhada",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "10/08",
+        "time": "16h",
+        "title": "Lançamento da campanha Amapá Lilás",
+        "location": "Miniteatro Caboco",
+        "category": "Agosto Lilás",
+        "detail": "Abertura da programação estadual de conscientização, prevenção e enfrentamento à violência contra a mulher."
+      },
+      {
+        "date": "10/08",
         "time": "17h às 23h",
         "title": "Serviços de cidadania e Justiça",
         "location": "Stands e unidades móveis",
@@ -409,51 +473,11 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "10/08",
-        "time": "16h",
-        "title": "Lançamento da campanha Amapá Lilás",
-        "location": "Miniteatro Caboco",
-        "category": "Agosto Lilás",
-        "detail": "Abertura da programação estadual de conscientização, prevenção e enfrentamento à violência contra a mulher."
-      },
-      {
-        "date": "10/08",
-        "time": "8h às 17h",
-        "title": "Troque e Pesque",
-        "location": "Tanque da Sepaq",
-        "category": "Experiências",
-        "detail": ""
-      },
-      {
-        "date": "10/08",
-        "time": "8h às 12h - 14h às 18h",
-        "title": "Curso Cacau e Cupuaçu",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
-        "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "10/08",
         "time": "17h às 22h",
         "title": "Startup Day",
         "location": "Arena Agro",
         "category": "Amapá AgroSummit",
         "detail": "Startups do agro apresentam soluções inteligentes, palestras e pitches de cinco minutos."
-      },
-      {
-        "date": "10/08",
-        "time": "19h",
-        "title": "Festival Povos do Terreiro",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "10/08",
-        "time": "19h",
-        "title": "Festival Dançar",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": ""
       },
       {
         "date": "10/08",
@@ -476,6 +500,30 @@ window.EXPO_SCHEDULE = [
         "time": "17h às 23h",
         "title": "Exposição, artesanato, moda e mostras indígenas",
         "location": "Maloca da Cultura Indígena",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "10/08",
+        "time": "18h às 22h",
+        "title": "Curso SENAI: Fabricação de salgado para lanchonete",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "10/08",
+        "time": "19h",
+        "title": "Festival Povos do Terreiro",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "10/08",
+        "time": "19h",
+        "title": "Festival Dançar",
+        "location": "Miniteatro Caboco",
         "category": "Cultura",
         "detail": ""
       },
@@ -511,19 +559,19 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "11/08",
-        "time": "17h às 23h",
-        "title": "Serviços de cidadania e Justiça",
-        "location": "Stands e unidades móveis",
-        "category": "Serviços",
-        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
+        "time": "8h às 12h e 14h às 18h",
+        "title": "Curso Café",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "Responsável: Telisson."
       },
       {
         "date": "11/08",
-        "time": "17h às 20h20",
-        "title": "Carreta Banco do Brasil - Soluções que conectam e protegem",
-        "location": "Carreta do Banco do Brasil",
-        "category": "Serviços",
-        "detail": "BB Consórcios; Cielo; seguros e previdência; Ourocap Capitalização; planejamento financeiro e espaço de negócios."
+        "time": "14h às 18h",
+        "title": "Curso SENAI: Fabricação de biscoitos mochilados",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
       },
       {
         "date": "11/08",
@@ -532,6 +580,14 @@ window.EXPO_SCHEDULE = [
         "location": "Arena Agro",
         "category": "Amapá AgroSummit",
         "detail": "Alimentos, cosméticos e novos mercados, com Dr. Antônio Cláudio de Almeida Carvalho, da Embrapa Amapá."
+      },
+      {
+        "date": "11/08",
+        "time": "15h às 18h",
+        "title": "Gincana Estadual da Juventude – Edição 2026",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": "Tema: Juventudes que Transformam. Integração institucional ao Calendário Cultural das Juventudes, com escolas estaduais de Macapá, Santana e Mazagão."
       },
       {
         "date": "11/08",
@@ -551,59 +607,19 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "11/08",
-        "time": "17h30 às 17h45",
-        "title": "Coffee break",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Intervalo da programação técnica."
+        "time": "17h às 23h",
+        "title": "Serviços de cidadania e Justiça",
+        "location": "Stands e unidades móveis",
+        "category": "Serviços",
+        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
       },
       {
         "date": "11/08",
-        "time": "17h50 às 18h20",
-        "title": "Açaí irrigado: eficiência e lucratividade",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Com Arcídio Ornela Filho, Amapaí/PA."
-      },
-      {
-        "date": "11/08",
-        "time": "18h30 às 19h30",
-        "title": "Produção e escolha de clones de café",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Estratégias para produtividade e sustentabilidade, com Dr. Marcos Santana Moraes."
-      },
-      {
-        "date": "11/08",
-        "time": "15h às 18h",
-        "title": "Gincana das Escolas",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "11/08",
-        "time": "8h às 12h - 14h às 18h",
-        "title": "Curso Café",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
-        "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "11/08",
-        "time": "19h",
-        "title": "Festival Hip Hop Show",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "11/08",
-        "time": "19h",
-        "title": "Festival de Cinema e Festival Gospel",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": ""
+        "time": "17h às 20h20",
+        "title": "Carreta Banco do Brasil - Soluções que conectam e protegem",
+        "location": "Carreta do Banco do Brasil",
+        "category": "Serviços",
+        "detail": "BB Consórcios; Cielo; seguros e previdência; Ourocap Capitalização; planejamento financeiro e espaço de negócios."
       },
       {
         "date": "11/08",
@@ -631,11 +647,67 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "11/08",
+        "time": "17h30 às 17h45",
+        "title": "Coffee break",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Intervalo da programação técnica."
+      },
+      {
+        "date": "11/08",
+        "time": "17h50 às 18h20",
+        "title": "Açaí irrigado: eficiência e lucratividade",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Com Arcídio Ornela Filho, Amapaí/PA."
+      },
+      {
+        "date": "11/08",
+        "time": "18h às 22h",
+        "title": "Curso SENAI: Fabricação de bolos caseiros",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "11/08",
+        "time": "18h30 às 19h30",
+        "title": "Produção e escolha de clones de café",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Estratégias para produtividade e sustentabilidade, com Dr. Marcos Santana Moraes."
+      },
+      {
+        "date": "11/08",
+        "time": "19h",
+        "title": "Festival Hip Hop Show",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "11/08",
+        "time": "19h",
+        "title": "Festival de Cinema e Festival Gospel",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "11/08",
         "time": "19h",
         "title": "Festival Toca Tudo",
         "location": "Arena da Rainha",
         "category": "Shows",
         "detail": ""
+      },
+      {
+        "date": "11/08",
+        "time": "19h às 20h",
+        "title": "Pitch Day do Programa NextBio Amazônia do Swissnex",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "Responsáveis: Brenda e SETEC."
       },
       {
         "date": "11/08",
@@ -661,19 +733,35 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "12/08",
-        "time": "17h às 23h",
-        "title": "Serviços de cidadania e Justiça",
-        "location": "Stands e unidades móveis",
-        "category": "Serviços",
-        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
+        "time": "8h às 9h",
+        "title": "Programa Nacional de Prevenção e Controle da Vassoura-de-bruxa da Mandioca - PVBM",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "DIAGRO. Responsável: Rommel."
       },
       {
         "date": "12/08",
-        "time": "A confirmar",
-        "title": "TROQUE E PESQUE - PARADA TÉCNICA",
-        "location": "Tanque da Sepaq",
-        "category": "Experiências",
-        "detail": ""
+        "time": "11h às 13h30",
+        "title": "Educação Financeira e Mercado de Trabalho",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "PROCON. Responsável: André."
+      },
+      {
+        "date": "12/08",
+        "time": "14h às 18h",
+        "title": "Curso Café",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "Responsável: Telisson."
+      },
+      {
+        "date": "12/08",
+        "time": "14h às 18h",
+        "title": "Curso SENAI: Fabricação de brownies",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
       },
       {
         "date": "12/08",
@@ -685,6 +773,14 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "12/08",
+        "time": "15h às 18h",
+        "title": "Gincana Estadual da Juventude – Edição 2026",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": "Tema: Juventudes que Transformam. Integração institucional ao Calendário Cultural das Juventudes, com escolas estaduais de Macapá, Santana e Mazagão."
+      },
+      {
+        "date": "12/08",
         "time": "16h às 16h50",
         "title": "Abelhas da Amazônia",
         "location": "Arena Agro",
@@ -693,67 +789,19 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "12/08",
+        "time": "17h às 23h",
+        "title": "Serviços de cidadania e Justiça",
+        "location": "Stands e unidades móveis",
+        "category": "Serviços",
+        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
+      },
+      {
+        "date": "12/08",
         "time": "17h às 17h20",
         "title": "Coffee break",
         "location": "Arena Agro",
         "category": "Amapá AgroSummit",
         "detail": "Intervalo da programação técnica."
-      },
-      {
-        "date": "12/08",
-        "time": "17h30 às 18h20",
-        "title": "Produção de ovos caipiras",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Manejo, custos e oportunidades de mercado, com Me. Ernesto Guevara Bezerra Silva."
-      },
-      {
-        "date": "12/08",
-        "time": "18h30 às 19h30",
-        "title": "Suinocultura de resultado",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Manejo inteligente e viabilidade econômica, com Me. Ernesto Guevara Bezerra Silva."
-      },
-      {
-        "date": "12/08",
-        "time": "15h às 18h",
-        "title": "Gincana das Escolas",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "12/08",
-        "time": "8h às 10:30h",
-        "title": "Curso Agricultura Regenerativa",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
-        "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "12/08",
-        "time": "11h às 14:30h",
-        "title": "PROCON",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
-        "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "12/08",
-        "time": "19h",
-        "title": "Festival do Marabaixo (18 grupos)",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "12/08",
-        "time": "19h",
-        "title": "Festival de Cinema e Festival de Teatro",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": ""
       },
       {
         "date": "12/08",
@@ -776,6 +824,54 @@ window.EXPO_SCHEDULE = [
         "time": "17h às 23h",
         "title": "Exposição, artesanato, moda e mostras indígenas",
         "location": "Maloca da Cultura Indígena",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "12/08",
+        "time": "17h30 às 18h20",
+        "title": "Produção de ovos caipiras",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Manejo, custos e oportunidades de mercado, com Me. Ernesto Guevara Bezerra Silva."
+      },
+      {
+        "date": "12/08",
+        "time": "18h às 22h",
+        "title": "Curso SENAI: Fabricação de cookies",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "12/08",
+        "time": "18h30 às 19h30",
+        "title": "Suinocultura de resultado",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Manejo inteligente e viabilidade econômica, com Me. Ernesto Guevara Bezerra Silva."
+      },
+      {
+        "date": "12/08",
+        "time": "18h30 às 22h",
+        "title": "Painel Amapá que Gera Renda: Cultura, Criatividade e Negócios da Nossa Terra",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "Fundação Rede Amazônica. Responsável: Matheus."
+      },
+      {
+        "date": "12/08",
+        "time": "19h",
+        "title": "Festival do Marabaixo (18 grupos)",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "12/08",
+        "time": "19h",
+        "title": "Festival de Cinema e Festival de Teatro",
+        "location": "Miniteatro Caboco",
         "category": "Cultura",
         "detail": ""
       },
@@ -802,6 +898,14 @@ window.EXPO_SCHEDULE = [
         "location": "Arena Rio Amazonas",
         "category": "Shows",
         "detail": ""
+      },
+      {
+        "date": "12/08",
+        "time": "A confirmar",
+        "title": "TROQUE E PESQUE - PARADA TÉCNICA",
+        "location": "Tanque da Sepaq",
+        "category": "Experiências",
+        "detail": ""
       }
     ]
   },
@@ -811,19 +915,43 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "13/08",
-        "time": "17h às 23h",
-        "title": "Serviços de cidadania e Justiça",
-        "location": "Stands e unidades móveis",
-        "category": "Serviços",
-        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
+        "time": "8h às 12h",
+        "title": "Curso Café",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "Responsável: Telisson."
       },
       {
         "date": "13/08",
-        "time": "A confirmar",
-        "title": "TROQUE E PESQUE - PARADA TÉCNICA",
-        "location": "Tanque da Sepaq",
-        "category": "Experiências",
-        "detail": ""
+        "time": "14h às 18h",
+        "title": "Curso SENAI: Fabricação de pizzas",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "13/08",
+        "time": "15h às 15h40",
+        "title": "Estratégias nutricionais para bovinos e bubalinos",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Com Me. Higo Gregório Silva Favacho, do Ifap/AP."
+      },
+      {
+        "date": "13/08",
+        "time": "15h às 18h",
+        "title": "Gincana Estadual da Juventude – Edição 2026",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": "Tema: Juventudes que Transformam. Integração institucional ao Calendário Cultural das Juventudes, com escolas estaduais de Macapá, Santana e Mazagão."
+      },
+      {
+        "date": "13/08",
+        "time": "15h50 às 16h30",
+        "title": "Sistemas integrados na Amazônia",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Novos caminhos para a produção animal, com Dr. Thiago da Silva Carvalho, da UFNT/TO."
       },
       {
         "date": "13/08",
@@ -843,46 +971,6 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "13/08",
-        "time": "17h às 17h30",
-        "title": "Atividades de perfuração - Óleo & Gás",
-        "location": "Auditório SDR",
-        "category": "Petróleo, gás e energia",
-        "detail": "Com Charles Galloti, gerente executivo de Operações da Constellation."
-      },
-      {
-        "date": "13/08",
-        "time": "17h30 às 18h10",
-        "title": "Perfuração do Poço Morpho no Amapá",
-        "location": "Auditório SDR",
-        "category": "Petróleo, gás e energia",
-        "detail": "Com Cezar Gomes Carneiro, coordenador operacional de Projetos de Parcerias da Petrobras."
-      },
-      {
-        "date": "13/08",
-        "time": "18h10 às 18h50",
-        "title": "Como fazer negócios com a Petrobras?",
-        "location": "Auditório SDR",
-        "category": "Petróleo, gás e energia",
-        "detail": "Com Felipe Pagiola de Oliveira, gerente-geral de Relacionamento com o Mercado Fornecedor da Petrobras."
-      },
-      {
-        "date": "13/08",
-        "time": "15h às 15h40",
-        "title": "Estratégias nutricionais para bovinos e bubalinos",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Com Me. Higo Gregório Silva Favacho, do Ifap/AP."
-      },
-      {
-        "date": "13/08",
-        "time": "15h50 às 16h30",
-        "title": "Sistemas integrados na Amazônia",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Novos caminhos para a produção animal, com Dr. Thiago da Silva Carvalho, da UFNT/TO."
-      },
-      {
-        "date": "13/08",
         "time": "16h40 às 17h20",
         "title": "Brasil: o celeiro que sustenta o planeta",
         "location": "Arena Agro",
@@ -891,67 +979,19 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "13/08",
-        "time": "17h30 às 17h45",
-        "title": "Coffee break",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Intervalo da programação técnica."
+        "time": "17h às 23h",
+        "title": "Serviços de cidadania e Justiça",
+        "location": "Stands e unidades móveis",
+        "category": "Serviços",
+        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
       },
       {
         "date": "13/08",
-        "time": "17h50 às 18h20",
-        "title": "Melhoramento genético na bubalinocultura amazônica",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Da pesquisa à produção, com Dr. José Ribamar Felipe Marques, da Embrapa/PA."
-      },
-      {
-        "date": "13/08",
-        "time": "18h30 às 19h30",
-        "title": "Biotecnologias da reprodução para bovinos e bubalinos",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Alternativas sustentáveis de produção, com Dr. Sebastião Tavares Rolim Filho, da UFPA/PA."
-      },
-      {
-        "date": "13/08",
-        "time": "15h às 18h",
-        "title": "Gincana das Escolas",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "13/08",
-        "time": "8h às 12h",
-        "title": "Curso Café",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
-        "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "13/08",
-        "time": "18h às 22h",
-        "title": "Seminário Royalties da Exploração Mineral Como Indutor do Desenvolvimento Científico, Tecnológico e Social (MCTI)",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
-        "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "13/08",
-        "time": "19h",
-        "title": "Festival de Batuque - Zimba - Sairé",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "13/08",
-        "time": "19h",
-        "title": "Festival de Cinema - Voz e Violão - Pré-Fólia Literária",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": ""
+        "time": "17h às 17h30",
+        "title": "Atividades de perfuração - Óleo & Gás",
+        "location": "Auditório SDR",
+        "category": "Petróleo, gás e energia",
+        "detail": "Com Charles Galloti, gerente executivo de Operações da Constellation."
       },
       {
         "date": "13/08",
@@ -979,11 +1019,91 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "13/08",
+        "time": "17h30 às 18h10",
+        "title": "Perfuração do Poço Morpho no Amapá",
+        "location": "Auditório SDR",
+        "category": "Petróleo, gás e energia",
+        "detail": "Com Cezar Gomes Carneiro, coordenador operacional de Projetos de Parcerias da Petrobras."
+      },
+      {
+        "date": "13/08",
+        "time": "17h30 às 17h45",
+        "title": "Coffee break",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Intervalo da programação técnica."
+      },
+      {
+        "date": "13/08",
+        "time": "17h50 às 18h20",
+        "title": "Melhoramento genético na bubalinocultura amazônica",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Da pesquisa à produção, com Dr. José Ribamar Felipe Marques, da Embrapa/PA."
+      },
+      {
+        "date": "13/08",
+        "time": "18h às 22h",
+        "title": "Seminário Royalties da Exploração Mineral como Indutor do Desenvolvimento Científico, Tecnológico e Social",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "MCTI/SCTA, Subsecretaria de Ciência e Tecnologia para a Amazônia do MCTI e SETEC. Responsável: Brenda."
+      },
+      {
+        "date": "13/08",
+        "time": "18h às 22h",
+        "title": "Curso SENAI: Fabricação de salgado para lanchonete",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "13/08",
+        "time": "18h10 às 18h50",
+        "title": "Como fazer negócios com a Petrobras?",
+        "location": "Auditório SDR",
+        "category": "Petróleo, gás e energia",
+        "detail": "Com Felipe Pagiola de Oliveira, gerente-geral de Relacionamento com o Mercado Fornecedor da Petrobras."
+      },
+      {
+        "date": "13/08",
+        "time": "18h30 às 19h30",
+        "title": "Biotecnologias da reprodução para bovinos e bubalinos",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Alternativas sustentáveis de produção, com Dr. Sebastião Tavares Rolim Filho, da UFPA/PA."
+      },
+      {
+        "date": "13/08",
+        "time": "19h",
+        "title": "Festival de Batuque - Zimba - Sairé",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "13/08",
+        "time": "19h",
+        "title": "Festival de Cinema - Voz e Violão - Pré-Fólia Literária",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "13/08",
         "time": "19h",
         "title": "FESTIVAL DE ROCK",
         "location": "Arena da Rainha",
         "category": "Shows",
         "detail": ""
+      },
+      {
+        "date": "13/08",
+        "time": "19h",
+        "title": "Lançamento do aplicativo Cuida Bem MP",
+        "location": "Estande do MP-AP - Pavilhão Gestão, Segurança e Comunicação",
+        "category": "Serviços",
+        "detail": "Ferramenta de apoio à prestação de contas em curatelas, criada para tornar a organização, o registro e a apresentação das informações patrimoniais mais simples, seguros e transparentes."
       },
       {
         "date": "13/08",
@@ -1000,6 +1120,14 @@ window.EXPO_SCHEDULE = [
         "location": "Arena Rio Amazonas",
         "category": "Conhecimento",
         "detail": ""
+      },
+      {
+        "date": "13/08",
+        "time": "A confirmar",
+        "title": "TROQUE E PESQUE - PARADA TÉCNICA",
+        "location": "Tanque da Sepaq",
+        "category": "Experiências",
+        "detail": ""
       }
     ]
   },
@@ -1007,14 +1135,6 @@ window.EXPO_SCHEDULE = [
     "date": "14/08",
     "weekday": "Sex",
     "events": [
-      {
-        "date": "14/08",
-        "time": "17h às 23h",
-        "title": "Serviços de cidadania e Justiça",
-        "location": "Stands e unidades móveis",
-        "category": "Serviços",
-        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
-      },
       {
         "date": "14/08",
         "time": "8h às 12h",
@@ -1030,6 +1150,46 @@ window.EXPO_SCHEDULE = [
         "location": "Tanque da Sepaq",
         "category": "Experiências",
         "detail": ""
+      },
+      {
+        "date": "14/08",
+        "time": "8h às 12h",
+        "title": "3º Fórum da Cadeia Produtiva do Açaí",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "SETEC. Responsável: Brenda."
+      },
+      {
+        "date": "14/08",
+        "time": "13h30 às 18h30",
+        "title": "Circuito AgroSummit: visita técnica a propriedades rurais",
+        "location": "Propriedades rurais",
+        "category": "Amapá AgroSummit",
+        "detail": "Da soja ao confinamento: uma experiência prática sobre sistemas produtivos, integração, manejo, tecnologia e agregação de valor no campo."
+      },
+      {
+        "date": "14/08",
+        "time": "14h às 18h",
+        "title": "Curso SENAI: Fabricação de salgado para lanchonete",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "14/08",
+        "time": "16h às 17h",
+        "title": "Recursos humanos para o setor de petróleo e gás",
+        "location": "Auditório SDR",
+        "category": "Petróleo, gás e energia",
+        "detail": "Oportunidades e desafios para o Amapá, com José Luis de Almeida (Senai-Cimatec), Claudia Chelala (Unifap), Pedro Henrique (Senai/AP) e Sandra Meinen da Cruz (Ifap). Mediação: Elissandro Araújo (Esap)."
+      },
+      {
+        "date": "14/08",
+        "time": "17h às 23h",
+        "title": "Serviços de cidadania e Justiça",
+        "location": "Stands e unidades móveis",
+        "category": "Serviços",
+        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
       },
       {
         "date": "14/08",
@@ -1057,75 +1217,11 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "14/08",
-        "time": "8h às 12h",
-        "title": "3º Fórum da Cadeia Produtiva do Açaí",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
-        "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "14/08",
-        "time": "16h",
-        "title": "Programa Nacional de Prevenção e controle da Vàssoura-de-bruxa da mandioca –",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
-        "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "14/08",
-        "time": "18h",
-        "title": "Cerimônia de Lançamento do entreposto do Açai",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
-        "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "14/08",
-        "time": "16h às 17h",
-        "title": "Recursos humanos para o setor de petróleo e gás",
-        "location": "Auditório SDR",
-        "category": "Petróleo, gás e energia",
-        "detail": "Oportunidades e desafios para o Amapá, com José Luis de Almeida (Senai-Cimatec), Claudia Chelala (Unifap), Pedro Henrique (Senai/AP) e Sandra Meinen da Cruz (Ifap). Mediação: Elissandro Araújo (Esap)."
-      },
-      {
-        "date": "14/08",
         "time": "17h às 17h30",
         "title": "Plano de proteção à fauna e simulados de emergência para petróleo",
         "location": "Auditório SDR",
         "category": "Petróleo, gás e energia",
         "detail": "Com Claudio Souza, gerente de Projetos da Mineral Engenharia e Meio Ambiente."
-      },
-      {
-        "date": "14/08",
-        "time": "17h30 às 18h30",
-        "title": "Tecnologia, inovação, meio ambiente e sustentabilidade no setor de petróleo e gás",
-        "location": "Auditório SDR",
-        "category": "Petróleo, gás e energia",
-        "detail": "Com André Bueno Portes, gerente de Sustentabilidade e Meio Ambiente do Cenpes/Petrobras."
-      },
-      {
-        "date": "14/08",
-        "time": "13h30 às 18h30",
-        "title": "Circuito AgroSummit: visita técnica a propriedades rurais",
-        "location": "Propriedades rurais",
-        "category": "Amapá AgroSummit",
-        "detail": "Da soja ao confinamento: uma experiência prática sobre sistemas produtivos, integração, manejo, tecnologia e agregação de valor no campo."
-      },
-      {
-        "date": "14/08",
-        "time": "19h",
-        "title": "Festival de Capoeira - Show de Bandas de Reggae",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "14/08",
-        "time": "19h",
-        "title": "Festival de Música Instrumental",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": ""
       },
       {
         "date": "14/08",
@@ -1148,6 +1244,38 @@ window.EXPO_SCHEDULE = [
         "time": "17h às 23h",
         "title": "Exposição, artesanato, moda e mostras indígenas",
         "location": "Maloca da Cultura Indígena",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "14/08",
+        "time": "17h30 às 18h30",
+        "title": "Tecnologia, inovação, meio ambiente e sustentabilidade no setor de petróleo e gás",
+        "location": "Auditório SDR",
+        "category": "Petróleo, gás e energia",
+        "detail": "Com André Bueno Portes, gerente de Sustentabilidade e Meio Ambiente do Cenpes/Petrobras."
+      },
+      {
+        "date": "14/08",
+        "time": "18h às 22h",
+        "title": "Curso SENAI: Fabricação de massa folhada",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "14/08",
+        "time": "19h",
+        "title": "Festival de Capoeira - Show de Bandas de Reggae",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "14/08",
+        "time": "19h",
+        "title": "Festival de Música Instrumental",
+        "location": "Miniteatro Caboco",
         "category": "Cultura",
         "detail": ""
       },
@@ -1191,14 +1319,6 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "15/08",
-        "time": "17h às 23h",
-        "title": "Serviços de cidadania e Justiça",
-        "location": "Stands e unidades móveis",
-        "category": "Serviços",
-        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
-      },
-      {
-        "date": "15/08",
         "time": "8h às 17h",
         "title": "Troque e Pesque",
         "location": "Tanque da Sepaq",
@@ -1208,34 +1328,18 @@ window.EXPO_SCHEDULE = [
       {
         "date": "15/08",
         "time": "8h às 12h",
-        "title": "PALESTRA - Da inovação ao lucro: Estratégias para crescimento e geração de riquezas",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
+        "title": "Da inovação ao lucro: estratégias para crescimento e geração de riquezas",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": ""
+        "detail": "SETEC. Responsável: Brenda."
       },
       {
         "date": "15/08",
-        "time": "16h",
-        "title": "Lançamento dos Modelos de Projetos de Agroindústrias o Governo do Amapá",
-        "location": "Pavilhão Balcão de Serviços Rurais - Aud. SDR",
+        "time": "14h às 18h",
+        "title": "Curso SENAI: Fabricação de bolos caseiros",
+        "location": "Expofeira 2026",
         "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "15/08",
-        "time": "17h",
-        "title": "Apresentação de drone e aeromodelos",
-        "location": "Clube de Aeromodelismo",
-        "category": "Experiências",
-        "detail": ""
-      },
-      {
-        "date": "15/08",
-        "time": "17h",
-        "title": "15º Fest Jeep",
-        "location": "Jeep Club",
-        "category": "Experiências",
-        "detail": ""
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
       },
       {
         "date": "15/08",
@@ -1255,6 +1359,14 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "15/08",
+        "time": "16h às 19h",
+        "title": "Lançamento dos Modelos de Projetos de Agroindústrias do Governo do Amapá",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "SDR/COAGRO/GT. Responsável: Gleeice."
+      },
+      {
+        "date": "15/08",
         "time": "16h15 às 17h40",
         "title": "Posicionamento e influência feminina",
         "location": "Arena Agro",
@@ -1263,50 +1375,26 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "15/08",
-        "time": "17h45 às 18h",
-        "title": "Coffee break",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Intervalo da programação."
+        "time": "17h às 23h",
+        "title": "Serviços de cidadania e Justiça",
+        "location": "Stands e unidades móveis",
+        "category": "Serviços",
+        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
       },
       {
         "date": "15/08",
-        "time": "18h10 às 18h40",
-        "title": "AgroTalk",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Show de experiências com mulheres que transformam o agro."
-      },
-      {
-        "date": "15/08",
-        "time": "18h45 às 19h30",
-        "title": "Sucessão: uma visão que atravessa gerações",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Com Rossi Cavalcante, médica veterinária e produtora rural."
-      },
-      {
-        "date": "15/08",
-        "time": "19h30 às 21h",
-        "title": "Música ao vivo",
-        "location": "Arena Agro",
-        "category": "Amapá AgroSummit",
-        "detail": "Encerramento do AgroMulheres Day."
-      },
-      {
-        "date": "15/08",
-        "time": "19h",
-        "title": "DJ - Shows",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
+        "time": "17h",
+        "title": "Apresentação de drone e aeromodelos",
+        "location": "Clube de Aeromodelismo",
+        "category": "Experiências",
         "detail": ""
       },
       {
         "date": "15/08",
-        "time": "19h",
-        "title": "Voz e Violão",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
+        "time": "17h",
+        "title": "15º Fest Jeep",
+        "location": "Jeep Club",
+        "category": "Experiências",
         "detail": ""
       },
       {
@@ -1335,17 +1423,57 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "15/08",
+        "time": "17h45 às 18h",
+        "title": "Coffee break",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Intervalo da programação."
+      },
+      {
+        "date": "15/08",
+        "time": "18h às 22h",
+        "title": "Curso SENAI: Fabricação de biscoitos mochilados",
+        "location": "Expofeira 2026",
+        "category": "Conhecimento",
+        "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
+      },
+      {
+        "date": "15/08",
+        "time": "18h10 às 18h40",
+        "title": "AgroTalk",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Show de experiências com mulheres que transformam o agro."
+      },
+      {
+        "date": "15/08",
+        "time": "18h45 às 19h30",
+        "title": "Sucessão: uma visão que atravessa gerações",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Com Rossi Cavalcante, médica veterinária e produtora rural."
+      },
+      {
+        "date": "15/08",
         "time": "19h",
-        "title": "Vaquejada",
-        "location": "Arena da Vaquejada",
-        "category": "Experiências",
+        "title": "DJ - Shows",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
         "detail": ""
       },
       {
         "date": "15/08",
-        "time": "21h",
-        "title": "Rodeio nacional",
-        "location": "Arena Rio Amazonas",
+        "time": "19h",
+        "title": "Voz e Violão",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "15/08",
+        "time": "19h",
+        "title": "Vaquejada",
+        "location": "Arena da Vaquejada",
         "category": "Experiências",
         "detail": ""
       },
@@ -1356,6 +1484,22 @@ window.EXPO_SCHEDULE = [
         "location": "Arena da Rainha",
         "category": "Shows",
         "detail": "Transamérica / Hipersom / Som Tropical / Trepidante / TUPINAMBÁ-PA"
+      },
+      {
+        "date": "15/08",
+        "time": "19h30 às 21h",
+        "title": "Música ao vivo",
+        "location": "Arena Agro",
+        "category": "Amapá AgroSummit",
+        "detail": "Encerramento do AgroMulheres Day."
+      },
+      {
+        "date": "15/08",
+        "time": "21h",
+        "title": "Rodeio nacional",
+        "location": "Arena Rio Amazonas",
+        "category": "Experiências",
+        "detail": ""
       }
     ]
   },
@@ -1365,19 +1509,19 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "16/08",
-        "time": "17h às 23h",
-        "title": "Serviços de cidadania e Justiça",
-        "location": "Stands e unidades móveis",
-        "category": "Serviços",
-        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
-      },
-      {
-        "date": "16/08",
         "time": "8h às 17h",
         "title": "Troque e Pesque",
         "location": "Tanque da Sepaq",
         "category": "Experiências",
         "detail": ""
+      },
+      {
+        "date": "16/08",
+        "time": "17h às 23h",
+        "title": "Serviços de cidadania e Justiça",
+        "location": "Stands e unidades móveis",
+        "category": "Serviços",
+        "detail": "Comissariado da Infância e Juventude; CEJUSC; TRE; DPE; MP-AP; Ouvidoria e Conselho Tutelar."
       },
       {
         "date": "16/08",
@@ -1405,22 +1549,6 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "16/08",
-        "time": "19h",
-        "title": "DJ - Shows",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "16/08",
-        "time": "19h",
-        "title": "Voz e Violão",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "16/08",
         "time": "17h às 23h",
         "title": "Contação de histórias - Espetáculos de Circo - Espetáculos de Dança - Espetáculos de Teatro",
         "location": "Circo Meio do Mundo",
@@ -1440,6 +1568,22 @@ window.EXPO_SCHEDULE = [
         "time": "17h às 23h",
         "title": "Exposição, artesanato, moda e mostras indígenas",
         "location": "Maloca da Cultura Indígena",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "16/08",
+        "time": "19h",
+        "title": "DJ - Shows",
+        "location": "Palco AfroAmapaense",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "16/08",
+        "time": "19h",
+        "title": "Voz e Violão",
+        "location": "Miniteatro Caboco",
         "category": "Cultura",
         "detail": ""
       },

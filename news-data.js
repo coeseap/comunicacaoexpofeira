@@ -385,14 +385,14 @@ window.EXPO_NEWS = [
   },
   {
     "number": 33,
-    "title": "Espaço de Óleo e Gás reúne gigantes globais com faturamento superior a meio trilhão de reais",
-    "date": "05/08/2026",
-    "source": "Expofeira 2026",
-    "medium": "Material para imprensa",
+    "title": "Expofeira 2026: Arena de Negócios reúne gigantes de óleo e gás com faturamento acima de R$ 500 bilhões",
+    "date": "04/08/2026",
+    "source": "Amapá Global News",
+    "medium": "Portal/Jornal",
     "topic": "Petróleo, gás e energia",
-    "author": "Comissão de Eventos da Expofeira 2026",
+    "author": "Amapá Global News",
     "summary": "Petrobras, Transpetro, Constellation, OceanPact, Grupo CBO e outras empresas integram o espaço dedicado à cadeia de óleo e gás.",
-    "url": "docs/materia-expofeira-oleo-gas.html",
+    "url": "https://www.amapaglobalnews.com.br/noticia/arena-de-negocios-de-oleo-e-gas-da-expofeira-2026-reune-gigantes-globais-com-faturamento-superior-a-r-500-bilhoes",
     "group": "Petróleo, gás e energia"
   }
 ];

@@ -191,11 +191,15 @@
       const icon = iconByCategory[event.category] || "calendar-check";
       const categoryClass = classByCategory[event.category] || "";
       const detail = event.detail ? `<p>${escapeHtml(event.detail)}</p>` : "";
+      const partnerLogo = /^Curso SENAI:/i.test(event.title)
+        ? `<img class="schedule-partner-logo" src="assets/senai.png" alt="SENAI">`
+        : "";
       return `
         <article class="schedule-item ${categoryClass}">
           <time>${escapeHtml(event.time)}</time>
           <span class="schedule-icon" aria-hidden="true"><i data-lucide="${icon}"></i></span>
           <div class="schedule-main">
+            ${partnerLogo}
             <h3>${escapeHtml(event.title)}</h3>
             ${detail}
           </div>
@@ -218,8 +222,8 @@
     button.addEventListener("click", () => {
       state.date = button.dataset.scheduleDate || state.date;
       state.category = button.dataset.scheduleCategory || "Todos";
-      state.query = "";
-      if (scheduleSearch) scheduleSearch.value = "";
+      state.query = button.dataset.scheduleQuery || "";
+      if (scheduleSearch) scheduleSearch.value = state.query;
       activateTab("programacao", { scroll: false });
       renderFilters();
       renderSchedule();
@@ -229,6 +233,94 @@
 
   renderFilters();
   renderSchedule();
+
+  const exhibitorData = window.EXPO_EXHIBITORS && Array.isArray(window.EXPO_EXHIBITORS.pavilions)
+    ? window.EXPO_EXHIBITORS
+    : null;
+  const exhibitorSearch = document.getElementById("exhibitor-search");
+  const exhibitorPavilion = document.getElementById("exhibitor-pavilion");
+  const exhibitorSegment = document.getElementById("exhibitor-segment");
+  const exhibitorList = document.getElementById("exhibitor-list");
+  const exhibitorResultCount = document.getElementById("exhibitor-result-count");
+  const exhibitorState = { query: "", pavilion: "Todos", segment: "Todos" };
+
+  function renderExhibitorOptions() {
+    if (!exhibitorData) return;
+    if (exhibitorPavilion) {
+      exhibitorPavilion.innerHTML = `<option value="Todos">Todos os pavilhões</option>${exhibitorData.pavilions.map((pavilion) => `<option value="${escapeHtml(pavilion.name)}">${escapeHtml(pavilion.name)}</option>`).join("")}`;
+    }
+    if (exhibitorSegment) {
+      const segments = [...new Set(exhibitorData.pavilions.flatMap((pavilion) => pavilion.segments.map((segment) => segment.name)))].sort((a, b) => a.localeCompare(b, "pt-BR"));
+      exhibitorSegment.innerHTML = `<option value="Todos">Todos os segmentos</option>${segments.map((segment) => `<option value="${escapeHtml(segment)}">${escapeHtml(segment)}</option>`).join("")}`;
+    }
+  }
+
+  function renderExhibitors() {
+    if (!exhibitorData || !exhibitorList) return;
+    const query = normalized(exhibitorState.query);
+    const filteredPavilions = exhibitorData.pavilions.map((pavilion) => {
+      if (exhibitorState.pavilion !== "Todos" && pavilion.name !== exhibitorState.pavilion) return null;
+      const pavilionMatch = !query || normalized(pavilion.name).includes(query);
+      const segments = pavilion.segments.map((segment) => {
+        if (exhibitorState.segment !== "Todos" && segment.name !== exhibitorState.segment) return null;
+        const segmentMatch = !query || normalized(segment.name).includes(query);
+        const companies = pavilionMatch || segmentMatch
+          ? segment.companies
+          : segment.companies.filter((company) => normalized(company).includes(query));
+        if (!companies.length) return null;
+        return { ...segment, companies };
+      }).filter(Boolean);
+      return segments.length ? { ...pavilion, segments } : null;
+    }).filter(Boolean);
+
+    const companyCount = filteredPavilions.reduce((total, pavilion) => total + pavilion.segments.reduce((sum, segment) => sum + segment.companies.length, 0), 0);
+    if (exhibitorResultCount) {
+      exhibitorResultCount.textContent = `${companyCount} ${companyCount === 1 ? "nome" : "nomes"} · ${filteredPavilions.length} ${filteredPavilions.length === 1 ? "pavilhão" : "pavilhões"}`;
+    }
+
+    if (!filteredPavilions.length) {
+      exhibitorList.innerHTML = `<div class="empty-state"><strong>Nenhum expositor encontrado.</strong><p>Tente outro nome, pavilhão ou segmento.</p></div>`;
+      return;
+    }
+
+    const expanded = Boolean(query || exhibitorState.pavilion !== "Todos" || exhibitorState.segment !== "Todos");
+    exhibitorList.innerHTML = filteredPavilions.map((pavilion, index) => {
+      const pavilionCompanies = pavilion.segments.reduce((sum, segment) => sum + segment.companies.length, 0);
+      return `
+        <details class="exhibitor-pavilion" ${expanded || index === 0 ? "open" : ""}>
+          <summary>
+            <span><small>Área / pavilhão</small><strong>${escapeHtml(pavilion.name)}</strong></span>
+            <span class="exhibitor-pavilion-count">${pavilionCompanies} ${pavilionCompanies === 1 ? "nome" : "nomes"}</span>
+          </summary>
+          <div class="exhibitor-segment-grid">
+            ${pavilion.segments.map((segment) => `
+              <section class="exhibitor-segment">
+                <header><span>Segmento</span><h3>${escapeHtml(segment.name)}</h3></header>
+                <ul>${segment.companies.map((company) => `<li>${escapeHtml(company)}</li>`).join("")}</ul>
+              </section>
+            `).join("")}
+          </div>
+        </details>
+      `;
+    }).join("");
+    refreshIcons();
+  }
+
+  exhibitorSearch?.addEventListener("input", (event) => {
+    exhibitorState.query = event.target.value;
+    renderExhibitors();
+  });
+  exhibitorPavilion?.addEventListener("change", (event) => {
+    exhibitorState.pavilion = event.target.value;
+    renderExhibitors();
+  });
+  exhibitorSegment?.addEventListener("change", (event) => {
+    exhibitorState.segment = event.target.value;
+    renderExhibitors();
+  });
+
+  renderExhibitorOptions();
+  renderExhibitors();
 
   const newsItems = Array.isArray(window.EXPO_NEWS)
     ? [...window.EXPO_NEWS].sort((a, b) => Number(b.number) - Number(a.number))
