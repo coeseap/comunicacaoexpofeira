@@ -5,35 +5,11 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "08/08",
-        "time": "00h",
-        "title": "Junior Moral",
-        "location": "Arena da Rainha",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
         "time": "14h às 18h",
         "title": "Curso SENAI: Fabricação de cookies",
         "location": "Expofeira 2026",
         "category": "Conhecimento",
         "detail": "Curso gratuito de aperfeiçoamento profissional realizado pelo SENAI."
-      },
-      {
-        "date": "08/08",
-        "time": "16h30",
-        "title": "Cortejão da Alegria e Carroça da Alegria",
-        "location": "Balneário da Fazendinha",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "16h30",
-        "title": "Arte e Luta Capoeira",
-        "location": "Palco AfroAmapaense",
-        "category": "Cultura",
-        "detail": ""
       },
       {
         "date": "08/08",
@@ -70,10 +46,26 @@ window.EXPO_SCHEDULE = [
       {
         "date": "08/08",
         "time": "17h às 23h",
-        "title": "Exposição de artistas visuais e artesanato",
+        "title": "Exposição de pintura: Ivan Amanajás",
         "location": "Galeria R. Peixe",
         "category": "Cultura",
-        "detail": ""
+        "detail": "Ecos da Floresta II: Entre a Memória e a Natureza."
+      },
+      {
+        "date": "08/08",
+        "time": "17h às 23h",
+        "title": "Exposições de fotografia",
+        "location": "Galeria R. Peixe",
+        "category": "Cultura",
+        "detail": "Eude Rocha — Amazônia: O Coração das Águas; Tom Quaresma — Rastros do Rio: Memórias e Cotidianos às Margens do Rio Araguari; Aynan Del Tetto — Sob o Mesmo Céu: Cartografias da Luz Amapaense; Alan Serique — Art & Tur."
+      },
+      {
+        "date": "08/08",
+        "time": "17h às 23h",
+        "title": "Exposição de artesanato",
+        "location": "Galeria R. Peixe",
+        "category": "Cultura",
+        "detail": "Mestra Rosângela — máscaras afros; Maria do Carmo (Calçoene) — Arte Santa Clara; Josy Gonçalves — Arte para Sentir; D'Artes — souvenir do Amapá e biojoia; Vani Nilton — Raízes Aéreas; Juvenal Belfort — artesanato em madeira; Dilza Palikur — artesanato indígena."
       },
       {
         "date": "08/08",
@@ -93,11 +85,19 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "08/08",
-        "time": "18h",
-        "title": "Grupo de Capoeira ACD Aruandê",
-        "location": "Palco AfroAmapaense",
+        "time": "Na abertura",
+        "title": "DJ Drikko",
+        "location": "Abertura da Expofeira 2026",
         "category": "Cultura",
-        "detail": "Apresentador: Rodiney Santos - O preto joia da Amazônia · DJ Insane"
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "18h",
+        "title": "Cortejo artístico: Cortejão da Alegria e Carroça da Alegria",
+        "location": "Parque de Exposições da Fazendinha",
+        "category": "Cultura",
+        "detail": ""
       },
       {
         "date": "08/08",
@@ -118,14 +118,6 @@ window.EXPO_SCHEDULE = [
       {
         "date": "08/08",
         "time": "19h",
-        "title": "Apresentadora: Irlan Paixão",
-        "location": "Miniteatro Caboco",
-        "category": "Cultura",
-        "detail": "Dj Robson Alucinado"
-      },
-      {
-        "date": "08/08",
-        "time": "19h",
         "title": "Contação de histórias - Espetáculos de Circo - Espetáculos de Dança - Espetáculos de Teatro",
         "location": "Circo Meio do Mundo",
         "category": "Cultura",
@@ -134,10 +126,18 @@ window.EXPO_SCHEDULE = [
       {
         "date": "08/08",
         "time": "19h",
-        "title": "Apresentador: Elson Summer",
-        "location": "Arena da Rainha",
+        "title": "Arte e Luta Capoeira",
+        "location": "Palco AfroAmapá",
         "category": "Cultura",
-        "detail": "DJ Pirão"
+        "detail": "Apresentador: Elson Summer · DJ Insane"
+      },
+      {
+        "date": "08/08",
+        "time": "19h30",
+        "title": "ACD Vem Brincar Capoeira",
+        "location": "Palco AfroAmapá",
+        "category": "Cultura",
+        "detail": ""
       },
       {
         "date": "08/08",
@@ -145,21 +145,21 @@ window.EXPO_SCHEDULE = [
         "title": "Michelle Maycoth",
         "location": "Miniteatro Caboco",
         "category": "Cultura",
-        "detail": ""
+        "detail": "Apresentadora: Irlan Paixão · DJ Robson Alucinado"
       },
       {
         "date": "08/08",
         "time": "21h",
         "title": "Caravana Janete Silva Show",
-        "location": "Arena da Rainha",
+        "location": "Palco da Rainha",
         "category": "Cultura",
-        "detail": ""
+        "detail": "Apresentador: Tio Gigante · DJ Pirão"
       },
       {
         "date": "08/08",
         "time": "21h30",
         "title": "Banda Show Rithmos",
-        "location": "Arena da Rainha",
+        "location": "Palco da Rainha",
         "category": "Cultura",
         "detail": ""
       },
@@ -175,15 +175,15 @@ window.EXPO_SCHEDULE = [
         "date": "08/08",
         "time": "22h",
         "title": "Clay Sam",
-        "location": "Arena da Rainha",
+        "location": "Palco da Rainha",
         "category": "Cultura",
         "detail": ""
       },
       {
         "date": "08/08",
         "time": "22h30",
-        "title": "22h30 - Verônica dos Tambores",
-        "location": "Palco AfroAmapaense",
+        "title": "Verônica dos Tambores",
+        "location": "Palco AfroAmapá",
         "category": "Cultura",
         "detail": ""
       },
@@ -191,7 +191,7 @@ window.EXPO_SCHEDULE = [
         "date": "08/08",
         "time": "22h30",
         "title": "Mônica Lins",
-        "location": "Arena da Rainha",
+        "location": "Palco da Rainha",
         "category": "Cultura",
         "detail": ""
       },
@@ -207,7 +207,7 @@ window.EXPO_SCHEDULE = [
         "date": "08/08",
         "time": "23h",
         "title": "Banda Nativus",
-        "location": "Arena da Rainha",
+        "location": "Palco da Rainha",
         "category": "Cultura",
         "detail": ""
       },
@@ -223,14 +223,22 @@ window.EXPO_SCHEDULE = [
         "date": "08/08",
         "time": "23h30",
         "title": "Neyzinho e Bena Niss",
-        "location": "Arena da Rainha",
+        "location": "Palco da Rainha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "00h",
+        "title": "Junior Moral",
+        "location": "Palco da Rainha",
         "category": "Cultura",
         "detail": ""
       },
       {
         "date": "08/08",
         "time": "A confirmar",
-        "title": "Leo Santana",
+        "title": "Léo Santana",
         "location": "Arena Rio Amazonas",
         "category": "Shows",
         "detail": ""
@@ -300,18 +308,26 @@ window.EXPO_SCHEDULE = [
       {
         "date": "09/08",
         "time": "17h às 23h",
-        "title": "Contação de histórias - Espetáculos de Circo - Espetáculos de Dança - Espetáculos de Teatro",
-        "location": "Circo Meio do Mundo",
+        "title": "Exposição de pintura: Ivan Amanajás",
+        "location": "Galeria R. Peixe",
         "category": "Cultura",
-        "detail": ""
+        "detail": "Ecos da Floresta II: Entre a Memória e a Natureza."
       },
       {
         "date": "09/08",
         "time": "17h às 23h",
-        "title": "Exposição de artistas visuais e artesanato",
+        "title": "Exposições de fotografia",
         "location": "Galeria R. Peixe",
         "category": "Cultura",
-        "detail": ""
+        "detail": "Eude Rocha — Amazônia: O Coração das Águas; Tom Quaresma — Rastros do Rio: Memórias e Cotidianos às Margens do Rio Araguari; Aynan Del Tetto — Sob o Mesmo Céu: Cartografias da Luz Amapaense; Alan Serique — Art & Tur."
+      },
+      {
+        "date": "09/08",
+        "time": "17h às 23h",
+        "title": "Exposição de artesanato",
+        "location": "Galeria R. Peixe",
+        "category": "Cultura",
+        "detail": "Mestra Rosângela — máscaras afros; Maria do Carmo (Calçoene) — Arte Santa Clara; Josy Gonçalves — Arte para Sentir; D'Artes — souvenir do Amapá e biojoia; Vani Nilton — Raízes Aéreas; Juvenal Belfort — artesanato em madeira; Dilza Palikur — artesanato indígena."
       },
       {
         "date": "09/08",
@@ -324,10 +340,10 @@ window.EXPO_SCHEDULE = [
       {
         "date": "09/08",
         "time": "18h",
-        "title": "Apresentador: Marcelo Stuart",
-        "location": "Palco AfroAmapaense",
+        "title": "Márcia Galindo",
+        "location": "Palco Circo",
         "category": "Cultura",
-        "detail": "DJ Delson Moreno"
+        "detail": ""
       },
       {
         "date": "09/08",
@@ -339,49 +355,105 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "09/08",
-        "time": "19h",
-        "title": "19h - Dança Indígena do Turé",
-        "location": "Palco AfroAmapaense",
+        "time": "18h30",
+        "title": "Palhaça Biscoito",
+        "location": "Palco Circo",
         "category": "Cultura",
         "detail": ""
       },
       {
         "date": "09/08",
         "time": "19h",
-        "title": "Música - Voz e Violão",
-        "location": "Miniteatro Caboco",
+        "title": "Dança Indígena do Turé",
+        "location": "Palco AfroAmapá",
+        "category": "Cultura",
+        "detail": "Apresentador: Marcelo Stuart · DJ Delson Moreno"
+      },
+      {
+        "date": "09/08",
+        "time": "19h",
+        "title": "Palhaço Peteca",
+        "location": "Palco Circo",
         "category": "Cultura",
         "detail": ""
       },
       {
         "date": "09/08",
         "time": "19h30",
-        "title": "19h30 - Dança Indígena do Kuty",
-        "location": "Palco AfroAmapaense",
+        "title": "Dança Indígena do Kuty",
+        "location": "Palco AfroAmapá",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "19h30",
+        "title": "Tusie Sandra",
+        "location": "Palco Circo",
         "category": "Cultura",
         "detail": ""
       },
       {
         "date": "09/08",
         "time": "20h",
-        "title": "DJ",
-        "location": "Arena da Rainha",
+        "title": "Sandra Lima",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": "Apresentadora: Karol Silva · DJ Aucky"
+      },
+      {
+        "date": "09/08",
+        "time": "20h",
+        "title": "DJ Arizinho",
+        "location": "Palco da Rainha",
         "category": "Cultura",
         "detail": ""
       },
       {
         "date": "09/08",
         "time": "Após 20h",
-        "title": "Concurso Rainha da Expofeira 2026",
-        "location": "Arena da Rainha",
+        "title": "Escolha da Rainha da Expofeira 2026",
+        "location": "Palco da Rainha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "20h30",
+        "title": "Chico Caetano",
+        "location": "Miniteatro Caboco",
         "category": "Cultura",
         "detail": ""
       },
       {
         "date": "09/08",
         "time": "21h",
-        "title": "21h - Mayara Braga",
-        "location": "Palco AfroAmapaense",
+        "title": "Mayara Braga",
+        "location": "Palco AfroAmapá",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "21h",
+        "title": "Anthony Barbosa",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "21h30",
+        "title": "Judas Sacaca",
+        "location": "Palco AfroAmapá",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "21h30",
+        "title": "Moisés Sandino",
+        "location": "Miniteatro Caboco",
         "category": "Cultura",
         "detail": ""
       },
@@ -389,15 +461,23 @@ window.EXPO_SCHEDULE = [
         "date": "09/08",
         "time": "22h",
         "title": "Tambores Tucuju",
-        "location": "Palco AfroAmapaense",
+        "location": "Palco AfroAmapá",
         "category": "Cultura",
         "detail": ""
       },
       {
         "date": "09/08",
-        "time": "23h",
-        "title": "23h - Judas Sacaca",
-        "location": "Palco AfroAmapaense",
+        "time": "22h30",
+        "title": "Jhimmy Feiches",
+        "location": "Miniteatro Caboco",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "09/08",
+        "time": "Após o concurso",
+        "title": "Show com Jeane Souza",
+        "location": "Palco da Rainha",
         "category": "Cultura",
         "detail": ""
       },
