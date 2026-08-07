@@ -1,10 +1,10 @@
 window.EXPO_EXHIBITORS = {
-  "updated": "06/08/2026",
-  "sourceRows": 344,
-  "namedRows": 309,
-  "companyCount": 314,
-  "pavilionCount": 16,
-  "segmentCount": 15,
+  "updated": "07/08/2026",
+  "sourceRows": 371,
+  "namedRows": 336,
+  "companyCount": 340,
+  "pavilionCount": 17,
+  "segmentCount": 16,
   "sourceUrl": "https://docs.google.com/spreadsheets/d/1jnHokXk6Bi-up5cRkoCCd1ODVm3-JeCsLss_zYmPmh4/edit?usp=sharing",
   "pavilions": [
     {
@@ -460,6 +460,42 @@ window.EXPO_EXHIBITORS = {
             "TEMPEROS E ERVAS / MAZAGÃO",
             "VIELLA DO AÇAÍ",
             "WELNA KITUTIS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pavilhão Território das Artes",
+      "segments": [
+        {
+          "name": "Vitrine do Afro Indígena Empreendedora",
+          "companies": [
+            "MARWORNO ARTES — Artesanato indígena",
+            "TIRIYO ARTESANATO — Artesanato indígena",
+            "ARTESANATOS INDÍGENA — Artesanato indígena",
+            "GENGIBIRRA MARABAIXEIRA — Gengibirra",
+            "NEGA GENGIBIRRA — Gengibirra",
+            "LEILA ARTES — Bijuteria de crochê",
+            "ATELIÊ BY FRANCE — Artesanato",
+            "PATRICINHAS NEGA LINDA — Camisas e bolsas",
+            "ZIZI ARTE DA MÃOS — Artesanato afro-religioso",
+            "MESTRA ROSANGELA TAPUIA — Artesanato",
+            "SANMI ATELIÊ — Artesanato afro-religioso",
+            "NEGRAFAS — Moda, bonecas negras e quadros",
+            "ARTES ARISTE CUNANI — Cerâmicas",
+            "NAZA AFRO DESIGNER — Artesanato afro e moda autoral",
+            "ANIGER ARTS — Artesanato",
+            "LOUCEIRAS DO MARUANUM — Cerâmica",
+            "CROCHÊ DA DRIKA — Crochê e biojoias",
+            "ARTE MERY — Artesanato afro-indígena",
+            "GRUPO DE ECONOMIA CRIATIVA SOLIDÁRIA MÃOS UNIDAS — Acessórios afro em tecido, biojoias, bonecas afro, decoração e crochê",
+            "PATRÍCIA RAMOS TRANÇAS E PENTEADOS — Tranças nagô",
+            "LOUCEIRA DO MARUANUM — Artesanato de referência cultural",
+            "ARTE DA MATA — Artesanato",
+            "ARTES JOSY — Biojoias, bonecas, tecidos e costura",
+            "EUNICE ARTESANATO — Artesanatos",
+            "OFICINA DO ARTESANATO — Bonecas afro, tecido, costura à mão, laços e fitas",
+            "ASSOCIAÇÃO ARTESÃS FERREIRENSE — Sementes, biojoias e cestarias"
           ]
         }
       ]

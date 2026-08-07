@@ -1580,6 +1580,14 @@ window.EXPO_SCHEDULE = [
         "location": "Arena Rio Amazonas",
         "category": "Experiências",
         "detail": ""
+      },
+      {
+        "date": "15/08",
+        "time": "23h",
+        "title": "Luísa Sonza",
+        "location": "Arena Rio Amazonas",
+        "category": "Shows",
+        "detail": "Show nacional."
       }
     ]
   },
