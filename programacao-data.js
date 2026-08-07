@@ -5,6 +5,38 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "08/08",
+        "time": "17h",
+        "title": "Saída da Cavalgada",
+        "location": "Estacionamento do Balneário da Fazendinha",
+        "category": "Experiências",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "18h",
+        "title": "Abertura oficial",
+        "location": "Parque de Exposições da Fazendinha",
+        "category": "Serviços",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "18h",
+        "title": "Cortejo artístico: Cortejão da Alegria e Carroça da Alegria",
+        "location": "Parque de Exposições da Fazendinha",
+        "category": "Cultura",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
+        "time": "17h",
+        "title": "Abertura dos pavilhões e serviços",
+        "location": "Parque de Exposições da Fazendinha",
+        "category": "Serviços",
+        "detail": ""
+      },
+      {
+        "date": "08/08",
         "time": "14h às 18h",
         "title": "Curso SENAI: Fabricação de cookies",
         "location": "Expofeira 2026",
@@ -26,22 +58,6 @@ window.EXPO_SCHEDULE = [
         "location": "Carreta do Banco do Brasil",
         "category": "Serviços",
         "detail": "Move Brasil para táxis e aplicativos; renovação de frota e financiamento de veículos; mobilidade sustentável; energia solar e financiamento para geração própria."
-      },
-      {
-        "date": "08/08",
-        "time": "17h",
-        "title": "Saída da Cavalgada",
-        "location": "Estacionamento do Balneário da Fazendinha",
-        "category": "Experiências",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "17h",
-        "title": "Abertura dos pavilhões e serviços",
-        "location": "Parque de Exposições da Fazendinha",
-        "category": "Serviços",
-        "detail": ""
       },
       {
         "date": "08/08",
@@ -77,25 +93,9 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "08/08",
-        "time": "18h",
-        "title": "Abertura oficial",
-        "location": "Parque de Exposições da Fazendinha",
-        "category": "Serviços",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
         "time": "Na abertura",
         "title": "DJ Drikko",
         "location": "Abertura da Expofeira 2026",
-        "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "08/08",
-        "time": "18h",
-        "title": "Cortejo artístico: Cortejão da Alegria e Carroça da Alegria",
-        "location": "Parque de Exposições da Fazendinha",
         "category": "Cultura",
         "detail": ""
       },
