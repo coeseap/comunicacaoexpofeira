@@ -1812,12 +1812,24 @@ h3 {
   border-top-color: var(--green);
 }
 
-.document-card-decree {
+.document-card.document-card-decree {
   border-top-color: var(--pink);
 }
 
 .document-card-decree .document-icon {
   background: var(--deep);
+}
+
+.document-grid.icms-document-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.document-card.document-card-instruction {
+  border-top-color: var(--sky);
+}
+
+.document-card-instruction .document-icon {
+  background: var(--forest);
 }
 
 .icms-section-heading {
@@ -3357,6 +3369,7 @@ h3 {
   .inclusion-overview-points { grid-column: 1 / -1; border-top: 1px solid rgba(255, 255, 255, .2); border-left: 0; }
   .inclusion-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .accessibility-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .document-grid.icms-document-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .icms-product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
@@ -3365,6 +3378,8 @@ h3 {
 }
 
 @media (max-width: 780px) {
+  .document-grid.icms-document-grid { grid-template-columns: 1fr; }
+
   .topical-heading {
     display: grid;
     gap: 14px;
