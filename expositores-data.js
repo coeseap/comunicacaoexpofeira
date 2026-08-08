@@ -166,7 +166,7 @@ window.EXPO_EXHIBITORS = {
       ]
     },
     {
-      "name": "Arena de Negócios - Pavilhão 01",
+      "name": "PAVILHÃO 01 - ESTAÇÃO PETRÓLEO",
       "segments": [
         {
           "name": "Institucional",
@@ -196,7 +196,7 @@ window.EXPO_EXHIBITORS = {
       ]
     },
     {
-      "name": "Arena de Negócios - Pavilhão 02",
+      "name": "PAVILHÃO 02 - ESTAÇÃO MORADIA",
       "segments": [
         {
           "name": "Construção civil",
@@ -232,7 +232,7 @@ window.EXPO_EXHIBITORS = {
       ]
     },
     {
-      "name": "Arena de Negócios - Pavilhão 03",
+      "name": "PAVILHÃO 03 - VITRINE DO AMAPÁ PARA O MUNDO",
       "segments": [
         {
           "name": "Minha 1ª Empresa",
@@ -293,7 +293,7 @@ window.EXPO_EXHIBITORS = {
       ]
     },
     {
-      "name": "Arena de Negócios - Pavilhão 04",
+      "name": "PAVILHÃO 04 - VITRINE DE NEGÓCIOS",
       "segments": [
         {
           "name": "Comércio",
@@ -327,7 +327,7 @@ window.EXPO_EXHIBITORS = {
       ]
     },
     {
-      "name": "Arena de Negócios - Pavilhão 05",
+      "name": "PAVILHÃO 05 - VITRINE MÁQUINAS E ENERGIA",
       "segments": [
         {
           "name": "Energia",
