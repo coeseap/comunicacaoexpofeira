@@ -172,7 +172,7 @@ window.EXPO_EXHIBITORS = {
           "name": "Institucional",
           "companies": [
             "CENTRO DE INFORMAÇÕES TURÍSTICAS",
-            "DNIT",
+            "Qualifica Amapá",
             "MPAP",
             "OAB",
             "TCE",
