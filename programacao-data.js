@@ -1385,7 +1385,7 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "14/08",
-        "time": "23h",
+        "time": "20h",
         "title": "Daniel",
         "location": "Arena Rio Amazonas",
         "category": "Shows",

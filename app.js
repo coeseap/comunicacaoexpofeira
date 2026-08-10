@@ -70,6 +70,29 @@
 
   document.getElementById("print-page")?.addEventListener("click", () => window.print());
 
+  const backToTop = document.getElementById("back-to-top");
+  let backToTopTicking = false;
+
+  function updateBackToTop() {
+    const visible = window.scrollY > 480;
+    backToTop?.classList.toggle("is-visible", visible);
+    backToTop?.setAttribute("aria-hidden", String(!visible));
+    if (backToTop) backToTop.tabIndex = visible ? 0 : -1;
+    backToTopTicking = false;
+  }
+
+  window.addEventListener("scroll", () => {
+    if (backToTopTicking) return;
+    backToTopTicking = true;
+    window.requestAnimationFrame(updateBackToTop);
+  }, { passive: true });
+
+  backToTop?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  updateBackToTop();
+
   const schedule = Array.isArray(window.EXPO_SCHEDULE) ? window.EXPO_SCHEDULE : [];
   const dateFilter = document.getElementById("date-filter");
   const categoryFilter = document.getElementById("category-filter");
