@@ -267,14 +267,6 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "09/08",
-        "time": "16h às 19h",
-        "title": "Agenda do Vice-Governador",
-        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
-        "category": "Serviços",
-        "detail": ""
-      },
-      {
-        "date": "09/08",
         "time": "17h às 23h",
         "title": "Serviços de cidadania e Justiça",
         "location": "Stands e unidades móveis",
@@ -483,16 +475,16 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "09/08",
-        "time": "23h",
-        "title": "APRESENTADORES + DJ",
+        "time": "21h",
+        "title": "Gusttavo Lima",
         "location": "Arena Rio Amazonas",
-        "category": "Cultura",
+        "category": "Shows",
         "detail": ""
       },
       {
         "date": "09/08",
-        "time": "21h",
-        "title": "Gusttavo Lima",
+        "time": "23h",
+        "title": "Festival de Música Eletrônica",
         "location": "Arena Rio Amazonas",
         "category": "Shows",
         "detail": ""
@@ -784,7 +776,7 @@ window.EXPO_SCHEDULE = [
       {
         "date": "11/08",
         "time": "19h às 20h",
-        "title": "Pitch Day do Programa NextBio Amazônia do Swissnex",
+        "title": "Pitch Day do Programa NextBio Amazônia do Swissnext",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
         "detail": "SETEC."
@@ -821,7 +813,7 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "12/08",
-        "time": "8h às 9h",
+        "time": "10h às 11h",
         "title": "Programa Nacional de Prevenção e Controle da Vassoura-de-bruxa da Mandioca - PVBM",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
@@ -829,7 +821,7 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "12/08",
-        "time": "11h às 13h30",
+        "time": "11h às 14h30",
         "title": "Educação Financeira e Mercado de Trabalho",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
@@ -837,7 +829,7 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "12/08",
-        "time": "14h às 18h",
+        "time": "15h às 18h",
         "title": "Curso Café",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
@@ -1374,6 +1366,14 @@ window.EXPO_SCHEDULE = [
         "location": "Arena da Rainha",
         "category": "Shows",
         "detail": "Matrix / Amazônia Fusion + / Mega Pressão / Croco Live / Mega Gibsom"
+      },
+      {
+        "date": "14/08",
+        "time": "19h às 22h",
+        "title": "Reunião PPCDAP",
+        "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
+        "category": "Conhecimento",
+        "detail": "SEMA."
       },
       {
         "date": "14/08",
