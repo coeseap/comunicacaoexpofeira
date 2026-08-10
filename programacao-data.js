@@ -517,7 +517,7 @@ window.EXPO_SCHEDULE = [
         "title": "Curso Cacau e Cupuaçu",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "Responsável: Cabral."
+        "detail": ""
       },
       {
         "date": "10/08",
@@ -617,15 +617,15 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "10/08",
-        "time": "23h",
-        "title": "Pe. Fabio de Melo",
+        "time": "19h",
+        "title": "Padre Fábio de Melo",
         "location": "Arena Rio Amazonas",
-        "category": "Conhecimento",
+        "category": "Shows",
         "detail": ""
       },
       {
         "date": "10/08",
-        "time": "A confirmar",
+        "time": "21h",
         "title": "Diante do Trono",
         "location": "Arena Rio Amazonas",
         "category": "Shows",
@@ -643,7 +643,7 @@ window.EXPO_SCHEDULE = [
         "title": "Curso Café",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "Responsável: Telisson."
+        "detail": ""
       },
       {
         "date": "11/08",
@@ -787,7 +787,7 @@ window.EXPO_SCHEDULE = [
         "title": "Pitch Day do Programa NextBio Amazônia do Swissnex",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "Responsáveis: Brenda e SETEC."
+        "detail": "SETEC."
       },
       {
         "date": "11/08",
@@ -817,7 +817,7 @@ window.EXPO_SCHEDULE = [
         "title": "Programa Nacional de Prevenção e Controle da Vassoura-de-bruxa da Mandioca - PVBM",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "DIAGRO. Responsável: Rommel."
+        "detail": "DIAGRO."
       },
       {
         "date": "12/08",
@@ -825,7 +825,7 @@ window.EXPO_SCHEDULE = [
         "title": "Educação Financeira e Mercado de Trabalho",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "PROCON. Responsável: André."
+        "detail": "PROCON."
       },
       {
         "date": "12/08",
@@ -833,7 +833,7 @@ window.EXPO_SCHEDULE = [
         "title": "Curso Café",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "Responsável: Telisson."
+        "detail": ""
       },
       {
         "date": "12/08",
@@ -937,7 +937,7 @@ window.EXPO_SCHEDULE = [
         "title": "Painel Amapá que Gera Renda: Cultura, Criatividade e Negócios da Nossa Terra",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "Fundação Rede Amazônica. Responsável: Matheus."
+        "detail": "Fundação Rede Amazônica."
       },
       {
         "date": "12/08",
@@ -999,7 +999,7 @@ window.EXPO_SCHEDULE = [
         "title": "Curso Café",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "Responsável: Telisson."
+        "detail": ""
       },
       {
         "date": "13/08",
@@ -1127,7 +1127,7 @@ window.EXPO_SCHEDULE = [
         "title": "Seminário Royalties da Exploração Mineral como Indutor do Desenvolvimento Científico, Tecnológico e Social",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "MCTI/SCTA, Subsecretaria de Ciência e Tecnologia para a Amazônia do MCTI e SETEC. Responsável: Brenda."
+        "detail": "MCTI/SCTA, Subsecretaria de Ciência e Tecnologia para a Amazônia do MCTI e SETEC."
       },
       {
         "date": "13/08",
@@ -1237,7 +1237,7 @@ window.EXPO_SCHEDULE = [
         "title": "3º Fórum da Cadeia Produtiva do Açaí",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "SETEC. Responsável: Brenda."
+        "detail": "SETEC."
       },
       {
         "date": "14/08",
@@ -1411,7 +1411,7 @@ window.EXPO_SCHEDULE = [
         "title": "Da inovação ao lucro: estratégias para crescimento e geração de riquezas",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "SETEC. Responsável: Brenda."
+        "detail": "SETEC."
       },
       {
         "date": "15/08",
@@ -1443,7 +1443,7 @@ window.EXPO_SCHEDULE = [
         "title": "Lançamento dos Modelos de Projetos de Agroindústrias do Governo do Amapá",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
         "category": "Conhecimento",
-        "detail": "SDR/COAGRO/GT. Responsável: Gleeice."
+        "detail": "SDR/COAGRO/GT."
       },
       {
         "date": "15/08",
