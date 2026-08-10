@@ -639,6 +639,14 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "11/08",
+        "time": "8h às 17h",
+        "title": "Troque e Pesque",
+        "location": "Tanque da Sepaq",
+        "category": "Experiências",
+        "detail": ""
+      },
+      {
+        "date": "11/08",
         "time": "8h às 12h e 14h às 18h",
         "title": "Curso Café",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
@@ -813,6 +821,14 @@ window.EXPO_SCHEDULE = [
     "events": [
       {
         "date": "12/08",
+        "time": "Dia todo",
+        "title": "Troque e Pesque - Parada técnica",
+        "location": "Tanque da Sepaq",
+        "category": "Experiências",
+        "detail": "Não haverá atividade no tanque durante todo o dia."
+      },
+      {
+        "date": "12/08",
         "time": "8h às 9h",
         "title": "Programa Nacional de Prevenção e Controle da Vassoura-de-bruxa da Mandioca - PVBM",
         "location": "Pavilhão Balcão de Serviços Rurais - Auditório SDR",
@@ -978,14 +994,6 @@ window.EXPO_SCHEDULE = [
         "location": "Arena Rio Amazonas",
         "category": "Shows",
         "detail": ""
-      },
-      {
-        "date": "12/08",
-        "time": "A confirmar",
-        "title": "TROQUE E PESQUE - PARADA TÉCNICA",
-        "location": "Tanque da Sepaq",
-        "category": "Experiências",
-        "detail": ""
       }
     ]
   },
@@ -993,6 +1001,14 @@ window.EXPO_SCHEDULE = [
     "date": "13/08",
     "weekday": "Qui",
     "events": [
+      {
+        "date": "13/08",
+        "time": "Dia todo",
+        "title": "Troque e Pesque - Parada técnica",
+        "location": "Tanque da Sepaq",
+        "category": "Experiências",
+        "detail": "Não haverá atividade no tanque durante todo o dia."
+      },
       {
         "date": "13/08",
         "time": "8h às 12h",
@@ -1199,14 +1215,6 @@ window.EXPO_SCHEDULE = [
         "title": "Wesley Safadao",
         "location": "Arena Rio Amazonas",
         "category": "Conhecimento",
-        "detail": ""
-      },
-      {
-        "date": "13/08",
-        "time": "A confirmar",
-        "title": "TROQUE E PESQUE - PARADA TÉCNICA",
-        "location": "Tanque da Sepaq",
-        "category": "Experiências",
         "detail": ""
       }
     ]
