@@ -237,7 +237,7 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "08/08",
-        "time": "A confirmar",
+        "time": "23h",
         "title": "Léo Santana",
         "location": "Arena Rio Amazonas",
         "category": "Shows",
@@ -491,7 +491,7 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "09/08",
-        "time": "A confirmar",
+        "time": "21h",
         "title": "Gusttavo Lima",
         "location": "Arena Rio Amazonas",
         "category": "Shows",
@@ -605,14 +605,6 @@ window.EXPO_SCHEDULE = [
         "title": "Festival Dançar",
         "location": "Miniteatro Caboco",
         "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "10/08",
-        "time": "19h",
-        "title": "FESTIVAL DE MÚSICA ELETRÔNICA",
-        "location": "Arena da Rainha",
-        "category": "Shows",
         "detail": ""
       },
       {
@@ -1212,9 +1204,9 @@ window.EXPO_SCHEDULE = [
       {
         "date": "13/08",
         "time": "23h",
-        "title": "Wesley Safadao",
+        "title": "Wesley Safadão",
         "location": "Arena Rio Amazonas",
-        "category": "Conhecimento",
+        "category": "Shows",
         "detail": ""
       }
     ]
@@ -1393,7 +1385,7 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "14/08",
-        "time": "22h",
+        "time": "23h",
         "title": "Daniel",
         "location": "Arena Rio Amazonas",
         "category": "Shows",
