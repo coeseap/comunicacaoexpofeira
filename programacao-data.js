@@ -783,7 +783,7 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "11/08",
-        "time": "22h",
+        "time": "20h",
         "title": "Rodeio regional",
         "location": "Arena Rio Amazonas",
         "category": "Experiências",
@@ -791,7 +791,7 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "11/08",
-        "time": "23h",
+        "time": "22h",
         "title": "Jota Quest",
         "location": "Arena Rio Amazonas",
         "category": "Shows",
@@ -965,7 +965,7 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "12/08",
-        "time": "22h",
+        "time": "20h",
         "title": "Rodeio regional",
         "location": "Arena Rio Amazonas",
         "category": "Experiências",
@@ -1188,7 +1188,7 @@ window.EXPO_SCHEDULE = [
       {
         "date": "13/08",
         "time": "22h",
-        "title": "Rodeio regional",
+        "title": "Rodeio nacional",
         "location": "Arena Rio Amazonas",
         "category": "Experiências",
         "detail": ""
@@ -1575,8 +1575,8 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "15/08",
-        "time": "21h",
-        "title": "Rodeio nacional",
+        "time": "22h",
+        "title": "Final do Rodeio Nacional",
         "location": "Arena Rio Amazonas",
         "category": "Experiências",
         "detail": ""
@@ -1673,14 +1673,6 @@ window.EXPO_SCHEDULE = [
         "title": "Voz e Violão",
         "location": "Miniteatro Caboco",
         "category": "Cultura",
-        "detail": ""
-      },
-      {
-        "date": "16/08",
-        "time": "21h",
-        "title": "Rodeio nacional",
-        "location": "Arena Rio Amazonas",
-        "category": "Experiências",
         "detail": ""
       }
     ]
