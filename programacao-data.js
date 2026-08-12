@@ -973,7 +973,7 @@ window.EXPO_SCHEDULE = [
       },
       {
         "date": "12/08",
-        "time": "23h",
+        "time": "22h",
         "title": "Ana Castela",
         "location": "Arena Rio Amazonas",
         "category": "Shows",

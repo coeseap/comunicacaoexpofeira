@@ -155,6 +155,80 @@
     return `${Number(day)} de agosto`;
   }
 
+  const openingTitles = new Set([
+    "saida da cavalgada",
+    "abertura oficial",
+    "cortejo artistico: cortejao da alegria e carroca da alegria",
+    "abertura dos pavilhoes e servicos",
+  ]);
+
+  function scheduleGroupFor(event, day) {
+    const title = normalized(event.title);
+
+    if (day.date === "08/08" && openingTitles.has(title)) {
+      return { key: "abertura", label: "Abertura da Expofeira 2026", icon: "flag" };
+    }
+
+    if (event.category === "Petróleo, gás e energia") {
+      return { key: "petroleo-gas", label: "Petróleo, gás e energia", icon: "ship" };
+    }
+
+    if (event.category === "Amapá AgroSummit") {
+      return { key: "agrosummit", label: "2º Amapá AgroSummit", icon: "tractor" };
+    }
+
+    if (event.category === "Agosto Lilás") {
+      return { key: "amapa-lilas", label: "Amapá Lilás", icon: "ribbon" };
+    }
+
+    if (/^curso senai:/i.test(event.title)) {
+      return { key: "cursos-senai", label: "Cursos gratuitos do SENAI", icon: "chef-hat" };
+    }
+
+    if (/^carreta banco do brasil/i.test(event.title)) {
+      return { key: "carreta-bb", label: "Serviços da Carreta do Banco do Brasil", icon: "landmark" };
+    }
+
+    const location = event.location || event.category || "Outras atividades";
+    const locationKey = normalized(location).replace(/[^a-z0-9]+/g, "-");
+    const locationLabels = {
+      "pavilhao-balcao-de-servicos-rurais-auditorio-sdr": "Programação técnica do Auditório SDR",
+      "stands-e-unidades-moveis": "Serviços e atendimentos",
+      "tanque-da-sepaq": "Atividades da Sepaq",
+    };
+    const culturalVenue = /(palco|miniteatro|galeria|circo|maloca)/i.test(location);
+
+    return {
+      key: `local-${locationKey}`,
+      label: locationLabels[locationKey] || location,
+      icon: culturalVenue ? "drama" : "map-pin",
+    };
+  }
+
+  function groupedSchedule(events, day) {
+    const groups = new Map();
+
+    events.forEach((event, index) => {
+      const descriptor = scheduleGroupFor(event, day);
+      if (!groups.has(descriptor.key)) {
+        groups.set(descriptor.key, { ...descriptor, events: [], firstIndex: index });
+      }
+      groups.get(descriptor.key).events.push(event);
+    });
+
+    return [...groups.values()].sort((a, b) => a.firstIndex - b.firstIndex);
+  }
+
+  function groupSummary(group) {
+    const locations = [...new Set(group.events.map((event) => event.location).filter(Boolean))];
+    const categories = [...new Set(group.events.map((event) => event.category).filter(Boolean))];
+    const subjects = ["agrosummit", "petroleo-gas", "amapa-lilas", "cursos-senai", "carreta-bb", "abertura"].includes(group.key)
+      ? locations
+      : categories;
+    const count = `${group.events.length} ${group.events.length === 1 ? "atividade" : "atividades"}`;
+    return subjects.length ? `${count} · ${subjects.join(" · ")}` : count;
+  }
+
   function renderFilters() {
     if (dateFilter) {
       dateFilter.innerHTML = schedule.map((day) => `
@@ -210,27 +284,43 @@
       return;
     }
 
-    scheduleList.innerHTML = events.map((event) => {
-      const icon = iconByCategory[event.category] || "calendar-check";
-      const categoryClass = classByCategory[event.category] || "";
-      const detail = event.detail ? `<p>${escapeHtml(event.detail)}</p>` : "";
-      const partnerLogo = /^Curso SENAI:/i.test(event.title)
-        ? `<img class="schedule-partner-logo" src="assets/senai.png" alt="SENAI">`
-        : "";
+    scheduleList.innerHTML = groupedSchedule(events, day).map((group) => {
+      const groupCategoryClass = classByCategory[group.events[0]?.category] || "";
+      const items = group.events.map((event) => {
+        const icon = iconByCategory[event.category] || "calendar-check";
+        const categoryClass = classByCategory[event.category] || "";
+        const detail = event.detail ? `<p>${escapeHtml(event.detail)}</p>` : "";
+        const partnerLogo = /^Curso SENAI:/i.test(event.title)
+          ? `<img class="schedule-partner-logo" src="assets/senai.png" alt="SENAI">`
+          : "";
+        return `
+          <article class="schedule-item ${categoryClass}">
+            <time>${escapeHtml(event.time)}</time>
+            <span class="schedule-icon" aria-hidden="true"><i data-lucide="${icon}"></i></span>
+            <div class="schedule-main">
+              ${partnerLogo}
+              <h3>${escapeHtml(event.title)}</h3>
+              ${detail}
+            </div>
+            <div class="schedule-meta">
+              <span class="schedule-category">${escapeHtml(event.category)}</span>
+              <span>${escapeHtml(event.location)}</span>
+            </div>
+          </article>
+        `;
+      }).join("");
+
       return `
-        <article class="schedule-item ${categoryClass}">
-          <time>${escapeHtml(event.time)}</time>
-          <span class="schedule-icon" aria-hidden="true"><i data-lucide="${icon}"></i></span>
-          <div class="schedule-main">
-            ${partnerLogo}
-            <h3>${escapeHtml(event.title)}</h3>
-            ${detail}
-          </div>
-          <div class="schedule-meta">
-            <span class="schedule-category">${escapeHtml(event.category)}</span>
-            <span>${escapeHtml(event.location)}</span>
-          </div>
-        </article>
+        <section class="schedule-group ${groupCategoryClass}" aria-labelledby="schedule-group-${escapeHtml(group.key)}">
+          <header class="schedule-group-heading">
+            <span class="schedule-group-icon" aria-hidden="true"><i data-lucide="${group.icon}"></i></span>
+            <div>
+              <h3 id="schedule-group-${escapeHtml(group.key)}">${escapeHtml(group.label)}</h3>
+              <p>${escapeHtml(groupSummary(group))}</p>
+            </div>
+          </header>
+          <div class="schedule-group-items">${items}</div>
+        </section>
       `;
     }).join("");
     refreshIcons();
